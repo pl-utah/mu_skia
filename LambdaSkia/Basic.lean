@@ -275,13 +275,3 @@ theorem remove_redundant_outer_savelayer_dstin_pattern
   Draw bottom g1 pd1 (a1, SrcOver, id) t (intersect c1 (intersect g2 c2)) := by
   simp
   grind
-
-@[grind, simp]
-theorem remove_outer_srcOver_transparent_savelayer_over_dstIn
-  (bottom inner : Layer) (a : Float) (cf : ColorFilter) :
-  SaveLayer bottom
-    (SaveLayer EmptyLayer inner (a, DstIn, cf))
-    (1.0, SrcOver, idColorFilter)
-  =
-  SaveLayer bottom inner (a, DstIn, cf) := by
-  simp
