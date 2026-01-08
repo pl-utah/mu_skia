@@ -258,20 +258,3 @@ theorem textblob_mask
 by
   simp
   grind
-
--- mailru 41
-@[grind, simp]
-theorem remove_redundant_outer_savelayer_dstin_pattern
-  (bottom : Layer)
-  (g1 g2 : Geometry) (pd1 : PaintDraw) (a1 : Float)
-  (c1 c2 : Geometry) (t : Transform)
-  (m : Color) (Hopaque : isOpaque m) :
-  SaveLayer bottom
-    (SaveLayer (Draw EmptyLayer g1 pd1 (a1, SrcOver, id) t c1)
-               (Draw EmptyLayer g2 (Fill, fun _ => m) (1.0, SrcOver, id) t c2)
-               (1.0, DstIn, id))
-    (1.0, SrcOver, id)
-  =
-  Draw bottom g1 pd1 (a1, SrcOver, id) t (intersect c1 (intersect g2 c2)) := by
-  simp
-  grind
