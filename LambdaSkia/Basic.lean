@@ -258,3 +258,19 @@ theorem textblob_mask
 by
   simp
   grind
+
+-- Mail ru proof
+theorem dstin_into_clip_bottom
+  (bottom : Layer) (shape clip1 : Geometry)
+  (t : Transform) (color : Color)
+  (Hopaque : isOpaque color) :
+  SaveLayer bottom
+    (Draw EmptyLayer shape (Fill, fun _ => color)
+          (1.0, SrcOver, id) t clip1)
+    (1.0, DstIn, id)
+  =
+  fun pt =>
+    if (intersect shape clip1) (t pt)
+    then bottom pt
+    else Transparent := by
+  simp; grind
