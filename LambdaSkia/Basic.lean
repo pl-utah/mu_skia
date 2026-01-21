@@ -33,6 +33,11 @@ def intersect (g1 g2 : Geometry) : Geometry :=
   fun pt => g1 pt && g2 pt
 
 @[grind, simp]
+def subset (g1 g2 : Geometry) : Prop :=
+    forall pt, g1 pt = true -> g2 pt = true
+
+
+@[grind, simp]
 def difference (g1 g2 : Geometry) : Geometry :=
   fun pt => g1 pt && not (g2 pt)
 
@@ -111,6 +116,9 @@ axiom applyAlpha_transparent :
 @[grind, simp]
 axiom applyAlpha_on_transparent :
   forall a : Float, applyAlpha a Transparent = Transparent
+@[simp]
+axiom applyAlpha_multiply :
+  forall (a2 a1 : Float) (color: Color), applyAlpha a2 (applyAlpha a1 color) = applyAlpha (a1 * a2) color
 
 @[grind, simp]
 noncomputable def blend  (l₁ l₂ : Layer) (pb: PaintBlend) : Layer :=
@@ -137,51 +145,37 @@ def EmptyLayer : Layer := (fun _ => Transparent)
 noncomputable def SaveLayer (l₁ l₂ : Layer) (pb : PaintBlend) : Layer :=
   blend l₁ l₂ pb
 
---! REWRITE 1
-@[grind, simp]
-theorem empty_SrcOver_SaveLayer_is_Empty l:
-  SaveLayer l EmptyLayer (1.0, SrcOver, idColorFilter) = l :=
-  by grind
-
 -- now we define draw
 @[grind, simp]
-noncomputable def Draw (l : Layer) (g : Geometry) (pd : PaintDraw) (pb : PaintBlend) (t: Transform)(clip : Geometry): Layer :=
+noncomputable def Draw (l : Layer) (g : Geometry) (pd : PaintDraw) (pb : PaintBlend) (t: Transform) (clip : Geometry): Layer :=
   blend l (raster g pd t clip) pb
 
+--! REWRITE 1
 @[grind, simp]
-theorem lone_draw_inside_opaque_srcover_savelayer
-  (bottom : Layer) (g : Geometry) (pd : PaintDraw) (α: Float) (c : Geometry) (t: Transform) cf:
-  SaveLayer bottom (Draw EmptyLayer g pd (α, SrcOver, cf) t c) (1.0, SrcOver, idColorFilter) = Draw bottom g pd (α, SrcOver, cf) t c :=
+theorem OpaqueSaveLayerEmptyLayer l:
+  SaveLayer l EmptyLayer (1.0, SrcOver, idColorFilter) = l :=
   by grind
 
 --! REWRITE 2
 @[grind, simp]
-theorem lone_softlight_draw_inside_opaque_srcover_savelayer
+theorem OpaqueSaveLayerRemoveLoneDraw
   (g : Geometry) (pd : PaintDraw) (α: Float) (c : Geometry) (t: Transform) (any_bm: BlendMode) cf:
-  SaveLayer EmptyLayer (Draw EmptyLayer g pd (α, any_bm, cf) t c) (1.0, SrcOver, id) = Draw EmptyLayer g pd (α, any_bm, cf) t c :=
+  SaveLayer EmptyLayer (Draw EmptyLayer g pd (α, any_bm, cf) t c)
+  (1.0, SrcOver, id)
+    = Draw EmptyLayer g pd (α, any_bm, cf) t c :=
   by grind
-
---! REWRITE 4
-@[grind, simp]
-theorem empty_src_is_noop g pd t c:
-  Draw EmptyLayer g pd (0.0, Src, id) t c = EmptyLayer := by
-  grind
 
 --! REWRITE 3
 @[grind, simp]
-theorem last_draw_inside_opaque_srcover_savelayer
+theorem OpaqueSaveLayerRemoveLastDraw
   (l₁ l₂ : Layer) (g c : Geometry) (pd : PaintDraw) (α : Float) (t : Transform) cf:
   SaveLayer l₁ (Draw l₂ g pd (α, SrcOver, cf) t c) (1.0, SrcOver, id) = Draw (SaveLayer l₁ l₂ (1.0, SrcOver, id)) g pd (α, SrcOver, cf) t c := by
   grind
 
---! REWRITE 5
+--! REWRITE 4
 @[grind, simp]
-theorem dstin_into_clip g1 pd1 a1 c1 t g2 c2 c (H: isOpaque c):
-  SaveLayer (Draw EmptyLayer g1 pd1 (a1, SrcOver, id) t c1)
-  (Draw EmptyLayer g2 (Fill, fun _ => c) (1.0, SrcOver, id) t c2) (1.0, DstIn, id)
-  =
-  Draw EmptyLayer g1 pd1 (a1, SrcOver, id) t (intersect c1 (intersect g2 c2)) := by
-  simp
+theorem EmptySrc g pd t c:
+  Draw EmptyLayer g pd (0.0, Src, id) t c = EmptyLayer := by
   grind
 
 @[grind]
@@ -192,7 +186,7 @@ inductive Clips (clip : Geometry) (t : Transform) : Layer -> Layer -> Prop where
     Clips clip t (Draw l1 g pd (a, SrcOver, id) t c) (Draw l2 g pd (a, SrcOver, id) t (intersect c clip))
 
 --! DSTIN
-theorem dstin_into_clip2 t g2 c2 c (H: isOpaque c) bottom1 bottom2:
+theorem MaskIntoDstin t g2 c2 c (H: isOpaque c) bottom1 bottom2:
   Clips (intersect g2 c2) t bottom1 bottom2 ->
   SaveLayer bottom1
   (Draw EmptyLayer g2 (Fill, fun _ => c) (1.0, SrcOver, id) t c2) (1.0, DstIn, id)
@@ -200,7 +194,7 @@ theorem dstin_into_clip2 t g2 c2 c (H: isOpaque c) bottom1 bottom2:
   intro Hclip
   induction Hclip <;> simp at * <;> grind
 
-theorem subsume_colorfilter g style c transform clip f (H: f Transparent = Transparent):
+theorem SubsumeColorFilter g style c transform clip f (H: f Transparent = Transparent):
   SaveLayer EmptyLayer (Draw EmptyLayer g (style, fun _ => c) (1.0, SrcOver, id) transform clip)
                        (1.0, SrcOver, f) =
   Draw EmptyLayer g (style, fun _ => f c) (1.0, SrcOver, id) transform clip := by
@@ -240,4 +234,14 @@ theorem dstin_masks shape style color tfrm clip gradient
             (1.0, DstIn, id)
   =
   Draw (EmptyLayer) shape (style, fun _ => color) (1.0, SrcOver, id) tfrm clip := by
+  grind
+
+theorem better_masks shape style color tfrm clip1 clip2 gradient
+        (Hsubset: subset clip1 clip2)
+        (Hopaque : forall pt, isOpaque (gradient pt)):
+  SaveLayer (Draw (EmptyLayer) shape (style, fun _ => color) (1.0, SrcOver, id) tfrm clip1)
+            (Draw (EmptyLayer) shape (style, gradient) (1.0, SrcOver, id) tfrm clip2)
+            (1.0, DstIn, id)
+  =
+  Draw (EmptyLayer) shape (style, fun _ => color) (1.0, SrcOver, id) tfrm clip1 := by
   grind
