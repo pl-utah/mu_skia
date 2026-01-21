@@ -60,7 +60,9 @@ abbrev PaintDraw := Style × (Point -> Color)
 -- see Colors.lean.
 abbrev BlendMode := Color -> Color -> Color
 
+--  AXIOMS
 --- SrcOver is a blend mode: r = s + (1-sa)*d
+-- Can try to prove
 axiom SrcOver : BlendMode
 @[grind, simp]
 axiom SrcOver_left_transparent:
@@ -77,7 +79,6 @@ axiom SrcOver_luminance_white:
 axiom SrcOver_right_opaque:
   forall c1 c2 : Color, isOpaque c2 -> SrcOver c1 c2 = c2
 
-
 axiom DstIn: BlendMode
 @[grind, simp]
 axiom DstIn_left_transparent:
@@ -92,6 +93,7 @@ axiom DstIn_right_opaque:
 axiom DstIn_right_opaque_general:
   forall (c : Color) (f : Point -> Color) (pt : Point),
     isOpaque (f pt) -> DstIn c (f pt) = c
+
 
 -- blend mode src:
 axiom Src : BlendMode
@@ -119,6 +121,7 @@ axiom applyAlpha_on_transparent :
 @[simp]
 axiom applyAlpha_multiply :
   forall (a2 a1 : Float) (color: Color), applyAlpha a2 (applyAlpha a1 color) = applyAlpha (a1 * a2) color
+
 
 @[grind, simp]
 noncomputable def blend  (l₁ l₂ : Layer) (pb: PaintBlend) : Layer :=
@@ -244,4 +247,17 @@ theorem better_masks shape style color tfrm clip1 clip2 gradient
             (1.0, DstIn, id)
   =
   Draw (EmptyLayer) shape (style, fun _ => color) (1.0, SrcOver, id) tfrm clip1 := by
+  grind
+-- this
+theorem textblob_mask
+  (shape shape': Geometry) (color color' : Color)
+  (transform : Transform) (clip : Geometry)
+  (Hopaque : isOpaque color') :
+  SaveLayer (Draw EmptyLayer shape (id, fun _ => color) (1.0, SrcOver, id) transform clip)
+            (Draw EmptyLayer shape' (id, fun _ => color') (1.0, SrcOver, id) transform clip)
+            (1.0, DstIn, id)
+    =
+  Draw EmptyLayer shape' (id, fun _ => color) (1.0, SrcOver, id) transform (intersect clip shape) :=
+by
+  simp
   grind
