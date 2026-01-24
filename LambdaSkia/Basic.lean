@@ -150,7 +150,7 @@ noncomputable def SaveLayer (l₁ l₂ : Layer) (pb : PaintBlend) : Layer :=
 
 -- now we define draw
 @[grind, simp]
-noncomputable def Draw (l : Layer) (g : Geometry) (pd : PaintDraw) (pb : PaintBlend) (t: Transform) (clip : Geometry): Layer :=
+noncomputable def Draw (l : Layer) (g : Geometry) (pd : PaintDraw) (pb : PaintBlend) (clip : Geometry) (t : Transform): Layer :=
   blend l (raster g pd t clip) pb
 
 --! REWRITE 1
