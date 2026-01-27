@@ -1,93 +1,190 @@
-import Mathlib.Data.Real.Basic
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Polyrith
 import Mathlib.Tactic.Ring
+import Mathlib.Data.Real.Basic
 
-def Interval (lo hi : ℝ) := { x : ℝ // lo ≤ x ∧ x ≤ hi }
+@[grind]
+structure Pixel where
+  a : Real
+  r : Real
+  g : Real
+  b : Real
+  valid : 0 <= a /\ a <= 1 /\
+          0 <= r /\ r <= a /\
+          0 <= g /\ g <= a /\
+          0 <= b /\ b <= a
 
-notation "⟦" lo ", " hi "⟧" => Interval lo hi
+namespace Pixel
 
--- premultiplied argb colors
-structure Color where
-  a : ⟦0, 1⟧
-  r : ⟦0, a.val⟧
-  g : ⟦0, a.val⟧
-  b : ⟦0, a.val⟧
+@[grind, simp]
+def Transparent : Pixel :=
+{ a := 0, r := 0, g := 0, b := 0,
+  valid := by grind}
 
--- Simple semi-transparent white
-noncomputable def Color.transparent : Color := {
-  a := ⟨0, by norm_num, by norm_num⟩,
-  r := ⟨0, by norm_num, by norm_num⟩,
-  g := ⟨0, by norm_num, by norm_num⟩,
-  b := ⟨0, by norm_num, by norm_num⟩
+@[grind, simp]
+def White : Pixel :=
+{ a := 1, r := 1, g := 1, b := 1,
+  valid := by grind}
+
+@[grind, simp]
+def Black : Pixel :=
+{ a := 1, r := 0, g := 0, b := 0,
+  valid := by grind}
+
+@[grind, simp]
+def AlphaPixel (alpha : Real) (h : 0 <= alpha ∧ alpha <= 1) : Pixel := {
+  a := alpha,
+  r := 0,
+  g := 0,
+  b := 0,
+  valid := by
+    rcases h with ⟨ha0, ha1⟩
+    repeat' constructor
+    all_goals nlinarith
 }
 
-theorem srcover_alpha (src_a dst_a : Interval 0 1) :
-  0 ≤ src_a.val + dst_a.val * (1 - src_a.val) ∧
-  src_a.val + dst_a.val * (1 - src_a.val) ≤ 1 := by
-  refine ⟨?_, ?_⟩
-  · -- Lower bound: 0 ≤ src_a + dst_a * (1 - src_a)
-    apply add_nonneg src_a.2.1
-    apply mul_nonneg dst_a.2.1
-    linarith [src_a.2.2]
-  · -- Upper bound: src_a + dst_a * (1 - src_a) ≤ 1
-    have h1 : dst_a.val * (1 - src_a.val) ≤ 1 - src_a.val := by
-      apply mul_le_of_le_one_left
-      · linarith [src_a.2.2]
-      · exact dst_a.2.2
-    linarith [src_a.2.2]
+end Pixel
 
-theorem srcover_color
-  (src_a dst_a : Interval 0 1) (src_c : Interval 0 src_a.val) (dst_c : Interval 0 dst_a.val) :
-  0 ≤ src_c.val + dst_c.val * (1 - src_a.val) ∧
-  src_c.val + dst_c.val * (1 - src_a.val) ≤ src_a.val + dst_a.val * (1 - src_a.val) := by
-  refine ⟨?_, ?_⟩
-  · -- Lower bound: need to show 0 ≤ src_c + dst_c * (1 - src_a)
-    apply add_nonneg src_c.2.1
-    apply mul_nonneg dst_c.2.1
-    nlinarith [src_a.2.2]
-  · -- Upper bound: need to show src_c + dst_c * (1 - src_a) ≤ src_a + dst_a * (1 - src_a)
-    have h1 : src_c.val ≤ src_a.val := src_c.2.2
-    have h2 : dst_c.val ≤ dst_a.val := dst_c.2.2
-    have h3 : 0 ≤ 1 - src_a.val := by linarith [src_a.2.2]
-    linarith [mul_le_mul_of_nonneg_right h2 h3]
+open Pixel
 
--- Source over blending operation
-noncomputable def src_over (src dst : Color) : Color := {
-  a := ⟨src.a.val + dst.a.val * (1 - src.a.val), srcover_alpha src.a dst.a⟩,
-  r := ⟨src.r.val + dst.r.val * (1 - src.a.val), srcover_color src.a dst.a src.r dst.r⟩,
-  g := ⟨src.g.val + dst.g.val * (1 - src.a.val), srcover_color src.a dst.a src.g dst.g⟩,
-  b := ⟨src.b.val + dst.b.val * (1 - src.a.val), srcover_color src.a dst.a src.b dst.b⟩
+@[grind, simp]
+def srcover (d s : Pixel) : Pixel := {
+  a := s.a + d.a * (1 - s.a),
+  r := s.r + d.r * (1 - s.a),
+  g := s.g + d.g * (1 - s.a),
+  b := s.b + d.b * (1 - s.a),
+  valid := by
+    rcases s.valid with
+      ⟨sa0, ⟨sa1, ⟨sr0, ⟨sr1, ⟨sg0, ⟨sg1, ⟨sb0, sb1⟩⟩⟩⟩⟩⟩⟩
+    rcases d.valid with
+      ⟨da0, ⟨da1, ⟨dr0, ⟨dr1, ⟨dg0, ⟨dg1, ⟨db0, db1⟩⟩⟩⟩⟩⟩⟩
+    repeat' constructor
+    all_goals nlinarith
 }
 
-theorem src_over.left_transparent c :
-  src_over Color.transparent c = c := by
-  simp [src_over, Color.transparent]
-  cases c with
-  | mk a r g b =>
-    simp
-    refine ⟨?_, ?_, ?_⟩
-    · rw [Subtype.heq_iff_coe_eq]; simp
-    · rw [Subtype.heq_iff_coe_eq]; simp
-    · rw [Subtype.heq_iff_coe_eq]; simp
+@[grind =, simp]
+theorem srcover.left_transparent (d : Pixel) :
+  srcover d Transparent = d :=
+by
+  grind
 
-theorem src_over.right_transparent c :
-  src_over c Color.transparent = c := by
-  simp [src_over, Color.transparent]
-  cases c with
-  | mk a r g b =>
-    simp
-    refine ⟨?_, ?_, ?_⟩
-    · rw [Subtype.heq_iff_coe_eq]; simp
-    · rw [Subtype.heq_iff_coe_eq]; simp
-    · rw [Subtype.heq_iff_coe_eq]; simp
+@[grind =, simp]
+theorem srcover.right_transparent (s : Pixel) :
+  srcover Transparent s = s :=
+by
+  grind
 
-theorem src_over.associative p q r :
-  src_over (src_over p q) r = src_over p (src_over q r) := by
-  simp [src_over]
-  refine ⟨?_, ?_, ?_, ?_⟩
-  · ring_nf
-  · rw [Subtype.heq_iff_coe_eq] <;> grind
-  · rw [Subtype.heq_iff_coe_eq] <;> grind
-  · rw [Subtype.heq_iff_coe_eq] <;> grind
+@[grind =, simp]
+theorem srcover.right_opaque (d s : Pixel) (h : s.a = 1) :
+  srcover d s = s :=
+by
+  grind
+
+@[grind =, simp]
+theorem srcover.associative (d₁ d₂ s : Pixel) :
+  srcover (srcover d₁ d₂) s = srcover d₁ (srcover d₂ s) :=
+by
+  grind
+
+@[simp]
+theorem srcover.luminance_white (d : Pixel) (f : Pixel -> Pixel) (h : f White = Black) :
+  f (srcover d White) = srcover (f d) Black :=
+by
+  grind
+
+-- r = d * sa
+@[grind, simp]
+def dstin (d s : Pixel) : Pixel := {
+  a := d.a * s.a,
+  r := d.r * s.a,
+  g := d.g * s.a,
+  b := d.b * s.a,
+  valid := by
+    rcases s.valid with
+      ⟨sa0, ⟨sa1, ⟨sr0, ⟨sr1, ⟨sg0, ⟨sg1, ⟨sb0, sb1⟩⟩⟩⟩⟩⟩⟩
+    rcases d.valid with
+      ⟨da0, ⟨da1, ⟨dr0, ⟨dr1, ⟨dg0, ⟨dg1, ⟨db0, db1⟩⟩⟩⟩⟩⟩⟩
+    repeat' constructor
+    all_goals nlinarith
+}
+
+@[grind =, simp]
+theorem dstin.left_transparent (s : Pixel) :
+  dstin Transparent s = Transparent :=
+by
+  grind
+
+@[grind =, simp]
+theorem dstin.right_transparent (d : Pixel) :
+  dstin d Transparent = Transparent :=
+by
+  grind
+
+@[grind =, simp]
+theorem dstin.right_opaque (d s : Pixel) (h : s.a = 1) :
+  dstin d s = d :=
+by
+  grind
+
+@[simp]
+theorem dstin.right_opaque_general (T : Type) (d : Pixel) (pt : T) (f : T -> Pixel)
+  (h : (f pt).a = 1) :
+  dstin d (f pt) = d :=
+by
+  grind
+
+@[grind, simp]
+def src (_ s : Pixel) : Pixel := {
+  a := s.a,
+  r := s.r,
+  g := s.g,
+  b := s.b,
+  valid := by
+    rcases s.valid with
+      ⟨sa0, ⟨sa1, ⟨sr0, ⟨sr1, ⟨sg0, ⟨sg1, ⟨sb0, sb1⟩⟩⟩⟩⟩⟩⟩
+    repeat' constructor
+    all_goals nlinarith
+}
+
+theorem src.def (d s : Pixel) :
+  src d s = s :=
+by
+  grind
+
+@[grind, simp]
+def srcin (d s : Pixel) : Pixel := {
+  a := d.a * s.a,
+  r := d.r * s.a,
+  g := d.g * s.a,
+  b := d.b * s.a,
+  valid := by
+    rcases s.valid with
+      ⟨sa0, ⟨sa1, ⟨sr0, ⟨sr1, ⟨sg0, ⟨sg1, ⟨sb0, sb1⟩⟩⟩⟩⟩⟩⟩
+    rcases d.valid with
+      ⟨da0, ⟨da1, ⟨dr0, ⟨dr1, ⟨dg0, ⟨dg1, ⟨db0, db1⟩⟩⟩⟩⟩⟩⟩
+    repeat' constructor
+    all_goals nlinarith
+}
+
+@[grind =, simp]
+theorem srcin.opaque (d s : Pixel) (h : s.a = 1) :
+  srcin d s = d :=
+by
+  grind
+
+@[grind =, simp]
+theorem srcin.transparent (d : Pixel) :
+  srcin d Transparent = Transparent :=
+by
+  grind
+
+@[simp]
+theorem srcin.on_transparent (s : Pixel) :
+  srcin Transparent s = Transparent :=
+by
+  grind
+
+@[grind, simp]
+def applyAlpha (alpha : Real) (h : 0 <= alpha ∧ alpha <= 1) (c : Pixel) : Pixel :=
+  srcin c (AlphaPixel alpha h)

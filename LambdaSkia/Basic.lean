@@ -118,10 +118,9 @@ axiom applyAlpha_transparent :
 @[grind, simp]
 axiom applyAlpha_on_transparent :
   forall a : Float, applyAlpha a Transparent = Transparent
-@[simp]
-axiom applyAlpha_multiply :
-  forall (a2 a1 : Float) (color: Color), applyAlpha a2 (applyAlpha a1 color) = applyAlpha (a1 * a2) color
-
+-- @[simp]
+-- axiom applyAlpha_multiply :
+--   forall (a2 a1 : Float) (color: Color), applyAlpha a2 (applyAlpha a1 color) = applyAlpha (a1 * a2) color
 
 @[grind, simp]
 noncomputable def blend  (l₁ l₂ : Layer) (pb: PaintBlend) : Layer :=
@@ -204,32 +203,6 @@ theorem SubsumeColorFilter g style c transform clip f (H: f Transparent = Transp
   simp
   grind
 
-theorem luma_to_diff_clip g1 g2 tfrm clip f (H1: f (0.0, 0.0, 0.0, 1.0) = f Transparent):
-  SaveLayer EmptyLayer
-            (Draw (Draw EmptyLayer g1 (id, fun _ => (1.0, 1.0, 1.0, 1.0)) (1.0, SrcOver, id) tfrm clip)
-                  g2 (id, fun _ => (0.0, 0.0, 0.0, 1.0)) (1.0, SrcOver, id) tfrm clip)
-            (1.0, SrcOver, f)
-  =
-  SaveLayer EmptyLayer
-            (Draw EmptyLayer g1 (id, fun _ => (1.0, 1.0, 1.0, 1.0)) (1.0, SrcOver, id) tfrm (difference clip g2))
-            (1.0, SrcOver, f) := by
-  have H2 : SrcOver (1.0, 1.0, 1.0, 1.0) (0.0, 0.0, 0.0, 1.0) = (0.0, 0.0, 0.0, 1.0) := by grind
-  simp
-  grind
-
-theorem luma_to_diff_clip2 l g1 g2 tfrm clip f (H1: f (0.0, 0.0, 0.0, 1.0) = f Transparent):
-  SaveLayer l
-            (Draw (Draw EmptyLayer g1 (id, fun _ => (1.0, 1.0, 1.0, 1.0)) (1.0, SrcOver, id) tfrm clip)
-                  g2 (id, fun _ => (0.0, 0.0, 0.0, 1.0)) (1.0, SrcOver, id) tfrm clip)
-            (1.0, SrcOver, f)
-  =
-  SaveLayer l
-            (Draw EmptyLayer g1 (id, fun _ => (1.0, 1.0, 1.0, 1.0)) (1.0, SrcOver, id) tfrm (difference clip g2))
-            (1.0, SrcOver, f) := by
-  have H2 : SrcOver (1.0, 1.0, 1.0, 1.0) (0.0, 0.0, 0.0, 1.0) = (0.0, 0.0, 0.0, 1.0) := by grind
-  simp
-  grind
-
 theorem dstin_masks shape style color tfrm clip gradient
         (Hopaque : forall pt, isOpaque (gradient pt)):
   SaveLayer (Draw (EmptyLayer) shape (style, fun _ => color) (1.0, SrcOver, id) tfrm clip)
@@ -261,3 +234,26 @@ theorem textblob_mask
 by
   simp
   grind
+
+-- Mail ru proof
+theorem dstin_into_clip_bottom
+  (bottom : Layer) (shape clip1 : Geometry)
+  (t : Transform) (color : Color)
+  (Hopaque : isOpaque color) :
+  SaveLayer bottom
+    (Draw EmptyLayer shape (Fill, fun _ => color)
+          (1.0, SrcOver, id) t clip1)
+    (1.0, DstIn, id)
+  =
+  fun pt =>
+    if (intersect shape clip1) (t pt)
+    then bottom pt
+    else Transparent := by
+  simp; grind
+
+
+-- bottom...
+-- SaveLayer 1.0 DstIn:
+--   Draw shape Solid fill, 1.0 srcover
+-- ==>
+--
