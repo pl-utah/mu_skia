@@ -168,14 +168,14 @@ theorem OpaqueSaveLayerRemoveLoneDraw
   by grind
 
 --! REWRITE 3
-@[grind, simp]
+@[grind =, simp]
 theorem OpaqueSaveLayerRemoveLastDraw
   (l₁ l₂ : Layer) (g c : Geometry) (pd : PaintDraw) (α : Float) (t : Transform) cf:
   SaveLayer l₁ (Draw l₂ g pd (α, SrcOver, cf) t c) (1.0, SrcOver, id) = Draw (SaveLayer l₁ l₂ (1.0, SrcOver, id)) g pd (α, SrcOver, cf) t c := by
   grind
 
 --! REWRITE 4
-@[grind, simp]
+@[grind =, simp]
 theorem EmptySrc g pd t c:
   Draw EmptyLayer g pd (0.0, Src, id) t c = EmptyLayer := by
   grind

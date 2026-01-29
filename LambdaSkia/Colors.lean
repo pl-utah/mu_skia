@@ -33,16 +33,15 @@ def Black : Pixel :=
   valid := by grind}
 
 @[grind, simp]
-def AlphaPixel (alpha : Real) (h : 0 <= alpha ∧ alpha <= 1) : Pixel := {
-  a := alpha,
-  r := 0,
-  g := 0,
-  b := 0,
-  valid := by
-    rcases h with ⟨ha0, ha1⟩
-    repeat' constructor
-    all_goals nlinarith
-}
+def Alpha (x : Real) : Pixel :=
+by
+  exact {
+    a := min 1 (max 0 x),
+    r := 0,
+    g := 0,
+    b := 0,
+    valid := by simp
+  }
 
 end Pixel
 
@@ -186,5 +185,5 @@ by
   grind
 
 @[grind, simp]
-def applyAlpha (alpha : Real) (h : 0 <= alpha ∧ alpha <= 1) (c : Pixel) : Pixel :=
-  srcin c (AlphaPixel alpha h)
+def applyAlpha (alpha : Real) (c : Pixel) : Pixel :=
+  srcin c (Alpha alpha)

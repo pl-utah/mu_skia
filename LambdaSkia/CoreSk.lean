@@ -2,14 +2,35 @@ import LambdaSkia.Colors
 
 open Pixel
 
+namespace CoreSk
+
 @[grind, simp]
 def Point : Type := Unit
 
 @[grind, simp]
-def Geometry : Type := Unit -> Bool
+def Geometry : Type := Point -> Bool
 
 @[grind, simp]
-def Fill : Type := Point -> Pixel
+def Fill : Type := Point -> Pixel -- make this Pixel | Point -> Pixel
+
+@[grind]
+inductive Fill' : Type where
+  | pixel : Pixel -> Fill'
+  | shader : (Point -> Pixel) -> Fill'
+
+@[grind, simp]
+def getFillFunc (f : Fill') : Point -> Pixel :=
+match f with
+  | Fill'.pixel px => fun _ => px
+  | Fill'.shader f => f
+
+@[simp, grind =]
+lemma getFillFunc_pixel (px) (pt) :
+  getFillFunc (Fill'.pixel px) pt = px := rfl
+
+@[simp, grind =]
+lemma getFillFunc_shader (f) (pt) :
+  getFillFunc (Fill'.shader f) pt = f pt := rfl
 
 @[grind, simp]
 def BlendMode : Type := Pixel -> Pixel -> Pixel
@@ -21,44 +42,27 @@ def Style : Type := Geometry -> Geometry
 def Filter : Type := Pixel -> Pixel
 
 @[grind, simp]
-def Paint : Type := Fill × BlendMode × Style × Filter
-
-@[grind]
-structure SavePaint where
-  paint : Paint
-  constPixel : Pixel
-  fill_const : ∀ pt : Point, paint.1 pt = constPixel
-
-@[simp] lemma SavePaint.alpha_bounds (p : SavePaint) :
-  0 <= p.constPixel.a ∧ p.constPixel.a <= 1 :=
-by
-  -- p.constPixel.valid : 0 <= a ∧ a <= 1 ∧ ...
-  exact ⟨p.constPixel.valid.1, p.constPixel.valid.2.1⟩
+def Paint : Type := Fill' × BlendMode × Style × Filter
 
 @[grind, simp]
-def mk_save_paint
-  (blend : BlendMode)
-  (filter : Filter)
-  (alpha : Real)
-  (H : 0 <= alpha ∧ alpha <= 1) : SavePaint :=
-  let c := Pixel.AlphaPixel alpha H
-{
-    paint := ((fun _ : Point => c), blend, id, filter),
-    constPixel := c,
-    fill_const := by grind
-}
+def getAlpha (p : Fill') : Real :=
+  match p with
+  | Fill'.pixel px => px.1
+  | Fill'.shader _ => 1
 
-instance : Coe SavePaint Paint where
-  coe sp := sp.paint
+@[simp, grind =]
+lemma getAlpha_pixel (px) :
+  getAlpha (Fill'.pixel px) = px.1 := rfl
 
-def getAlpha (p : SavePaint) : Real :=
-  p.constPixel.a
+@[simp, grind =]
+lemma getAlpha_shader (f) :
+  getAlpha (Fill'.shader f) = 1 := rfl
 
 @[grind]
 inductive Layer : Type where
   | empty : Layer
   | draw  : Layer -> Geometry -> Paint -> Geometry -> Layer
-  | saveLayer  : Layer -> Layer -> SavePaint -> Layer
+  | saveLayer  : Layer -> Layer -> Paint -> Layer
 
 open Layer
 
@@ -68,21 +72,23 @@ def denote : Layer -> Point -> Pixel
   | draw l_b geo paint clip, pt =>
     let l_b := denote l_b
     let (fill, blend_mode, style, filter) := paint
-    let drawPx := if (style geo) pt && (clip pt) then fill pt else Pixel.Transparent
+    let drawPx := if (style geo) pt && (clip pt) then ((getFillFunc fill) pt) else Pixel.Transparent
     blend_mode (l_b pt) (filter drawPx)
-    | saveLayer l_b l_t sp, pt =>
+  | saveLayer l_b l_t paint, pt =>
     let l_b := denote l_b
     let l_t := denote l_t
-    let blend_mode : BlendMode := sp.paint.2.1
-    let filter     : Filter    := sp.paint.2.2.2
-    blend_mode (l_b pt) (filter (applyAlpha sp.constPixel.a (SavePaint.alpha_bounds sp) (l_t pt)))
+    let blend_mode : BlendMode := paint.2.1
+    let filter     : Filter    := paint.2.2.2
+    let alpha      : Real      := getAlpha paint.1
+    blend_mode (l_b pt) (filter (applyAlpha alpha (l_t pt)))
 
 notation "⟦" l "⟧" => denote l
 
 theorem OpaqueSaveLayerEmptyLayer l_b :
   denote (saveLayer l_b
                     empty
-                    (mk_save_paint srcover id 1 ⟨by norm_num, by norm_num⟩))
+                    (Fill'.pixel (Alpha 1), srcover, id, id)
+                    )
   =
   denote l_b :=
 by
@@ -95,7 +101,8 @@ theorem OpaqueSaveLayerRemoveLoneDraw
   (clip : Geometry) :
   denote (saveLayer empty
                     (draw empty g paint clip)
-                    (mk_save_paint srcover id 1 ⟨by norm_num, by norm_num⟩))
+                    (Fill'.pixel (Alpha 1), srcover, id, id)
+                    )
   =
   denote (draw empty g paint clip) :=
 by
@@ -105,17 +112,17 @@ by
 theorem OpaqueSaveLayerRemoveLastDraw
   (l₁ l₂ : Layer)
   (g clip : Geometry)
-  (fill : Fill)
+  (fill : Fill')
   (style : Style)
   (filter : Filter) :
   denote
     (saveLayer l₁
       (draw l₂ g (fill, srcover, style, filter) clip)
-      (mk_save_paint srcover id 1 ⟨by norm_num, by norm_num⟩))
+      (Fill'.pixel (Alpha 1), srcover, id, id))
   =
   denote
     (draw
-      (saveLayer l₁ l₂ (mk_save_paint srcover id 1 ⟨by norm_num, by norm_num⟩))
+      (saveLayer l₁ l₂ (Fill'.pixel (Alpha 1), srcover, id, id))
       g (fill, srcover, style, filter) clip) :=
 by
   ext pt
@@ -130,73 +137,33 @@ theorem SubsumeColorFilter
   (H : f Transparent = Transparent) :
   denote
     (saveLayer empty
-      (draw empty g ((fun _ => c), srcover, style, id) clip)
-      (mk_save_paint srcover f 1 ⟨by norm_num, by norm_num⟩))
+      (draw empty g (Fill'.pixel c, srcover, style, id) clip)
+      (Fill'.pixel (Alpha 1), srcover, id, f))
   =
   denote
-    (draw empty g ((fun _ => f c), srcover, style, id) clip) :=
+    (draw empty g (Fill'.pixel (f c), srcover, style, id) clip) :=
 by
   ext pt
-  simp [denote]
+  simp
   grind
 
 theorem better_masks
   (shape clip1 clip2 : Geometry)
   (style : Style)
   (color : Pixel)
-  (gradient : Fill)
+  (gradient : Fill')
   (Hsubset : ∀ pt, clip1 pt = true → clip2 pt = true)
-  (Hopaque : ∀ pt, (gradient pt).a = 1) :
+  (Hopaque : ∀ pt, ((getFillFunc gradient) pt).a = 1) :
   denote
     (saveLayer
-      (draw empty shape ((fun _ => color), srcover, style, id) clip1)
+      (draw empty shape (Fill'.pixel color, srcover, style, id) clip1)
       (draw empty shape (gradient, srcover, style, id) clip2)
-      (mk_save_paint dstin id 1 ⟨by norm_num, by norm_num⟩))
+      (Fill'.pixel (Alpha 1), dstin, id, id))
   =
-  denote (draw empty shape ((fun _ => color), srcover, style, id) clip1) :=
+  denote (draw empty shape (Fill'.pixel color, srcover, style, id) clip1) :=
 by
   ext pt
-  simp [denote]
+  simp only [denote]
   grind
 
-/- @[grind]
-inductive DrawOnly : Layer → Type where
-| empty : DrawOnly Layer.empty
-| draw  :
-    ∀ (g : Geometry) (fill : Fill) (style : Style) (clip : Geometry) (l : Layer),
-    DrawOnly l →
-    DrawOnly (Layer.draw l g (fill, srcover, style, id) clip)
-
-@[grind, simp]
-def mask
-  (m : Geometry)
-  : ∀ {l : Layer}, DrawOnly l → Layer
-  | _, DrawOnly.empty =>
-      Layer.empty
-  | _, @DrawOnly.draw g fill style clip _ h =>
-      Layer.draw
-        (mask m h)
-        g
-        (fill, srcover, style, id)
-        (fun pt => clip pt && m pt)
-
-
-theorem MaskIntoDstin
-  (bottom : Layer)
-  (Hdraw : DrawOnly bottom)
-  (shape clip : Geometry)
-  (c : Pixel)
-  (Hopaque : c.a = 1) :
-  denote
-    (saveLayer
-      bottom
-      (draw empty shape ((fun _ => c), srcover, id, id) clip)
-      (mk_save_paint dstin id 1 ⟨by norm_num, by norm_num⟩))
-  =
-  denote
-    (mask (fun pt => shape pt && clip pt) Hdraw) :=
-by
-  ext pt
-  simp [denote]
-  grind
- -/
+end CoreSk
