@@ -4,7 +4,6 @@ import Mathlib.Tactic.Polyrith
 import Mathlib.Tactic.Ring
 import Mathlib.Data.Real.Basic
 
-@[grind]
 structure Pixel where
   a : Real
   r : Real
@@ -17,22 +16,18 @@ structure Pixel where
 
 namespace Pixel
 
-@[grind, simp]
 def Transparent : Pixel :=
 { a := 0, r := 0, g := 0, b := 0,
   valid := by grind}
 
-@[grind, simp]
 def White : Pixel :=
 { a := 1, r := 1, g := 1, b := 1,
   valid := by grind}
 
-@[grind, simp]
 def Black : Pixel :=
 { a := 1, r := 0, g := 0, b := 0,
   valid := by grind}
 
-@[grind, simp]
 def Alpha (x : Real) : Pixel :=
 by
   exact {
@@ -43,11 +38,15 @@ by
     valid := by simp
   }
 
+lemma Alpha.alpha_proj_one :
+  (Alpha 1).a = 1 :=
+by
+  simp [Alpha]
+
 end Pixel
 
 open Pixel
 
-@[grind, simp]
 def srcover (d s : Pixel) : Pixel := {
   a := s.a + d.a * (1 - s.a),
   r := s.r + d.r * (1 - s.a),
@@ -62,38 +61,32 @@ def srcover (d s : Pixel) : Pixel := {
     all_goals nlinarith
 }
 
-@[grind =, simp]
 theorem srcover.left_transparent (d : Pixel) :
   srcover d Transparent = d :=
 by
-  grind
+  grind [srcover, Transparent, Pixel]
 
-@[grind =, simp]
 theorem srcover.right_transparent (s : Pixel) :
   srcover Transparent s = s :=
 by
-  grind
+  grind [srcover, Transparent, Pixel]
 
-@[grind =, simp]
 theorem srcover.right_opaque (d s : Pixel) (h : s.a = 1) :
   srcover d s = s :=
 by
-  grind
+  grind [srcover, Pixel]
 
-@[grind =, simp]
 theorem srcover.associative (d₁ d₂ s : Pixel) :
   srcover (srcover d₁ d₂) s = srcover d₁ (srcover d₂ s) :=
 by
-  grind
+  grind [srcover, Pixel]
 
-@[simp]
 theorem srcover.luminance_white (d : Pixel) (f : Pixel -> Pixel) (h : f White = Black) :
   f (srcover d White) = srcover (f d) Black :=
 by
-  grind
+  grind [srcover, Pixel, White, Black]
 
 -- r = d * sa
-@[grind, simp]
 def dstin (d s : Pixel) : Pixel := {
   a := d.a * s.a,
   r := d.r * s.a,
@@ -108,32 +101,27 @@ def dstin (d s : Pixel) : Pixel := {
     all_goals nlinarith
 }
 
-@[grind =, simp]
 theorem dstin.left_transparent (s : Pixel) :
   dstin Transparent s = Transparent :=
 by
-  grind
+  grind [dstin, Transparent, Pixel]
 
-@[grind =, simp]
 theorem dstin.right_transparent (d : Pixel) :
   dstin d Transparent = Transparent :=
 by
-  grind
+  grind [dstin, Transparent, Pixel]
 
-@[grind =, simp]
 theorem dstin.right_opaque (d s : Pixel) (h : s.a = 1) :
   dstin d s = d :=
 by
-  grind
+  grind [dstin, Pixel]
 
-@[simp]
 theorem dstin.right_opaque_general (T : Type) (d : Pixel) (pt : T) (f : T -> Pixel)
   (h : (f pt).a = 1) :
   dstin d (f pt) = d :=
 by
-  grind
+  grind [dstin, Pixel]
 
-@[grind, simp]
 def src (_ s : Pixel) : Pixel := {
   a := s.a,
   r := s.r,
@@ -149,9 +137,8 @@ def src (_ s : Pixel) : Pixel := {
 theorem src.def (d s : Pixel) :
   src d s = s :=
 by
-  grind
+  grind [src, Pixel]
 
-@[grind, simp]
 def srcin (d s : Pixel) : Pixel := {
   a := d.a * s.a,
   r := d.r * s.a,
@@ -166,24 +153,25 @@ def srcin (d s : Pixel) : Pixel := {
     all_goals nlinarith
 }
 
-@[grind =, simp]
 theorem srcin.opaque (d s : Pixel) (h : s.a = 1) :
   srcin d s = d :=
 by
-  grind
+  grind [srcin, Pixel]
 
-@[grind =, simp]
 theorem srcin.transparent (d : Pixel) :
   srcin d Transparent = Transparent :=
 by
-  grind
+  grind [srcin, Transparent, Pixel]
 
-@[simp]
 theorem srcin.on_transparent (s : Pixel) :
   srcin Transparent s = Transparent :=
 by
-  grind
+  grind [srcin, Transparent, Pixel]
 
-@[grind, simp]
 def applyAlpha (alpha : Real) (c : Pixel) : Pixel :=
   srcin c (Alpha alpha)
+
+lemma applyAlpha.one (c : Pixel) :
+  applyAlpha 1 c = c :=
+by
+  grind [applyAlpha, srcin, Alpha, srcin.opaque]

@@ -4,7 +4,6 @@ open Classical
 @[grind, simp]
 def Point : Type := Unit
 
--- WTF IS TRANFORM DOING
 -- IMO there are 2 spaces:
 -- * the global coordinate set
 -- * the local coordinate set
