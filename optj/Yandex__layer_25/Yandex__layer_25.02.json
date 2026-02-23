@@ -1,0 +1,143 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, -844 ],
+            [ 0, 1, 0, -2138 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 844 ],
+            [ 0, 1, 0, 2138 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 0, 0, 320, 180 ], [ 20, 20 ], [ 20, 20 ], [ 0, 0 ], [ 0, 0 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 320, 180 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 16, 80, 96 ]
+         },
+         "shortDesc": " [0 0 320 180]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 320, 180 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 320 180]"
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 0, 0, 320, 181 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 320, 181 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 320 181]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 320, 180 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 320 180]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 320, 180 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 16, 80, 96 ]
+         },
+         "shortDesc": " [0 0 320 180]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 180, 320, 181 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 31, 0, 0, 0 ]
+         },
+         "shortDesc": " [0 180 320 181]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

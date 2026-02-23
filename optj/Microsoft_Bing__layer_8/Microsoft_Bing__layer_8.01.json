@@ -1,0 +1,182 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, -1293 ],
+            [ 0, 1, 0, -500 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ -0.353553, 0.353553, 0, 1313 ],
+            [ -0.353553, -0.353553, 0, 534.142 ],
+            [ -0, 0, 1, 0 ],
+            [ -0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 0, 0, 40, 40 ], [ 6, 6 ], [ 6, 6 ], [ 6, 6 ], [ 6, 6 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 6, 0, 40, 34 ], [ 0, 0 ], [ 6, 6 ], [ 0, 0 ], [ 0, 0 ] ],
+         "op": "difference",
+         "antiAlias": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "paint": {
+            "color": [ 204, 0, 0, 0 ]
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 34, 40.1, 40 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 34 40.1 40]"
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(40, 40);\npath.lineTo(40, 34);\npath.lineTo(5.9000001f, 34);\npath.lineTo(-0.100000001f, 40);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 40, 40 ]
+               },
+               {
+                  "line": [ 40, 34 ]
+               },
+               {
+                  "line": [ 5.9, 34 ]
+               },
+               {
+                  "line": [ -0.1, 40 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 40, 40 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [0 0 40 40]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(0, 40.0999985f);\npath.lineTo(6, 34.0999985f);\npath.lineTo(6, 0);\npath.lineTo(0, 0);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 0, 40.1 ]
+               },
+               {
+                  "line": [ 6, 34.1 ]
+               },
+               {
+                  "line": [ 6, 0 ]
+               },
+               {
+                  "line": [ 0, 0 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, -0.1, 6, 40 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 -0.1 6 40]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 40, 40 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [0 0 40 40]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}
