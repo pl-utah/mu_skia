@@ -1,4 +1,4 @@
-import LambdaSkia.CoreSk
+import LambdaSkia.Layer
 import LambdaSkia.Colors
 
 namespace SurfaceSk
@@ -14,47 +14,31 @@ inductive Command : Type where
   | draw : Geometry -> Paint -> Command
   | clip : Geometry -> ClipOp -> Command
   | save : Command -> Command
-  | saveLayer : SavePaint -> Command -> Command
+  | saveLayer : Paint -> Command -> Command
+  | seq : Command -> Command -> Command
 
 open Command
 
-structure CanvasState where
-  clip : Geometry
-  prevState : CanvasState
-  surface : Layer
+structure State where
+  clip_stack : List Geometry
+  layer_stack : List Layer
 
-def interp (state : CanvasState) (cmd : Command) : CanvasState :=
-  match cmd with
-  | skip => state
-  | draw geo paint => {
-      clip := state.clip,
-      prevState := state.prevState,
-      surface := Layer.draw state.surface geo paint state.clip
-    }
-  | clip geo ClipOp.int => {
-      clip := fun pt => geo pt && state.clip pt,
-      prevState := state.prevState,
-      surface := state.surface
-    }
-  | clip geo ClipOp.dif => {
-      clip := fun pt => geo pt && !(state.clip pt),
-      prevState := state.prevState,
-      surface := state.surface
-    }
-  | save _ =>
-    let inner_state := interp {
+notation "Σ" => State
 
-    }
-  | saveLayer paint inner_cmd =>
-    let inner_state := interp {
-      clip := state.clip,
-      surface := Layer.empty,
-      prevState := state,
-    } inner_cmd
-    {
-      clip := state.clip,
-      surface := Layer.saveLayer state.surface inner_state.surface paint,
-      prevState := state.prevState,
-    }
+-- function or inductive predicate?
+
+/-
+theorem:
+∃ L, C such that
+⟨cmd, ⟨[Empty], [Full]⟩⟩ -> ⟨[L], [C]⟩
+
+this means that -> never gets stuck, and we get a single layer back.
+
+OR
+
+theorem:
+∃ L, C such that
+interp(cmd, ⟨[Empty], [Full]⟩) = ⟨[L], [C]⟩
+-/
 
 end SurfaceSk

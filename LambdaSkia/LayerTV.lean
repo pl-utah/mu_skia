@@ -1,4 +1,4 @@
-import LambdaSkia.CoreSk
+import LambdaSkia.Layer
 import LambdaSkia.Colors
 
 open CoreSk
@@ -11,6 +11,8 @@ def TextBlob (x y w h a b : Float) : Geometry := sorry
 def ImageRect (l t r b : Float) : Geometry := sorry
 def Path (b : Float) : Geometry := sorry
 def Full : Geometry := sorry
+
+def stroke : Style := sorry
 
 def LinearGradient (isOpaque : Bool) : Point -> Pixel := sorry
 
@@ -142,67 +144,3 @@ theorem denote_in_saveLayer l1 l1' l2 l2' p :
 by
   intros H1 H2
   simp [denote, H1, H2]
-
-theorem testing :
-  denote (saveLayer (draw empty (Rect 150 70 200 120)
-              (Fill.pixel ⟨1, 1, 0, 0, by norm_num⟩,
-               BlendMode.srcover,
-               id,
-               Filter.id)
-               Full)
-            (draw empty (Rect 170 70 220 120)
-              (Fill.pixel ⟨0.30196078431372547, 0, 0, 0.30196078431372547,
-                                           by norm_num⟩,
-               BlendMode.srcover,
-               id,
-               Filter.id)
-               Full)
-            (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id))
-=
-  denote (draw (draw empty (Rect 150 70 200 120)
-              (Fill.pixel ⟨1, 1, 0, 0, by norm_num⟩,
-               BlendMode.srcover,
-               id,
-               Filter.id)
-               Full)
-   (Rect 170 70 220 120)
-              (Fill.pixel ⟨0.30196078431372547, 0, 0, 0.30196078431372547,
-                                           by norm_num⟩,
-               BlendMode.srcover,
-               id,
-               Filter.id)
-               Full) :=
-by
-  grind [OpaqueSaveLayerRemoveLastDraw, OpaqueSaveLayerEmptyLayer]
-
-theorem testing_2 :
-  denote (saveLayer (draw (draw empty (Rect 10.0 70.0 60.0 120.0) (Fill.pixel ⟨1.0, 1.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (Rect 150.0 70.0 200.0 120.0) (Fill.pixel ⟨1.0, 1.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (draw (draw empty (Rect 30.0 70.0 80.0 120.0) (Fill.pixel ⟨1.0, 0.0, 0.0, 1.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (Rect 170.0 70.0 220.0 120.0) (Fill.pixel ⟨0.30196078431372547, 0.0, 0.0, 0.30196078431372547, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id) )
-  =
-  denote (draw (draw (draw (draw empty (Rect 10.0 70.0 60.0 120.0) (Fill.pixel ⟨1.0, 1.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (Rect 150.0 70.0 200.0 120.0) (Fill.pixel ⟨1.0, 1.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (Rect 30.0 70.0 80.0 120.0) (Fill.pixel ⟨1.0, 0.0, 0.0, 1.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (Rect 170.0 70.0 220.0 120.0) (Fill.pixel ⟨0.30196078431372547, 0.0, 0.0, 0.30196078431372547, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) :=
-by
-  grind [OpaqueSaveLayerRemoveLastDraw, OpaqueSaveLayerEmptyLayer]
-
-theorem testing_4 :
-  denote (saveLayer (draw empty (Rect 0.0 0.0 192.0 192.0) (Fill.pixel ⟨1.0, 1.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (draw empty (Rect 64.0 64.0 128.0 128.0) (Fill.pixel ⟨1, 1.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full ) (Fill.pixel (Alpha 1), BlendMode.dstin, id, Filter.id) )
-  =
-  denote (draw empty (Rect 0.0 0.0 192.0 192.0) (Fill.pixel ⟨1.0, 1.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (Rect 64.0 64.0 128.0 128.0)))
-  :=
-by
-  grind [clip_mask, is_maskable, MaskIntoDstin]
-
--- def src' := (draw (saveLayer (draw empty Full (Fill.pixel ⟨0.0, 0.0, 0.0, 0.0, by norm_num⟩, BlendMode.src, id, Filter.id) Full ) (draw (draw empty (Rect 1220.0 0.0 1256.0 36.0) (Fill.pixel ⟨0.7490196078431373, 0.03818531334102268, 0.049934640522875814, 0.06755863129565552, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1221.0 1.0 1255.0 35.0 17.0 17.0 17.0 17.0)) ) (Path 0) (Fill.pixel ⟨0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 0.14901960784313725, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1220.0 0.0 1256.0 36.0 18.0 18.0 18.0 18.0)) ) (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id) ) (Path 1) (Fill.pixel ⟨0.6, 0.6, 0.6, 0.6, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full )
-
--- def opt1 := (draw (saveLayer (draw empty Full (Fill.pixel ⟨0.0, 0.0, 0.0, 0.0, by norm_num⟩, BlendMode.src, id, Filter.id) Full ) (draw (draw empty (Rect 1220.0 0.0 1256.0 36.0) (Fill.pixel ⟨0.7490196078431373, 0.03818531334102268, 0.049934640522875814, 0.06755863129565552, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1221.0 1.0 1255.0 35.0 17.0 17.0 17.0 17.0)) ) (Path 0) (Fill.pixel ⟨0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 0.14901960784313725, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1220.0 0.0 1256.0 36.0 18.0 18.0 18.0 18.0)) ) (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id) ) (Path 1) (Fill.pixel ⟨0.6, 0.6, 0.6, 0.6, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full )
-
--- def opt2 := (draw (saveLayer (draw empty Full (Fill.pixel ⟨0.0, 0.0, 0.0, 0.0, by norm_num⟩, BlendMode.src, id, Filter.id) Full ) (draw (draw empty (Rect 1220.0 0.0 1256.0 36.0) (Fill.pixel ⟨0.7490196078431373, 0.03818531334102268, 0.049934640522875814, 0.06755863129565552, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1221.0 1.0 1255.0 35.0 17.0 17.0 17.0 17.0)) ) (Path 0) (Fill.pixel ⟨0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 0.14901960784313725, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1220.0 0.0 1256.0 36.0 18.0 18.0 18.0 18.0)) ) (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id) ) (Path 1) (Fill.pixel ⟨0.6, 0.6, 0.6, 0.6, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full )
-
--- def opt3 := (draw (saveLayer (draw empty Full (Fill.pixel ⟨0.0, 0.0, 0.0, 0.0, by norm_num⟩, BlendMode.src, id, Filter.id) Full ) (draw (draw empty (Rect 1220.0 0.0 1256.0 36.0) (Fill.pixel ⟨0.7490196078431373, 0.03818531334102268, 0.049934640522875814, 0.06755863129565552, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1221.0 1.0 1255.0 35.0 17.0 17.0 17.0 17.0)) ) (Path 0) (Fill.pixel ⟨0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 0.14901960784313725, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1220.0 0.0 1256.0 36.0 18.0 18.0 18.0 18.0)) ) (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id) ) (Path 1) (Fill.pixel ⟨0.6, 0.6, 0.6, 0.6, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full )
-
--- def opt4 := (draw (draw (draw (draw empty Full (Fill.pixel ⟨0.0, 0.0, 0.0, 0.0, by norm_num⟩, BlendMode.src, id, Filter.id) Full ) (Rect 1220.0 0.0 1256.0 36.0) (Fill.pixel ⟨0.7490196078431373, 0.03818531334102268, 0.049934640522875814, 0.06755863129565552, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1221.0 1.0 1255.0 35.0 17.0 17.0 17.0 17.0)) ) (Path 0) (Fill.pixel ⟨0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 0.14901960784313725, by norm_num⟩, BlendMode.srcover, id, Filter.id) (intersect Full (RRect 1220.0 0.0 1256.0 36.0 18.0 18.0 18.0 18.0)) ) (Path 1) (Fill.pixel ⟨0.6, 0.6, 0.6, 0.6, by norm_num⟩, BlendMode.srcover, id, Filter.id) Full )
-
--- theorem src_to_opt1 :
---   denote opt3 = denote opt4 :=
--- by
---   unfold opt3
---   unfold opt4
---   grind [OpaqueSaveLayerRemoveLastDraw, OpaqueSaveLayerEmptyLayer]

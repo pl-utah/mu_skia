@@ -463,9 +463,6 @@ def paint_to_lean(paint: Paint, is_savelayer=False) -> str:
     style = paint.style[1:-1].lower()
     if style == 'solid':
         style = 'id'
-    elif style == 'stroke':
-        # CoreSk currently has no stroke style constructor; use identity style.
-        style = 'id'
     color_filter_name = paint.color_filter[1:-1].lower()
     if color_filter_name == 'idfilter':
         color_filter = 'Filter.id'
