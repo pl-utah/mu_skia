@@ -39,7 +39,7 @@ class Color(Node):
     b: float
 
     def pprint(self) -> str:
-        return f'Color({int(self.a * 255)}, {int(self.r * 255)}, {int(self.b * 255)}, {int(self.g * 255)})'
+        return f'Color({int(self.a * 255)}, {int(self.r * 255)}, {int(self.g * 255)}, {int(self.b * 255)})'
 
 
 @dataclass
