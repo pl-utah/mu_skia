@@ -47,6 +47,11 @@ end Pixel
 
 open Pixel
 
+axiom plus : Pixel -> Pixel -> Pixel
+axiom overlay : Pixel -> Pixel -> Pixel
+axiom softlight : Pixel -> Pixel -> Pixel
+axiom multiply : Pixel -> Pixel -> Pixel
+
 def srcover (d s : Pixel) : Pixel := {
   a := s.a + d.a * (1 - s.a),
   r := s.r + d.r * (1 - s.a),

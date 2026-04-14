@@ -1,0 +1,413 @@
+{
+  "version": 1,
+  "commands": [
+    {
+      "command": "DrawPaint",
+      "visible": true,
+      "paint": {
+        "color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "blendMode": "Src"
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          -844
+        ],
+        [
+          0,
+          1,
+          0,
+          -2138
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          844
+        ],
+        [
+          0,
+          1,
+          0,
+          2138
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "ClipRRect",
+      "visible": true,
+      "coords": [
+        [
+          0,
+          0,
+          320,
+          180
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "op": "intersect",
+      "antiAlias": true
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        320,
+        180
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          16,
+          80,
+          96
+        ]
+      },
+      "shortDesc": " [0 0 320 180]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        320,
+        180
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 320 180]"
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        0,
+        0,
+        320,
+        181
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        320,
+        181
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 320 181]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        320,
+        180
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 320 180]"
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        320,
+        180
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          16,
+          80,
+          96
+        ]
+      },
+      "shortDesc": " [0 0 320 180]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        0,
+        0,
+        320,
+        181
+      ],
+      "paint": {
+        "blendMode": "DstIn"
+      }
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        320,
+        180
+      ],
+      "paint": {
+        "antiAlias": true,
+        "dither": true,
+        "shader": {
+          "name": "SkLocalMatrixShader",
+          "data": "data/0",
+          "values": {
+            "00_matrix": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0.5625,
+                39.375
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "01_SkRadialGradient": {
+              "00_uint": 536870913,
+              "01_colorArray": [
+                [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "02_byteArray": [
+                "01",
+                "00",
+                "00",
+                "00",
+                "9a",
+                "99",
+                "19",
+                "40",
+                "6e",
+                "a7",
+                "72",
+                "3f",
+                "19",
+                "89",
+                "55",
+                "3d",
+                "91",
+                "83",
+                "9e",
+                "3d",
+                "e6",
+                "ae",
+                "25",
+                "3d",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "44",
+                "df",
+                "3e",
+                "00",
+                "32",
+                "c5",
+                "3e",
+                "00",
+                "80",
+                "12",
+                "3e",
+                "00",
+                "d4",
+                "63",
+                "3e",
+                "00",
+                "85",
+                "37",
+                "3f",
+                "00",
+                "40",
+                "78",
+                "3d",
+                "00",
+                "00",
+                "64",
+                "3c",
+                "00",
+                "d0",
+                "c6",
+                "3d",
+                "00",
+                "cf",
+                "36",
+                "3f"
+              ],
+              "03_point": [
+                160,
+                90
+              ],
+              "04_scalar": 226.274
+            }
+          }
+        }
+      },
+      "shortDesc": " [0 0 320 180]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        180,
+        320,
+        181
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "shortDesc": " [0 180 320 181]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    }
+  ],
+  "dim": [
+    320,
+    180
+  ],
+  "has_save_layer": true
+}

@@ -12,6 +12,8 @@ def Geometry : Type := Point -> Bool
 
 def intersect (g1 g2 : Geometry) : Geometry := fun pt => g1 pt && g2 pt
 
+def difference (g1 g2 : Geometry) : Geometry := fun pt => g1 pt && !(g2 pt)
+
 inductive Fill : Type where
   | pixel : Pixel -> Fill
   | shader : (Point -> Pixel) -> Fill
@@ -33,6 +35,10 @@ inductive BlendMode : Type where
   | dstin : BlendMode
   | srcin : BlendMode
   | src : BlendMode
+  | plus : BlendMode
+  | overlay : BlendMode
+  | softlight : BlendMode
+  | multiply : BlendMode
 
 def Style : Type := Geometry -> Geometry
 
@@ -67,12 +73,16 @@ def countSaveLayers : Layer -> Nat
   | saveLayer l_b l_t _ => countSaveLayers l_b + countSaveLayers l_t + 1
 
 @[simp]
-def denote_bm (bm : BlendMode) : Pixel -> Pixel -> Pixel :=
+noncomputable def denote_bm (bm : BlendMode) : Pixel -> Pixel -> Pixel :=
   match bm with
   | BlendMode.srcover => srcover
   | BlendMode.dstin => dstin
   | BlendMode.srcin => srcin
   | BlendMode.src => src
+  | BlendMode.plus => plus
+  | BlendMode.overlay => overlay
+  | BlendMode.softlight => softlight
+  | BlendMode.multiply => multiply
 
 @[simp]
 def denote_filter (f : Filter) : Pixel -> Pixel :=
@@ -83,7 +93,7 @@ def denote_filter (f : Filter) : Pixel -> Pixel :=
 def denote_filter.id (px : Pixel) :
   denote_filter Filter.id px = px := rfl
 
-def denote : Layer -> Point -> Pixel
+noncomputable def denote : Layer -> Point -> Pixel
   | empty, _ => Pixel.Transparent
   | draw l_b geo paint clip, pt =>
     let l_b := denote l_b
@@ -113,23 +123,21 @@ by
 
 @[simp]
 theorem OpaqueSaveLayerRemoveLastDraw
-  (l₁ l₂ lp: Layer)
+  (l₁ l₂ : Layer)
   (g clip : Geometry)
   (fill : Fill)
   (style : Style)
-  (filter : Filter)
-  (Hp : denote lp = denote (saveLayer l₁ l₂ (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id))
-) :
+  (filter : Filter) :
   denote
     (saveLayer l₁
       (draw l₂ g (fill, BlendMode.srcover, style, filter) clip)
       (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id))
   =
   denote
-    (draw lp
+    (draw (saveLayer l₁ l₂ (Fill.pixel (Alpha 1), BlendMode.srcover, id, Filter.id))
       g (fill, BlendMode.srcover, style, filter) clip) :=
 by
-  simp only [Hp, denote, denote_bm, denote_filter]
+  simp only [denote, denote_bm, denote_filter]
   grind [denote, getAlpha.pixel, Alpha.alpha_proj_one, srcover.associative,
     applyAlpha.one]
 
@@ -151,7 +159,7 @@ by
   grind [denote, getFillFunc.pixel, getAlpha.pixel, Alpha.alpha_proj_one, srcover.right_transparent,
     srcin.opaque, applyAlpha.one]
 
-theorem better_masks
+theorem GradientMask
   (shape clip1 clip2 : Geometry)
   (style : Style)
   (color : Pixel)
@@ -169,5 +177,51 @@ by
   simp only [denote, denote_bm, denote_filter.id]
   grind [denote, getAlpha.pixel, Alpha.alpha_proj_one, srcover.left_transparent,
     srcover.right_opaque, dstin.right_transparent, dstin.right_opaque, applyAlpha.one]
+
+def is_maskable (l : Layer) : Bool :=
+match l with
+| .empty => true
+| .draw l_b _ (_, BlendMode.srcover, _, Filter.id) _ => is_maskable l_b
+| .draw _ _ _ _ => false
+| .saveLayer _ _ _ => false
+
+def clip_mask (l : Layer) (m : Geometry) : Layer :=
+match l with
+| .empty => .empty
+| .draw l_b g p c => .draw (clip_mask l_b m) g p (intersect c m)
+| .saveLayer l1 l2 p => .saveLayer (clip_mask l1 m) (clip_mask l2 m) p
+
+theorem MaskIntoDstin
+  (g2 c2 : Geometry)
+  (color : Pixel)
+  (Hopaque : color.a = 1)
+  l_b
+  (Hmaskable : is_maskable l_b = true) :
+  denote
+    (Layer.saveLayer l_b
+      (Layer.draw Layer.empty g2 (Fill.pixel color, BlendMode.srcover, id, Filter.id) c2)
+      (Fill.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
+  = denote (clip_mask l_b (intersect g2 c2)) :=
+by
+  -- induction on structure of Hmaskable
+  induction l_b with
+  | saveLayer l1 l2 p IH =>
+    simp [is_maskable] at Hmaskable
+  | empty =>
+    simp [clip_mask, denote]
+    grind [dstin.left_transparent]
+  | draw l g p c IH =>
+    rcases p with ⟨fill, bm, s, filter⟩
+    cases bm <;> cases filter
+    · simp only [is_maskable] at Hmaskable
+      have IH' := IH Hmaskable
+      simp only [clip_mask]
+      simp only [denote] at *
+      simp only [denote_bm, denote_filter, Alpha, zero_le_one, sup_of_le_right, min_self,
+                 getAlpha.pixel, id_eq, Bool.and_eq_true, applyAlpha.one] at *
+      grind [intersect, getFillFunc.pixel, dstin.right_opaque, srcover.right_transparent,
+                       srcover.left_transparent, dstin.right_transparent, Alpha,
+                       getAlpha.pixel, applyAlpha.one]
+    all_goals simp [is_maskable] at Hmaskable
 
 end CoreSk

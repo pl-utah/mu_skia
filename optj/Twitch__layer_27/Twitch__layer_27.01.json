@@ -1,0 +1,262 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 0, 0, 28, 28 ], [ 14, 14 ], [ 14, 14 ], [ 14, 14 ], [ 14, 14 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 2, 2, 26, 26 ], [ 12, 12 ], [ 12, 12 ], [ 12, 12 ], [ 12, 12 ] ],
+         "op": "difference",
+         "antiAlias": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "paint": {
+            "color": [ 89, 0, 0, 0 ]
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(-0.100000001f, 0);\npath.lineTo(7.9000001f, 8);\npath.lineTo(28, 8);\npath.lineTo(28, 0);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ -0.1, 0 ]
+               },
+               {
+                  "line": [ 7.9, 8 ]
+               },
+               {
+                  "line": [ 28, 8 ]
+               },
+               {
+                  "line": [ 28, 0 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(0, 0);\npath.lineTo(0, 8);\npath.lineTo(20.1000004f, 8);\npath.lineTo(28.1000004f, 0);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 0, 0 ]
+               },
+               {
+                  "line": [ 0, 8 ]
+               },
+               {
+                  "line": [ 20.1, 8 ]
+               },
+               {
+                  "line": [ 28.1, 0 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 28, 28 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 173, 173, 184 ]
+         },
+         "shortDesc": " [0 0 28 28]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(28.1000004f, 28);\npath.lineTo(20.1000004f, 20);\npath.lineTo(0, 20);\npath.lineTo(0, 28);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 28.1, 28 ]
+               },
+               {
+                  "line": [ 20.1, 20 ]
+               },
+               {
+                  "line": [ 0, 20 ]
+               },
+               {
+                  "line": [ 0, 28 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(28, 28);\npath.lineTo(28, 20);\npath.lineTo(7.9000001f, 20);\npath.lineTo(-0.100000001f, 28);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 28, 28 ]
+               },
+               {
+                  "line": [ 28, 20 ]
+               },
+               {
+                  "line": [ 7.9, 20 ]
+               },
+               {
+                  "line": [ -0.1, 28 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 28, 28 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 173, 173, 184 ]
+         },
+         "shortDesc": " [0 0 28 28]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(28, 0);\npath.lineTo(20, 8);\npath.lineTo(20, 20);\npath.lineTo(28, 28);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 28, 0 ]
+               },
+               {
+                  "line": [ 20, 8 ]
+               },
+               {
+                  "line": [ 20, 20 ]
+               },
+               {
+                  "line": [ 28, 28 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 28, 28 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 173, 173, 184 ]
+         },
+         "shortDesc": " [0 0 28 28]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(0, 28);\npath.lineTo(8, 20);\npath.lineTo(8, 8);\npath.lineTo(0, 0);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 0, 28 ]
+               },
+               {
+                  "line": [ 8, 20 ]
+               },
+               {
+                  "line": [ 8, 8 ]
+               },
+               {
+                  "line": [ 0, 0 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 28, 28 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 14, 14, 16 ]
+         },
+         "shortDesc": " [0 0 28 28]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

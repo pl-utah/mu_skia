@@ -1,1 +1,9 @@
 /.lake
+.venv/
+.pi
+.agents
+*.tar.gz
+Scratch*
+scratch*
+*.pyc
+Generated*.lean

@@ -1,0 +1,248 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, -29 ],
+            [ 0, 1, 0, -2222 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 32 ],
+            [ 0, 1, 0, 2226 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ -3, -4, 35, 37 ],
+         "paint": {
+            "color": [ 235, 0, 0, 0 ]
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 1, 1, 31, 31 ], [ 15, 15 ], [ 15, 15 ], [ 15, 15 ], [ 15, 15 ] ],
+         "op": "difference",
+         "antiAlias": true
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 0, 0, 32, 32 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ] ],
+         "paint": {
+            "antiAlias": true,
+            "blur": {
+               "sigma": 1,
+               "style": "normal"
+            },
+            "colorfilter": {
+               "name": "SkBlendModeColorFilter",
+               "data": "data/0",
+               "values": {
+                  "00_color": [ 0.121569, 0, 0, 0 ],
+                  "01_uint": 5
+               }
+            }
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 0 ],
+            [ 0, 1, 0, 2 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 0, 0, 32, 32 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ] ],
+         "paint": {
+            "antiAlias": true,
+            "blur": {
+               "sigma": 1,
+               "style": "normal"
+            },
+            "colorfilter": {
+               "name": "SkBlendModeColorFilter",
+               "data": "data/1",
+               "values": {
+                  "00_color": [ 0.239216, 0, 0, 0 ],
+                  "01_uint": 5
+               }
+            }
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 0.5, 0.5, 31.5, 31.5 ], [ 15.5, 15.5 ], [ 15.5, 15.5 ], [ 15.5, 15.5 ], [ 15.5, 15.5 ] ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 0.5, 0.5, 31.5, 31.5 ], [ 15.5, 15.5 ], [ 15.5, 15.5 ], [ 15.5, 15.5 ], [ 15.5, 15.5 ] ],
+         "paint": {
+            "strokeWidth": 1,
+            "antiAlias": true,
+            "color": [ 255, 229, 229, 229 ],
+            "style": "stroke"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 8 ],
+            [ 0, 1, 0, 8 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(3.29299998f, 8.70800018f);\npath.conicTo(2.58471274f, 8.00050068f, 3.29299998f, 7.29300022f, 0.706713438f);\npath.lineTo(9.29300022f, 1.29300022f);\npath.conicTo(9.9998951f, 0.61024332f, 10.6948261f, 1.30517399f, 0.713220716f);\npath.conicTo(11.3897572f, 2.0001049f, 10.7070007f, 2.70700026f, 0.713220716f);\npath.lineTo(5.41400003f, 8);\npath.lineTo(10.7070007f, 13.2930002f);\npath.conicTo(11.3897429f, 13.9998951f, 10.6948195f, 14.6948185f, 0.713224471f);\npath.conicTo(9.99989605f, 15.3897429f, 9.29300117f, 14.7070007f, 0.713224471f);\npath.lineTo(3.29300117f, 8.70700073f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 3.293, 8.708 ]
+               },
+               {
+                  "conic": [
+                     [ 2.58471, 8.0005 ],
+                     [ 3.293, 7.293 ],
+                     0.706713
+                  ]
+               },
+               {
+                  "line": [ 9.293, 1.293 ]
+               },
+               {
+                  "conic": [
+                     [ 9.9999, 0.610243 ],
+                     [ 10.6948, 1.30517 ],
+                     0.713221
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 11.3898, 2.0001 ],
+                     [ 10.707, 2.707 ],
+                     0.713221
+                  ]
+               },
+               {
+                  "line": [ 5.414, 8 ]
+               },
+               {
+                  "line": [ 10.707, 13.293 ]
+               },
+               {
+                  "conic": [
+                     [ 11.3897, 13.9999 ],
+                     [ 10.6948, 14.6948 ],
+                     0.713224
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 9.9999, 15.3897 ],
+                     [ 9.293, 14.707 ],
+                     0.713224
+                  ]
+               },
+               {
+                  "line": [ 3.293, 8.707 ]
+               },
+               {
+                  "line": [ 3.293, 8.708 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 25, 25, 25 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}
