@@ -1,5 +1,5 @@
-import LambdaSkia.Layer
-import LambdaSkia.Colors
+import MuSkia.Layer
+import MuSkia.Colors
 
 namespace SurfaceSk
 

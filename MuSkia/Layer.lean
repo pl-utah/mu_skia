@@ -1,4 +1,4 @@
-import LambdaSkia.Colors
+import MuSkia.Colors
 
 open Pixel
 

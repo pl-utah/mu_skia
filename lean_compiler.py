@@ -7,9 +7,11 @@ from lambda_skia import (
     Draw,
     Empty,
     Intersect,
-    Path as LPath,
     SaveLayer,
     layer_to_lean,
+)
+from lambda_skia import (
+    Path as LPath,
 )
 from skp_compiler import compile_skp_to_lskia
 
@@ -100,7 +102,7 @@ if __name__ == "__main__":
     ]
 
     prelude = [
-        "import LambdaSkia.LayerTV",
+        "import MuSkia.LayerTV",
         "",
         f"namespace Generated_{args.name}",
         "",
