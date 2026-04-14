@@ -112,7 +112,7 @@ if __name__ == "__main__":
         "",
         "attribute [local irreducible] CoreSk.denote CoreSk.denote_bm CoreSk.denote_filter",
         "attribute [local irreducible] srcover dstin srcin applyAlpha",
-        "attribute [local irreducible] Rect RRect ImageRect Path Full TextBlob intersect",
+        "attribute [local irreducible] Rect RRect Oval ImageRect Path Full TextBlob intersect difference",
     ]
 
     body = []
@@ -123,7 +123,7 @@ if __name__ == "__main__":
         "theorem src_eq_opt1 : denote src = denote opt1 := by",
         "  unfold src",
         "  unfold opt1",
-        "  grind [GradientMask]",
+        "  grind [GradientMask, GradientMaskRadialTrue, GradientMaskLinearTrue, GradientMaskRadialRRectClip]",
         "",
         "theorem opt1_eq_opt2 : denote opt1 = denote opt2 := by",
         "  unfold opt1",

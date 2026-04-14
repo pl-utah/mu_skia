@@ -12,6 +12,8 @@ def Geometry : Type := Point -> Bool
 
 def intersect (g1 g2 : Geometry) : Geometry := fun pt => g1 pt && g2 pt
 
+def difference (g1 g2 : Geometry) : Geometry := fun pt => g1 pt && !(g2 pt)
+
 inductive Fill : Type where
   | pixel : Pixel -> Fill
   | shader : (Point -> Pixel) -> Fill
@@ -33,6 +35,10 @@ inductive BlendMode : Type where
   | dstin : BlendMode
   | srcin : BlendMode
   | src : BlendMode
+  | plus : BlendMode
+  | overlay : BlendMode
+  | softlight : BlendMode
+  | multiply : BlendMode
 
 def Style : Type := Geometry -> Geometry
 
@@ -67,12 +73,16 @@ def countSaveLayers : Layer -> Nat
   | saveLayer l_b l_t _ => countSaveLayers l_b + countSaveLayers l_t + 1
 
 @[simp]
-def denote_bm (bm : BlendMode) : Pixel -> Pixel -> Pixel :=
+noncomputable def denote_bm (bm : BlendMode) : Pixel -> Pixel -> Pixel :=
   match bm with
   | BlendMode.srcover => srcover
   | BlendMode.dstin => dstin
   | BlendMode.srcin => srcin
   | BlendMode.src => src
+  | BlendMode.plus => plus
+  | BlendMode.overlay => overlay
+  | BlendMode.softlight => softlight
+  | BlendMode.multiply => multiply
 
 @[simp]
 def denote_filter (f : Filter) : Pixel -> Pixel :=
@@ -83,7 +93,7 @@ def denote_filter (f : Filter) : Pixel -> Pixel :=
 def denote_filter.id (px : Pixel) :
   denote_filter Filter.id px = px := rfl
 
-def denote : Layer -> Point -> Pixel
+noncomputable def denote : Layer -> Point -> Pixel
   | empty, _ => Pixel.Transparent
   | draw l_b geo paint clip, pt =>
     let l_b := denote l_b
@@ -130,6 +140,8 @@ by
   simp only [denote, denote_bm, denote_filter]
   grind [denote, getAlpha.pixel, Alpha.alpha_proj_one, srcover.associative,
     applyAlpha.one]
+
+#print OpaqueSaveLayerRemoveLastDraw._proof_1_6
 
 theorem SubsumeColorFilter
   (g clip : Geometry)

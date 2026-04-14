@@ -474,22 +474,32 @@ def paint_to_lean(paint: Paint, is_savelayer=False) -> str:
     return f'({fill}, {blend_mode}, {style}, {color_filter})'
 
 
+def _lean_num(x: float) -> str:
+    s = str(x)
+    # Prevent Lean from parsing e.g. `Rect 0.0 -388.0 ...` as subtraction.
+    return f'({s})' if s.startswith('-') else s
+
+
 def shape_to_lean(shape: Geometry) -> str:
     match shape:
         case Rect(l, t, r, b):
-            return f'(Rect {l} {t} {r} {b})'
+            return f'(Rect {_lean_num(l)} {_lean_num(t)} {_lean_num(r)} {_lean_num(b)})'
         case Full():
             return 'Full'
         case Intersect(a, b):
             return f'(intersect {shape_to_lean(a)} {shape_to_lean(b)})'
+        case Difference(a, b):
+            return f'(difference {shape_to_lean(a)} {shape_to_lean(b)})'
         case RRect(a, b, c, d, e, f, g, h):
-            return f'(RRect {a} {b} {c} {d} {e} {f} {g} {h})'
+            return f'(RRect {_lean_num(a)} {_lean_num(b)} {_lean_num(c)} {_lean_num(d)} {_lean_num(e)} {_lean_num(f)} {_lean_num(g)} {_lean_num(h)})'
+        case Oval(l, t, r, b):
+            return f'(Oval {_lean_num(l)} {_lean_num(t)} {_lean_num(r)} {_lean_num(b)})'
         case Path(a, b):
-            return f'(Path {b})'
+            return f'(Path {_lean_num(b)})'
         case TextBlob(a, b, c, d, e, f):
-            return f'(TextBlob {a} {b} {c} {d} {e} {f})'
+            return f'(TextBlob {_lean_num(a)} {_lean_num(b)} {_lean_num(c)} {_lean_num(d)} {_lean_num(e)} {_lean_num(f)})'
         case ImageRect(l, t, r, b):
-            return f'(ImageRect {l} {t} {r} {b})'
+            return f'(ImageRect {_lean_num(l)} {_lean_num(t)} {_lean_num(r)} {_lean_num(b)})'
         case _:
             raise NotImplementedError(str(shape))
 

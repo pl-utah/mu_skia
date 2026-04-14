@@ -7,6 +7,7 @@ open Pixel
 
 def Rect (x y w h : Float) : Geometry := sorry
 def RRect (x y w h a b c d : Float) : Geometry := sorry
+def Oval (l t r b : Float) : Geometry := sorry
 def TextBlob (x y w h a b : Float) : Geometry := sorry
 def ImageRect (l t r b : Float) : Geometry := sorry
 def Path (b : Float) : Geometry := sorry
@@ -45,13 +46,14 @@ theorem GradientMaskRadialTrue
   denote
     (saveLayer
       (draw empty shape (Fill.pixel color, BlendMode.srcover, style, Filter.id) clip1)
-      (draw empty shape (Fill.shader (RadialGradient true), BlendMode.srcover, style, Filter.id) clip2)
+      (draw empty shape
+                  (Fill.shader (RadialGradient true), BlendMode.srcover, style, Filter.id) clip2)
       (Fill.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
   =
   denote (draw empty shape (Fill.pixel color, BlendMode.srcover, style, Filter.id) clip1) := by
   apply GradientMask shape clip1 clip2 style color (Fill.shader (RadialGradient true)) Hsubset
   intro pt
-  simpa using RadialGradientFill.opaque pt
+  simp [RadialGradientFill.opaque pt]
 
 @[grind, simp]
 theorem GradientMaskLinearTrue
@@ -69,6 +71,37 @@ theorem GradientMaskLinearTrue
   apply GradientMask shape clip1 clip2 style color (Fill.shader (LinearGradient true)) Hsubset
   intro pt
   simpa using LinearGradientFill.opaque pt
+
+@[grind, simp]
+theorem GradientMaskRadialRRectClip
+  (shape mask : Geometry)
+  (color : Pixel) :
+  denote
+    (saveLayer
+      (draw empty shape (Fill.pixel color, BlendMode.srcover, id, Filter.id) (intersect Full mask))
+      (draw empty mask (Fill.shader (RadialGradient true), BlendMode.srcover, id, Filter.id) Full)
+      (Fill.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
+  =
+  denote (draw empty shape (Fill.pixel color, BlendMode.srcover, id, Filter.id) (intersect Full mask)) := by
+  funext pt
+  by_cases hdraw : shape pt = true ∧ intersect Full mask pt = true
+  · have hmaskfull : mask pt = true ∧ Full pt = true := by
+      have hfullmask : Full pt = true ∧ mask pt = true := by
+        simpa [CoreSk.intersect] using hdraw.2
+      exact ⟨hfullmask.2, hfullmask.1⟩
+    have hα :
+        (applyAlpha (getAlpha (Fill.pixel (Alpha 1)))
+          (getFillFunc (Fill.shader (RadialGradient true)) pt)).a = 1 := by
+      simp [getAlpha.pixel, Alpha.alpha_proj_one, applyAlpha.one, RadialGradientFill.opaque]
+    have hdst :
+        dstin (getFillFunc (Fill.pixel color) pt)
+          (applyAlpha (getAlpha (Fill.pixel (Alpha 1)))
+            (getFillFunc (Fill.shader (RadialGradient true)) pt))
+        = getFillFunc (Fill.pixel color) pt :=
+      dstin.right_opaque _ _ hα
+    simp [denote, denote_bm, denote_filter, hdraw, hmaskfull, hdst, srcover.right_transparent]
+  · simp [denote, denote_bm, denote_filter, hdraw, applyAlpha.one, srcover.right_transparent,
+      dstin.left_transparent]
 
 def LumaFilter : Pixel -> Pixel := sorry
 
