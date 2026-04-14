@@ -141,8 +141,6 @@ by
   grind [denote, getAlpha.pixel, Alpha.alpha_proj_one, srcover.associative,
     applyAlpha.one]
 
-#print OpaqueSaveLayerRemoveLastDraw._proof_1_6
-
 theorem SubsumeColorFilter
   (g clip : Geometry)
   (style : Style)
