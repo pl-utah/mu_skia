@@ -292,7 +292,7 @@ theorem opaque_saveLayer_plain_srcover_draws_denote_eq_save
         cmd))
   =
   denote
-      (eval
+    (eval
       (save cmd)) := by
   induction hcmd with
   | skip =>
