@@ -97,7 +97,15 @@ def run_one(name: str, optj_dir: Path, report_dir: Path, timeout: int | None) ->
     lean_path.parent.mkdir(parents=True, exist_ok=True)
 
     # 1) Generate Lean file
-    gen_cmd = ["uv", "run", "python", "lean_compiler.py", name]
+    gen_cmd = [
+        "uv",
+        "run",
+        "python",
+        "lean_compiler.py",
+        name,
+        "--optj-dir",
+        str(optj_dir),
+    ]
     rc, out, err, gen_sec, timed_out = run_cmd(gen_cmd, timeout)
 
     if timed_out:

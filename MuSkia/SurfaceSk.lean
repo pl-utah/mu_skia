@@ -282,7 +282,146 @@ theorem plainDrawList_interp_double_empty
       · simp [interp, htwo]
       · simp [interp, hone]
 
-theorem opaque_saveLayer_plain_srcover_draws_denote_eq_save
+theorem plainDrawList_interp_single_empty
+  (cmd : Command)
+  (hcmd : PlainDrawList cmd) :
+  ∃ topLayer,
+    interp cmd ⟨[fun _ => true], [Layer.empty]⟩ =
+      ⟨[fun _ => true], [topLayer]⟩ := by
+  induction hcmd with
+  | skip =>
+      exact ⟨Layer.empty, by simp [interp]⟩
+  | seq_draw cmd hcmd g fill style ih =>
+      rcases ih with ⟨topLayer, htop⟩
+      refine ⟨Layer.draw topLayer g
+          (fill, BlendMode.srcover, style, Filter.id) (fun _ => true), ?_⟩
+      simp [interp, htop]
+
+theorem plainDrawList_eval_is_maskable
+  (cmd : Command)
+  (hcmd : PlainDrawList cmd) :
+  is_maskable (eval cmd) = true := by
+  induction hcmd with
+  | skip =>
+      simp [eval, interp, is_maskable]
+  | seq_draw cmd hcmd g fill style ih =>
+      rcases plainDrawList_interp_single_empty cmd hcmd with ⟨topLayer, hone⟩
+      have heval : eval cmd = topLayer := by
+        unfold eval
+        rw [hone]
+      rw [heval] at ih
+      simpa [eval, interp, hone, is_maskable] using ih
+
+theorem plainDrawList_interp_clip_mask
+  (cmd : Command)
+  (hcmd : PlainDrawList cmd)
+  (mask : Geometry) :
+  ∃ sourceLayer clippedLayer,
+    interp cmd ⟨[fun _ => true], [Layer.empty]⟩ =
+      ⟨[fun _ => true], [sourceLayer]⟩ ∧
+    interp cmd ⟨[mask, fun _ => true], [Layer.empty]⟩ =
+      ⟨[mask, fun _ => true], [clippedLayer]⟩ ∧
+    denote clippedLayer = denote (clip_mask sourceLayer mask) := by
+  induction hcmd with
+  | skip =>
+      exact ⟨Layer.empty, Layer.empty, by simp [interp], by simp [interp], by simp [clip_mask, denote]⟩
+  | seq_draw cmd hcmd g fill style ih =>
+      rcases ih with ⟨sourceLayer, clippedLayer, hsource, hclipped, hdenote⟩
+      refine
+        ⟨Layer.draw sourceLayer g
+            (fill, BlendMode.srcover, style, Filter.id) (fun _ => true),
+         Layer.draw clippedLayer g
+            (fill, BlendMode.srcover, style, Filter.id) mask, ?_, ?_, ?_⟩
+      · simp [interp, hsource]
+      · simp [interp, hclipped]
+      · funext pt
+        simp [clip_mask, denote, hdenote, intersect]
+
+theorem maskIntoDstin_denote_eq_clip
+  (cmd : Command)
+  (hcmd : PlainDrawList cmd)
+  (g2 c2 : Geometry)
+  (color : Pixel)
+  (Hopaque : color.a = 1) :
+  denote
+    (eval
+      (seq cmd
+        (saveLayer
+          (Fill.pixel (Pixel.Alpha 1), BlendMode.dstin, id, Filter.id)
+          (seq
+            (clip c2 ClipOp.int)
+            (draw g2 (Fill.pixel color, BlendMode.srcover, id, Filter.id))))))
+  =
+  denote
+    (eval
+      (save
+        (seq
+          (clip (intersect g2 c2) ClipOp.int)
+          cmd))) := by
+  rcases plainDrawList_interp_clip_mask cmd hcmd (intersect g2 c2) with
+    ⟨sourceLayer, clippedLayer, hsource, hclipped, hdenote⟩
+  have Hmaskable : is_maskable sourceLayer = true := by
+    have heval : eval cmd = sourceLayer := by
+      unfold eval
+      rw [hsource]
+    simpa [heval] using plainDrawList_eval_is_maskable cmd hcmd
+  have htrue_c2 : intersect (fun _ => true) c2 = c2 := by
+    funext pt
+    simp [intersect]
+  have htrue_mask :
+      intersect (fun _ => true) (intersect g2 c2) = intersect g2 c2 := by
+    funext pt
+    simp [intersect]
+  have hfrom :
+      denote
+        (eval
+          (seq cmd
+            (saveLayer
+              (Fill.pixel (Pixel.Alpha 1), BlendMode.dstin, id, Filter.id)
+              (seq
+                (clip c2 ClipOp.int)
+                (draw g2 (Fill.pixel color, BlendMode.srcover, id, Filter.id))))))
+        =
+        denote (clip_mask sourceLayer (intersect g2 c2)) := by
+    calc
+      denote
+          (eval
+            (seq cmd
+              (saveLayer
+                (Fill.pixel (Pixel.Alpha 1), BlendMode.dstin, id, Filter.id)
+                (seq
+                  (clip c2 ClipOp.int)
+                  (draw g2 (Fill.pixel color, BlendMode.srcover, id, Filter.id))))))
+          =
+          denote
+            (Layer.saveLayer sourceLayer
+              (Layer.draw Layer.empty g2
+                (Fill.pixel color, BlendMode.srcover, id, Filter.id) c2)
+              (Fill.pixel (Pixel.Alpha 1), BlendMode.dstin, id, Filter.id)) := by
+            simp [eval, interp, hsource, htrue_c2]
+      _ = denote (clip_mask sourceLayer (intersect g2 c2)) := by
+            simpa using
+              (MaskIntoDstin g2 c2 color Hopaque sourceLayer Hmaskable)
+  calc
+    denote
+        (eval
+          (seq cmd
+            (saveLayer
+              (Fill.pixel (Pixel.Alpha 1), BlendMode.dstin, id, Filter.id)
+              (seq
+                (clip c2 ClipOp.int)
+                (draw g2 (Fill.pixel color, BlendMode.srcover, id, Filter.id))))))
+        = denote (clip_mask sourceLayer (intersect g2 c2)) := hfrom
+    _ = denote clippedLayer := hdenote.symm
+    _ = denote
+        (eval
+          (save
+            (seq
+              (clip (intersect g2 c2) ClipOp.int)
+              cmd))) := by
+          simp [eval, interp, hclipped, htrue_mask]
+
+theorem opaque_saveLayer_denote_eq_save
   (cmd : Command)
   (hcmd : PlainDrawList cmd) :
   denote

@@ -212,8 +212,14 @@ def compile_skp_to_lskia(commands: list[dict[str, Any]]) -> tuple[Layer, skia.Pa
                 if 'colorfilter' in json_paint:
                     json_color_filter = json_paint['colorfilter']
                     if json_color_filter['name'] == 'SkRuntimeColorFilter':
-                        # I AM ASSUMING ALL RUNTIME FILTERS ARE LUMINANCE FILTERS
-                        assert 'sk_luma' in json_color_filter['values']['01_string']
+                        # Runtime effects serialize either their source (old format) or a
+                        # Skia-known stable key (current format).  527 is kLuma.
+                        values = json_color_filter['values']
+                        is_luma = (
+                            'sk_luma' in values.get('01_string', '')
+                            or values.get('00_int') == 527
+                        )
+                        assert is_luma
                         color_filter = '(LumaFilter)'
                     else:
                         raise NotImplementedError(f'{json_color_filter["name"]} is not implemented')
