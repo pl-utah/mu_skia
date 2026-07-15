@@ -431,7 +431,7 @@ theorem opaque_saveLayer_denote_eq_save
         cmd))
   =
   denote
-      (eval
+    (eval
       (save cmd)) := by
   induction hcmd with
   | skip =>
