@@ -1,0 +1,3944 @@
+{
+  "version": 1,
+  "commands": [
+    {
+      "command": "DrawPaint",
+      "visible": true,
+      "paint": {
+        "color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "blendMode": "Src"
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          -507
+        ],
+        [
+          0,
+          1,
+          0,
+          -6
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        507,
+        6,
+        567,
+        53
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkColorFilterImageFilter",
+          "data": "data/0",
+          "values": {
+            "00_int": 1,
+            "01_bool": false,
+            "02_SkComposeColorFilter": {
+              "00_SkMatrixColorFilter": {
+                "00_scalarArray": [
+                  0.9,
+                  0,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0.9,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0.9,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "01_bool": true,
+                "02_bool": true
+              },
+              "01_SkComposeColorFilter": {
+                "00_SkMatrixColorFilter": {
+                  "00_scalarArray": [
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "01_bool": true,
+                  "02_bool": true
+                },
+                "01_SkComposeColorFilter": {
+                  "00_SkMatrixColorFilter": {
+                    "00_scalarArray": [
+                      -0.525057,
+                      1.5433,
+                      -0.0182396,
+                      0,
+                      0,
+                      0.397932,
+                      0.410019,
+                      0.192049,
+                      0,
+                      0,
+                      0.559425,
+                      1.29498,
+                      -0.854404,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "01_bool": true,
+                    "02_bool": true
+                  },
+                  "01_SkComposeColorFilter": {
+                    "00_SkMatrixColorFilter": {
+                      "00_scalarArray": [
+                        21.9027,
+                        -18.9904,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        8.5696,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        -18.9904,
+                        25.6477,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "01_bool": true,
+                      "02_bool": true
+                    },
+                    "01_SkComposeColorFilter": {
+                      "00_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.80576,
+                          0.24608,
+                          0.06048,
+                          0,
+                          0,
+                          0.11168,
+                          0.89952,
+                          0.05376,
+                          0,
+                          0,
+                          0.08704,
+                          0.17088,
+                          0.72192,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      },
+                      "01_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.6,
+                          0,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0.6,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0.6,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        507,
+        7,
+        567,
+        53
+      ],
+      "op": "intersect",
+      "antiAlias": false,
+      "shortDesc": " [507 7 567 53]"
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          507
+        ],
+        [
+          0,
+          1,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        60,
+        46
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 60 46]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.46,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0.46,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(31.9543915f, 73.9149399f);\npath.cubicTo(31.9543915f, 55.4748955f, 32.5574074f, 38.5557327f, 32.3146019f, 21.3404007f);\npath.cubicTo(32.2372246f, 15.6864491f, 36.4676819f, 13.1769924f, 42.549881f, 11.958951f);\npath.cubicTo(59.8172455f, 8.53829765f, 79.5500412f, 4.1330719f, 97.2082977f, 3.81469727e-06f);\npath.cubicTo(97.2082977f, 23.9886055f, 97.7566147f, 47.2060928f, 96.9921722f, 70.3795471f);\npath.cubicTo(96.5826035f, 82.5252686f, 76.8031158f, 91.2423325f, 65.7647018f, 85.6817703f);\npath.cubicTo(60.4309387f, 82.9908752f, 57.6786728f, 78.4615784f, 59.9439888f, 72.055191f);\npath.cubicTo(63.5260696f, 61.867939f, 74.2429657f, 56.5355072f, 85.4548035f, 59.4878922f);\npath.cubicTo(86.8609543f, 59.8614426f, 88.251091f, 60.3083687f, 90.8072433f, 61.0634727f);\npath.cubicTo(90.8072433f, 47.0099754f, 90.824585f, 33.5621643f, 90.7872314f, 20.1103516f);\npath.cubicTo(90.7872314f, 18.6695137f, 90.4843903f, 17.223341f, 90.2055588f, 14.8086052f);\npath.cubicTo(73.1036224f, 18.6134815f, 56.4539528f, 22.3129654f, 38.711647f, 26.256588f);\npath.cubicTo(38.711647f, 42.229866f, 39.0665207f, 57.9469986f, 38.5168686f, 73.6374435f);\npath.cubicTo(38.3194199f, 79.4034576f, 39.5027733f, 87.7162857f, 35.040184f, 92.4617157f);\npath.cubicTo(29.3075218f, 98.5545883f, 18.2811165f, 101.370895f, 10.3511753f, 99.3537216f);\npath.cubicTo(3.75534391f, 97.6700745f, 0.2666502f, 90.1096878f, 2.8614912f, 83.1042786f);\npath.cubicTo(6.16474342f, 74.1577454f, 18.7934132f, 69.1735229f, 27.9654083f, 71.891098f);\npath.cubicTo(29.8585091f, 72.4474182f, 31.9543915f, 73.9149399f, 31.9543915f, 73.9149399f);\n",
+        "fillType": "evenOdd",
+        "verbs": [
+          {
+            "move": [
+              31.9544,
+              73.9149
+            ]
+          },
+          {
+            "cubic": [
+              [
+                31.9544,
+                55.4749
+              ],
+              [
+                32.5574,
+                38.5557
+              ],
+              [
+                32.3146,
+                21.3404
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                32.2372,
+                15.6864
+              ],
+              [
+                36.4677,
+                13.177
+              ],
+              [
+                42.5499,
+                11.959
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                59.8172,
+                8.5383
+              ],
+              [
+                79.55,
+                4.13307
+              ],
+              [
+                97.2083,
+                3.8147e-06
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                97.2083,
+                23.9886
+              ],
+              [
+                97.7566,
+                47.2061
+              ],
+              [
+                96.9922,
+                70.3795
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                96.5826,
+                82.5253
+              ],
+              [
+                76.8031,
+                91.2423
+              ],
+              [
+                65.7647,
+                85.6818
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                60.4309,
+                82.9909
+              ],
+              [
+                57.6787,
+                78.4616
+              ],
+              [
+                59.944,
+                72.0552
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                63.5261,
+                61.8679
+              ],
+              [
+                74.243,
+                56.5355
+              ],
+              [
+                85.4548,
+                59.4879
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                86.861,
+                59.8614
+              ],
+              [
+                88.2511,
+                60.3084
+              ],
+              [
+                90.8072,
+                61.0635
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                90.8072,
+                47.01
+              ],
+              [
+                90.8246,
+                33.5622
+              ],
+              [
+                90.7872,
+                20.1104
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                90.7872,
+                18.6695
+              ],
+              [
+                90.4844,
+                17.2233
+              ],
+              [
+                90.2056,
+                14.8086
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                73.1036,
+                18.6135
+              ],
+              [
+                56.454,
+                22.313
+              ],
+              [
+                38.7116,
+                26.2566
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                38.7116,
+                42.2299
+              ],
+              [
+                39.0665,
+                57.947
+              ],
+              [
+                38.5169,
+                73.6374
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                38.3194,
+                79.4035
+              ],
+              [
+                39.5028,
+                87.7163
+              ],
+              [
+                35.0402,
+                92.4617
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                29.3075,
+                98.5546
+              ],
+              [
+                18.2811,
+                101.371
+              ],
+              [
+                10.3512,
+                99.3537
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                3.75534,
+                97.6701
+              ],
+              [
+                0.26665,
+                90.1097
+              ],
+              [
+                2.86149,
+                83.1043
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                6.16474,
+                74.1577
+              ],
+              [
+                18.7934,
+                69.1735
+              ],
+              [
+                27.9654,
+                71.8911
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                29.8585,
+                72.4474
+              ],
+              [
+                31.9544,
+                73.9149
+              ],
+              [
+                31.9544,
+                73.9149
+              ]
+            ]
+          }
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        757,
+        6,
+        817,
+        53
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkColorFilterImageFilter",
+          "data": "data/0",
+          "values": {
+            "00_int": 1,
+            "01_bool": false,
+            "02_SkComposeColorFilter": {
+              "00_SkMatrixColorFilter": {
+                "00_scalarArray": [
+                  0.9,
+                  0,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0.9,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0.9,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "01_bool": true,
+                "02_bool": true
+              },
+              "01_SkComposeColorFilter": {
+                "00_SkMatrixColorFilter": {
+                  "00_scalarArray": [
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "01_bool": true,
+                  "02_bool": true
+                },
+                "01_SkComposeColorFilter": {
+                  "00_SkMatrixColorFilter": {
+                    "00_scalarArray": [
+                      -0.525057,
+                      1.5433,
+                      -0.0182396,
+                      0,
+                      0,
+                      0.397932,
+                      0.410019,
+                      0.192049,
+                      0,
+                      0,
+                      0.559425,
+                      1.29498,
+                      -0.854404,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "01_bool": true,
+                    "02_bool": true
+                  },
+                  "01_SkComposeColorFilter": {
+                    "00_SkMatrixColorFilter": {
+                      "00_scalarArray": [
+                        21.9027,
+                        -18.9904,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        8.5696,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        -18.9904,
+                        25.6477,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "01_bool": true,
+                      "02_bool": true
+                    },
+                    "01_SkComposeColorFilter": {
+                      "00_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.80576,
+                          0.24608,
+                          0.06048,
+                          0,
+                          0,
+                          0.11168,
+                          0.89952,
+                          0.05376,
+                          0,
+                          0,
+                          0.08704,
+                          0.17088,
+                          0.72192,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      },
+                      "01_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.6,
+                          0,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0.6,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0.6,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        757,
+        7,
+        817,
+        53
+      ],
+      "op": "intersect",
+      "antiAlias": false,
+      "shortDesc": " [757 7 817 53]"
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          757
+        ],
+        [
+          0,
+          1,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        60,
+        46
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 60 46]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.46,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0.46,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(93, 21);\npath.lineTo(82, 21);\npath.lineTo(82, 32);\npath.lineTo(93, 32);\npath.close();\npath.moveTo(76, 21);\npath.lineTo(65, 21);\npath.lineTo(65, 32);\npath.lineTo(76, 32);\npath.close();\npath.moveTo(93, 79);\npath.lineTo(93, 42);\npath.lineTo(7, 42);\npath.lineTo(7, 79);\npath.close();\npath.moveTo(60.0018425f, 21);\npath.lineTo(7.0018425f, 21);\npath.lineTo(7.0018425f, 32);\npath.lineTo(60.0018425f, 32);\npath.close();\npath.moveTo(100, 86);\npath.lineTo(0, 86);\npath.lineTo(0, 14);\npath.lineTo(100, 14);\npath.close();\n",
+        "fillType": "winding",
+        "verbs": [
+          {
+            "move": [
+              93,
+              21
+            ]
+          },
+          {
+            "line": [
+              82,
+              21
+            ]
+          },
+          {
+            "line": [
+              82,
+              32
+            ]
+          },
+          {
+            "line": [
+              93,
+              32
+            ]
+          },
+          {
+            "line": [
+              93,
+              21
+            ]
+          },
+          "close",
+          {
+            "move": [
+              76,
+              21
+            ]
+          },
+          {
+            "line": [
+              65,
+              21
+            ]
+          },
+          {
+            "line": [
+              65,
+              32
+            ]
+          },
+          {
+            "line": [
+              76,
+              32
+            ]
+          },
+          {
+            "line": [
+              76,
+              21
+            ]
+          },
+          "close",
+          {
+            "move": [
+              93,
+              79
+            ]
+          },
+          {
+            "line": [
+              93,
+              42
+            ]
+          },
+          {
+            "line": [
+              7,
+              42
+            ]
+          },
+          {
+            "line": [
+              7,
+              79
+            ]
+          },
+          {
+            "line": [
+              93,
+              79
+            ]
+          },
+          "close",
+          {
+            "move": [
+              60.0018,
+              21
+            ]
+          },
+          {
+            "line": [
+              7.00184,
+              21
+            ]
+          },
+          {
+            "line": [
+              7.00184,
+              32
+            ]
+          },
+          {
+            "line": [
+              60.0018,
+              32
+            ]
+          },
+          {
+            "line": [
+              60.0018,
+              21
+            ]
+          },
+          "close",
+          {
+            "move": [
+              100,
+              86
+            ]
+          },
+          {
+            "line": [
+              0,
+              86
+            ]
+          },
+          {
+            "line": [
+              0,
+              14
+            ]
+          },
+          {
+            "line": [
+              100,
+              14
+            ]
+          },
+          {
+            "line": [
+              100,
+              86
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        1007,
+        6,
+        1067,
+        53
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkColorFilterImageFilter",
+          "data": "data/0",
+          "values": {
+            "00_int": 1,
+            "01_bool": false,
+            "02_SkComposeColorFilter": {
+              "00_SkMatrixColorFilter": {
+                "00_scalarArray": [
+                  0.9,
+                  0,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0.9,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0.9,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "01_bool": true,
+                "02_bool": true
+              },
+              "01_SkComposeColorFilter": {
+                "00_SkMatrixColorFilter": {
+                  "00_scalarArray": [
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "01_bool": true,
+                  "02_bool": true
+                },
+                "01_SkComposeColorFilter": {
+                  "00_SkMatrixColorFilter": {
+                    "00_scalarArray": [
+                      -0.525057,
+                      1.5433,
+                      -0.0182396,
+                      0,
+                      0,
+                      0.397932,
+                      0.410019,
+                      0.192049,
+                      0,
+                      0,
+                      0.559425,
+                      1.29498,
+                      -0.854404,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "01_bool": true,
+                    "02_bool": true
+                  },
+                  "01_SkComposeColorFilter": {
+                    "00_SkMatrixColorFilter": {
+                      "00_scalarArray": [
+                        21.9027,
+                        -18.9904,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        8.5696,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        -18.9904,
+                        25.6477,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "01_bool": true,
+                      "02_bool": true
+                    },
+                    "01_SkComposeColorFilter": {
+                      "00_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.80576,
+                          0.24608,
+                          0.06048,
+                          0,
+                          0,
+                          0.11168,
+                          0.89952,
+                          0.05376,
+                          0,
+                          0,
+                          0.08704,
+                          0.17088,
+                          0.72192,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      },
+                      "01_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.6,
+                          0,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0.6,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0.6,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        1007,
+        7,
+        1067,
+        53
+      ],
+      "op": "intersect",
+      "antiAlias": false,
+      "shortDesc": " [1007 7 1067 53]"
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1007
+        ],
+        [
+          0,
+          1,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        60,
+        46
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 60 46]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.46,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0.46,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(50, 20);\npath.lineTo(83.3333282f, 63.3333321f);\npath.lineTo(63.3333282f, 63.3333321f);\npath.lineTo(63.3333282f, 100);\npath.lineTo(36.6666641f, 100);\npath.lineTo(36.6666641f, 63.3333321f);\npath.lineTo(16.6666641f, 63.3333321f);\npath.close();\npath.moveTo(100, 0);\npath.lineTo(100, 13.333333f);\npath.lineTo(0, 13.333333f);\npath.lineTo(0, 0);\npath.close();\n",
+        "fillType": "evenOdd",
+        "verbs": [
+          {
+            "move": [
+              50,
+              20
+            ]
+          },
+          {
+            "line": [
+              83.3333,
+              63.3333
+            ]
+          },
+          {
+            "line": [
+              63.3333,
+              63.3333
+            ]
+          },
+          {
+            "line": [
+              63.3333,
+              100
+            ]
+          },
+          {
+            "line": [
+              36.6667,
+              100
+            ]
+          },
+          {
+            "line": [
+              36.6667,
+              63.3333
+            ]
+          },
+          {
+            "line": [
+              16.6667,
+              63.3333
+            ]
+          },
+          {
+            "line": [
+              50,
+              20
+            ]
+          },
+          "close",
+          {
+            "move": [
+              100,
+              0
+            ]
+          },
+          {
+            "line": [
+              100,
+              13.3333
+            ]
+          },
+          {
+            "line": [
+              0,
+              13.3333
+            ]
+          },
+          {
+            "line": [
+              0,
+              0
+            ]
+          },
+          {
+            "line": [
+              100,
+              0
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        1257,
+        6,
+        1317,
+        53
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkColorFilterImageFilter",
+          "data": "data/0",
+          "values": {
+            "00_int": 1,
+            "01_bool": false,
+            "02_SkComposeColorFilter": {
+              "00_SkMatrixColorFilter": {
+                "00_scalarArray": [
+                  0.9,
+                  0,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0.9,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0.9,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "01_bool": true,
+                "02_bool": true
+              },
+              "01_SkComposeColorFilter": {
+                "00_SkMatrixColorFilter": {
+                  "00_scalarArray": [
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "01_bool": true,
+                  "02_bool": true
+                },
+                "01_SkComposeColorFilter": {
+                  "00_SkMatrixColorFilter": {
+                    "00_scalarArray": [
+                      -0.525057,
+                      1.5433,
+                      -0.0182396,
+                      0,
+                      0,
+                      0.397932,
+                      0.410019,
+                      0.192049,
+                      0,
+                      0,
+                      0.559425,
+                      1.29498,
+                      -0.854404,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "01_bool": true,
+                    "02_bool": true
+                  },
+                  "01_SkComposeColorFilter": {
+                    "00_SkMatrixColorFilter": {
+                      "00_scalarArray": [
+                        21.9027,
+                        -18.9904,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        8.5696,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        -18.9904,
+                        25.6477,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "01_bool": true,
+                      "02_bool": true
+                    },
+                    "01_SkComposeColorFilter": {
+                      "00_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.80576,
+                          0.24608,
+                          0.06048,
+                          0,
+                          0,
+                          0.11168,
+                          0.89952,
+                          0.05376,
+                          0,
+                          0,
+                          0.08704,
+                          0.17088,
+                          0.72192,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      },
+                      "01_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.6,
+                          0,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0.6,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0.6,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        1257,
+        7,
+        1317,
+        53
+      ],
+      "op": "intersect",
+      "antiAlias": false,
+      "shortDesc": " [1257 7 1317 53]"
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1257
+        ],
+        [
+          0,
+          1,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        60,
+        46
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 60 46]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.46,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0.46,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(75.2264328f, 43.7758636f);\npath.lineTo(75.2264328f, 78.2931061f);\npath.cubicTo(75.1387558f, 79.4247742f, 74.9094238f, 80.1718979f, 74.5384369f, 80.5344849f);\npath.cubicTo(74.16745f, 80.8970718f, 73.4030151f, 81.1212082f, 72.2451248f, 81.2069016f);\npath.lineTo(57.3385963f, 81.2069016f);\npath.cubicTo(56.0373802f, 81.5728912f, 55.1200562f, 81.8717422f, 54.5866203f, 82.1034546f);\npath.cubicTo(54.0531845f, 82.3351669f, 53.5945244f, 82.6340179f, 53.2106323f, 83.0000076f);\npath.lineTo(51.1466522f, 83.0000076f);\npath.lineTo(51.1466522f, 46.2413864f);\npath.cubicTo(52.2455482f, 45.1949577f, 53.0864296f, 44.522541f, 53.6692963f, 44.224144f);\npath.cubicTo(54.2521629f, 43.9257469f, 55.0166016f, 43.7763214f, 55.9626083f, 43.7758675f);\npath.close();\npath.moveTo(43.3493958f, 43.7758636f);\npath.cubicTo(44.2954025f, 43.7763176f, 45.0598412f, 43.9257431f, 45.6427078f, 44.2241402f);\npath.cubicTo(46.1839409f, 44.5012245f, 46.9476471f, 45.1007996f, 47.9338226f, 46.0228729f);\npath.lineTo(48.1653519f, 46.2413826f);\npath.lineTo(48.1653519f, 83);\npath.lineTo(46.1013718f, 83);\npath.cubicTo(45.7174835f, 82.6340103f, 45.2588196f, 82.3351593f, 44.7253838f, 82.103447f);\npath.cubicTo(44.2329826f, 81.8895569f, 43.4134789f, 81.6184616f, 42.2668762f, 81.2901611f);\npath.lineTo(41.9734116f, 81.2068939f);\npath.lineTo(27.0668831f, 81.2068939f);\npath.cubicTo(25.9089966f, 81.1212082f, 25.144558f, 80.8970642f, 24.773571f, 80.5344772f);\npath.cubicTo(24.4311199f, 80.1997833f, 24.2093716f, 79.5374298f, 24.1083241f, 78.5474243f);\npath.lineTo(24.085577f, 78.2930984f);\npath.lineTo(24.085577f, 43.775856f);\npath.close();\npath.moveTo(50, 18.0000019f);\npath.cubicTo(71.7118912f, 18.0000019f, 89.8283234f, 32.4313126f, 94.0301285f, 51.6201172f);\npath.lineTo(95.1782455f, 51.6206894f);\npath.lineTo(95.3617401f, 51.6650696f);\npath.cubicTo(96.404068f, 51.9557114f, 97.489563f, 52.9121857f, 98.6182175f, 54.5344849f);\npath.cubicTo(99.8089981f, 56.2460823f, 99.989418f, 60.2167625f, 100, 62.0652733f);\npath.lineTo(99.9999771f, 62.4273033f);\npath.cubicTo(99.99897f, 62.5904808f, 99.9967041f, 62.7257042f, 99.9942093f, 62.8275871f);\npath.cubicTo(99.8838577f, 67.33535f, 98.0326614f, 70.2837906f, 97.2422333f, 71.1206894f);\npath.cubicTo(95.4708481f, 72.9962311f, 92.6305237f, 73.9663467f, 88.7212524f, 74.0310211f);\npath.lineTo(88.2983093f, 74.0344849f);\npath.lineTo(84.3996811f, 74.0344849f);\npath.lineTo(84.3996811f, 50.9482803f);\npath.lineTo(87.9801102f, 50.9480476f);\npath.cubicTo(86.206665f, 44.4896202f, 82.6077423f, 38.718132f, 77.7296448f, 34.145668f);\npath.cubicTo(70.6330109f, 27.4936657f, 60.8291016f, 23.3793182f, 50, 23.3793182f);\npath.cubicTo(39.1708984f, 23.3793182f, 29.366991f, 27.4936676f, 22.2703571f, 34.145668f);\npath.cubicTo(17.3922615f, 38.718132f, 13.793335f, 44.4896202f, 12.0198908f, 50.9480476f);\npath.lineTo(15.600318f, 50.9482803f);\npath.lineTo(15.600318f, 74.0344849f);\npath.lineTo(11.7016869f, 74.0344849f);\npath.lineTo(11.2787466f, 74.0310211f);\npath.cubicTo(7.36948109f, 73.9663467f, 4.52915525f, 72.9962387f, 2.75776958f, 71.1206894f);\npath.cubicTo(1.96734643f, 70.2837906f, 0.116144896f, 67.33535f, 0.00579500198f, 62.8275871f);\npath.cubicTo(0.00330096181f, 62.725708f, 0.00103364186f, 62.5904808f, 2.68612057e-05f, 62.4273033f);\npath.lineTo(3.21204425e-07f, 62.0652733f);\npath.cubicTo(0.0105786622f, 60.2167587f, 0.191000208f, 56.2460823f, 1.38178241f, 54.5344849f);\npath.cubicTo(2.51043797f, 52.9121857f, 3.5959301f, 51.9557152f, 4.63825846f, 51.6650696f);\npath.lineTo(4.82175064f, 51.6206894f);\npath.lineTo(5.96987057f, 51.6201172f);\npath.cubicTo(10.1716824f, 32.4313126f, 28.2881088f, 18, 50, 18);\npath.close();\n",
+        "fillType": "evenOdd",
+        "verbs": [
+          {
+            "move": [
+              75.2264,
+              43.7759
+            ]
+          },
+          {
+            "line": [
+              75.2264,
+              78.2931
+            ]
+          },
+          {
+            "cubic": [
+              [
+                75.1388,
+                79.4248
+              ],
+              [
+                74.9094,
+                80.1719
+              ],
+              [
+                74.5384,
+                80.5345
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                74.1674,
+                80.8971
+              ],
+              [
+                73.403,
+                81.1212
+              ],
+              [
+                72.2451,
+                81.2069
+              ]
+            ]
+          },
+          {
+            "line": [
+              57.3386,
+              81.2069
+            ]
+          },
+          {
+            "cubic": [
+              [
+                56.0374,
+                81.5729
+              ],
+              [
+                55.1201,
+                81.8717
+              ],
+              [
+                54.5866,
+                82.1035
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                54.0532,
+                82.3352
+              ],
+              [
+                53.5945,
+                82.634
+              ],
+              [
+                53.2106,
+                83
+              ]
+            ]
+          },
+          {
+            "line": [
+              51.1467,
+              83
+            ]
+          },
+          {
+            "line": [
+              51.1467,
+              46.2414
+            ]
+          },
+          {
+            "cubic": [
+              [
+                52.2455,
+                45.195
+              ],
+              [
+                53.0864,
+                44.5225
+              ],
+              [
+                53.6693,
+                44.2241
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                54.2522,
+                43.9257
+              ],
+              [
+                55.0166,
+                43.7763
+              ],
+              [
+                55.9626,
+                43.7759
+              ]
+            ]
+          },
+          {
+            "line": [
+              75.2264,
+              43.7759
+            ]
+          },
+          "close",
+          {
+            "move": [
+              43.3494,
+              43.7759
+            ]
+          },
+          {
+            "cubic": [
+              [
+                44.2954,
+                43.7763
+              ],
+              [
+                45.0598,
+                43.9257
+              ],
+              [
+                45.6427,
+                44.2241
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                46.1839,
+                44.5012
+              ],
+              [
+                46.9476,
+                45.1008
+              ],
+              [
+                47.9338,
+                46.0229
+              ]
+            ]
+          },
+          {
+            "line": [
+              48.1654,
+              46.2414
+            ]
+          },
+          {
+            "line": [
+              48.1654,
+              83
+            ]
+          },
+          {
+            "line": [
+              46.1014,
+              83
+            ]
+          },
+          {
+            "cubic": [
+              [
+                45.7175,
+                82.634
+              ],
+              [
+                45.2588,
+                82.3352
+              ],
+              [
+                44.7254,
+                82.1034
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                44.233,
+                81.8896
+              ],
+              [
+                43.4135,
+                81.6185
+              ],
+              [
+                42.2669,
+                81.2902
+              ]
+            ]
+          },
+          {
+            "line": [
+              41.9734,
+              81.2069
+            ]
+          },
+          {
+            "line": [
+              27.0669,
+              81.2069
+            ]
+          },
+          {
+            "cubic": [
+              [
+                25.909,
+                81.1212
+              ],
+              [
+                25.1446,
+                80.8971
+              ],
+              [
+                24.7736,
+                80.5345
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                24.4311,
+                80.1998
+              ],
+              [
+                24.2094,
+                79.5374
+              ],
+              [
+                24.1083,
+                78.5474
+              ]
+            ]
+          },
+          {
+            "line": [
+              24.0856,
+              78.2931
+            ]
+          },
+          {
+            "line": [
+              24.0856,
+              43.7759
+            ]
+          },
+          {
+            "line": [
+              43.3494,
+              43.7759
+            ]
+          },
+          "close",
+          {
+            "move": [
+              50,
+              18
+            ]
+          },
+          {
+            "cubic": [
+              [
+                71.7119,
+                18
+              ],
+              [
+                89.8283,
+                32.4313
+              ],
+              [
+                94.0301,
+                51.6201
+              ]
+            ]
+          },
+          {
+            "line": [
+              95.1782,
+              51.6207
+            ]
+          },
+          {
+            "line": [
+              95.3617,
+              51.6651
+            ]
+          },
+          {
+            "cubic": [
+              [
+                96.4041,
+                51.9557
+              ],
+              [
+                97.4896,
+                52.9122
+              ],
+              [
+                98.6182,
+                54.5345
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                99.809,
+                56.2461
+              ],
+              [
+                99.9894,
+                60.2168
+              ],
+              [
+                100,
+                62.0653
+              ]
+            ]
+          },
+          {
+            "line": [
+              100,
+              62.4273
+            ]
+          },
+          {
+            "cubic": [
+              [
+                99.999,
+                62.5905
+              ],
+              [
+                99.9967,
+                62.7257
+              ],
+              [
+                99.9942,
+                62.8276
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                99.8839,
+                67.3354
+              ],
+              [
+                98.0327,
+                70.2838
+              ],
+              [
+                97.2422,
+                71.1207
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                95.4708,
+                72.9962
+              ],
+              [
+                92.6305,
+                73.9663
+              ],
+              [
+                88.7213,
+                74.031
+              ]
+            ]
+          },
+          {
+            "line": [
+              88.2983,
+              74.0345
+            ]
+          },
+          {
+            "line": [
+              84.3997,
+              74.0345
+            ]
+          },
+          {
+            "line": [
+              84.3997,
+              50.9483
+            ]
+          },
+          {
+            "line": [
+              87.9801,
+              50.948
+            ]
+          },
+          {
+            "cubic": [
+              [
+                86.2067,
+                44.4896
+              ],
+              [
+                82.6077,
+                38.7181
+              ],
+              [
+                77.7296,
+                34.1457
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                70.633,
+                27.4937
+              ],
+              [
+                60.8291,
+                23.3793
+              ],
+              [
+                50,
+                23.3793
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                39.1709,
+                23.3793
+              ],
+              [
+                29.367,
+                27.4937
+              ],
+              [
+                22.2704,
+                34.1457
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                17.3923,
+                38.7181
+              ],
+              [
+                13.7933,
+                44.4896
+              ],
+              [
+                12.0199,
+                50.948
+              ]
+            ]
+          },
+          {
+            "line": [
+              15.6003,
+              50.9483
+            ]
+          },
+          {
+            "line": [
+              15.6003,
+              74.0345
+            ]
+          },
+          {
+            "line": [
+              11.7017,
+              74.0345
+            ]
+          },
+          {
+            "line": [
+              11.2787,
+              74.031
+            ]
+          },
+          {
+            "cubic": [
+              [
+                7.36948,
+                73.9663
+              ],
+              [
+                4.52916,
+                72.9962
+              ],
+              [
+                2.75777,
+                71.1207
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                1.96735,
+                70.2838
+              ],
+              [
+                0.116145,
+                67.3354
+              ],
+              [
+                0.005795,
+                62.8276
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                0.00330096,
+                62.7257
+              ],
+              [
+                0.00103364,
+                62.5905
+              ],
+              [
+                2.68612e-05,
+                62.4273
+              ]
+            ]
+          },
+          {
+            "line": [
+              3.21204e-07,
+              62.0653
+            ]
+          },
+          {
+            "cubic": [
+              [
+                0.0105787,
+                60.2168
+              ],
+              [
+                0.191,
+                56.2461
+              ],
+              [
+                1.38178,
+                54.5345
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                2.51044,
+                52.9122
+              ],
+              [
+                3.59593,
+                51.9557
+              ],
+              [
+                4.63826,
+                51.6651
+              ]
+            ]
+          },
+          {
+            "line": [
+              4.82175,
+              51.6207
+            ]
+          },
+          {
+            "line": [
+              5.96987,
+              51.6201
+            ]
+          },
+          {
+            "cubic": [
+              [
+                10.1717,
+                32.4313
+              ],
+              [
+                28.2881,
+                18
+              ],
+              [
+                50,
+                18
+              ]
+            ]
+          },
+          {
+            "line": [
+              50,
+              18
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        1507,
+        6,
+        1567,
+        53
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkColorFilterImageFilter",
+          "data": "data/0",
+          "values": {
+            "00_int": 1,
+            "01_bool": false,
+            "02_SkComposeColorFilter": {
+              "00_SkMatrixColorFilter": {
+                "00_scalarArray": [
+                  0.9,
+                  0,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0.9,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0.9,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "01_bool": true,
+                "02_bool": true
+              },
+              "01_SkComposeColorFilter": {
+                "00_SkMatrixColorFilter": {
+                  "00_scalarArray": [
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "01_bool": true,
+                  "02_bool": true
+                },
+                "01_SkComposeColorFilter": {
+                  "00_SkMatrixColorFilter": {
+                    "00_scalarArray": [
+                      -0.525057,
+                      1.5433,
+                      -0.0182396,
+                      0,
+                      0,
+                      0.397932,
+                      0.410019,
+                      0.192049,
+                      0,
+                      0,
+                      0.559425,
+                      1.29498,
+                      -0.854404,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "01_bool": true,
+                    "02_bool": true
+                  },
+                  "01_SkComposeColorFilter": {
+                    "00_SkMatrixColorFilter": {
+                      "00_scalarArray": [
+                        21.9027,
+                        -18.9904,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        8.5696,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        -18.9904,
+                        25.6477,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "01_bool": true,
+                      "02_bool": true
+                    },
+                    "01_SkComposeColorFilter": {
+                      "00_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.80576,
+                          0.24608,
+                          0.06048,
+                          0,
+                          0,
+                          0.11168,
+                          0.89952,
+                          0.05376,
+                          0,
+                          0,
+                          0.08704,
+                          0.17088,
+                          0.72192,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      },
+                      "01_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.6,
+                          0,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0.6,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0.6,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        1507,
+        7,
+        1567,
+        53
+      ],
+      "op": "intersect",
+      "antiAlias": false,
+      "shortDesc": " [1507 7 1567 53]"
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1507
+        ],
+        [
+          0,
+          1,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        60,
+        46
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 60 46]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.46,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0.46,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(89.6854553f, 79.6500626f);\npath.cubicTo(91.4154892f, 86.132431f, 91.8658752f, 92.9623337f, 93, 100);\npath.lineTo(7, 100);\npath.cubicTo(7.56831503f, 84.1441498f, 9.98334122f, 69.215065f, 22.167614f, 58.3418655f);\npath.cubicTo(45.1624222f, 37.8231888f, 81.4179077f, 49.3385811f, 89.6854553f, 79.6500549f);\npath.close();\npath.moveTo(49.5856247f, 0);\npath.cubicTo(60.4580269f, 0.0493248068f, 69.5556641f, 9.25722313f, 69.5035858f, 20.1421795f);\npath.cubicTo(69.4206467f, 31.1850471f, 60.5419617f, 39.9914322f, 49.443306f, 40);\npath.cubicTo(38.3251877f, 40, 29.5035858f, 31.2095299f, 29.5035858f, 20.109127f);\npath.cubicTo(29.4708309f, 8.9891386f, 38.5161629f, -0.0657444f, 49.5856247f, 0);\npath.close();\n",
+        "fillType": "evenOdd",
+        "verbs": [
+          {
+            "move": [
+              89.6855,
+              79.6501
+            ]
+          },
+          {
+            "cubic": [
+              [
+                91.4155,
+                86.1324
+              ],
+              [
+                91.8659,
+                92.9623
+              ],
+              [
+                93,
+                100
+              ]
+            ]
+          },
+          {
+            "line": [
+              7,
+              100
+            ]
+          },
+          {
+            "cubic": [
+              [
+                7.56832,
+                84.1441
+              ],
+              [
+                9.98334,
+                69.2151
+              ],
+              [
+                22.1676,
+                58.3419
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                45.1624,
+                37.8232
+              ],
+              [
+                81.4179,
+                49.3386
+              ],
+              [
+                89.6855,
+                79.6501
+              ]
+            ]
+          },
+          {
+            "line": [
+              89.6855,
+              79.6501
+            ]
+          },
+          "close",
+          {
+            "move": [
+              49.5856,
+              0
+            ]
+          },
+          {
+            "cubic": [
+              [
+                60.458,
+                0.0493248
+              ],
+              [
+                69.5557,
+                9.25722
+              ],
+              [
+                69.5036,
+                20.1422
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                69.4206,
+                31.185
+              ],
+              [
+                60.542,
+                39.9914
+              ],
+              [
+                49.4433,
+                40
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                38.3252,
+                40
+              ],
+              [
+                29.5036,
+                31.2095
+              ],
+              [
+                29.5036,
+                20.1091
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                29.4708,
+                8.98914
+              ],
+              [
+                38.5162,
+                -0.0657444
+              ],
+              [
+                49.5856,
+                0
+              ]
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        1757,
+        6,
+        1817,
+        53
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkColorFilterImageFilter",
+          "data": "data/0",
+          "values": {
+            "00_int": 1,
+            "01_bool": false,
+            "02_SkComposeColorFilter": {
+              "00_SkMatrixColorFilter": {
+                "00_scalarArray": [
+                  0.9,
+                  0,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0.9,
+                  0,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0.9,
+                  0,
+                  0.05,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "01_bool": true,
+                "02_bool": true
+              },
+              "01_SkComposeColorFilter": {
+                "00_SkMatrixColorFilter": {
+                  "00_scalarArray": [
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.98,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "01_bool": true,
+                  "02_bool": true
+                },
+                "01_SkComposeColorFilter": {
+                  "00_SkMatrixColorFilter": {
+                    "00_scalarArray": [
+                      -0.525057,
+                      1.5433,
+                      -0.0182396,
+                      0,
+                      0,
+                      0.397932,
+                      0.410019,
+                      0.192049,
+                      0,
+                      0,
+                      0.559425,
+                      1.29498,
+                      -0.854404,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "01_bool": true,
+                    "02_bool": true
+                  },
+                  "01_SkComposeColorFilter": {
+                    "00_SkMatrixColorFilter": {
+                      "00_scalarArray": [
+                        21.9027,
+                        -18.9904,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        8.5696,
+                        -1.91232,
+                        0,
+                        0,
+                        -5.65728,
+                        -18.9904,
+                        25.6477,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "01_bool": true,
+                      "02_bool": true
+                    },
+                    "01_SkComposeColorFilter": {
+                      "00_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.80576,
+                          0.24608,
+                          0.06048,
+                          0,
+                          0,
+                          0.11168,
+                          0.89952,
+                          0.05376,
+                          0,
+                          0,
+                          0.08704,
+                          0.17088,
+                          0.72192,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      },
+                      "01_SkMatrixColorFilter": {
+                        "00_scalarArray": [
+                          0.6,
+                          0,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0.6,
+                          0,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0.6,
+                          0,
+                          0.2,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "01_bool": true,
+                        "02_bool": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        1757,
+        7,
+        1817,
+        53
+      ],
+      "op": "intersect",
+      "antiAlias": false,
+      "shortDesc": " [1757 7 1817 53]"
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1757
+        ],
+        [
+          0,
+          1,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        60,
+        46
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 60 46]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.46,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0.46,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(50.2918892f, 2);\npath.lineTo(50.4577293f, 2);\npath.cubicTo(59.1872787f, 2, 67.2776566f, 4.15471077f, 74.7288666f, 8.46413326f);\npath.cubicTo(82.1800766f, 12.7735558f, 88.0742493f, 18.6399879f, 92.4113846f, 26.0634346f);\npath.cubicTo(96.7485199f, 33.4868813f, 98.944725f, 41.5633049f, 99.0000076f, 50.2927055f);\npath.cubicTo(99.0000076f, 56.7418671f, 97.7907715f, 62.9273033f, 95.3722916f, 68.8490143f);\npath.cubicTo(92.9538116f, 74.7707291f, 89.4643021f, 80.0394592f, 84.9037476f, 84.65522f);\npath.cubicTo(75.5062408f, 94.1078491f, 64.1083069f, 98.8894424f, 50.7099495f, 99);\npath.lineTo(50.4611931f, 99);\npath.cubicTo(41.7316437f, 99, 33.6550865f, 96.8452911f, 26.2315178f, 92.5358658f);\npath.cubicTo(18.8079472f, 88.2264404f, 12.9137754f, 82.3461914f, 8.54900169f, 74.8951035f);\npath.cubicTo(4.18422794f, 67.4440155f, 2.00184107f, 59.353775f, 2.00184107f, 50.6243744f);\npath.cubicTo(1.94656157f, 44.1752129f, 3.14197969f, 37.9897766f, 5.58809566f, 32.0680618f);\npath.cubicTo(8.03421211f, 26.146349f, 11.5375471f, 20.9064064f, 16.0981026f, 16.3482304f);\npath.cubicTo(20.6563549f, 11.7324734f, 25.8825665f, 8.18773746f, 31.7767372f, 5.71402359f);\npath.cubicTo(37.6709099f, 3.24030924f, 43.8426285f, 2.0034523f, 50.2919006f, 2.0034523f);\npath.close();\npath.moveTo(56.6282959f, 66.7207947f);\npath.lineTo(56.6282959f, 63.0516815f);\npath.cubicTo(56.9622765f, 60.9948578f, 57.6014442f, 59.3825684f, 58.5458031f, 58.2148094f);\npath.cubicTo(59.3796005f, 57.0470505f, 60.5197411f, 55.906929f, 61.9662209f, 54.7944489f);\npath.cubicTo(63.7443771f, 53.4608536f, 65.106781f, 52.460083f, 66.0534439f, 51.7921333f);\npath.cubicTo(67.4999237f, 50.8477936f, 68.8346939f, 49.6247559f, 70.0577469f, 48.1230202f);\npath.cubicTo(71.2255249f, 46.6765671f, 72.2263107f, 44.9802055f, 73.060112f, 43.0339394f);\npath.cubicTo(73.8386307f, 41.142952f, 74.22789f, 38.5851707f, 74.22789f, 35.3605881f);\npath.cubicTo(74.22789f, 33.3590431f, 73.8386307f, 31.357502f, 73.060112f, 29.355957f);\npath.cubicTo(72.2263107f, 27.2438564f, 70.8915482f, 25.214674f, 69.055809f, 23.2684097f);\npath.cubicTo(67.0542297f, 21.3221455f, 64.5804749f, 19.7651329f, 61.6345444f, 18.597374f);\npath.cubicTo(58.4651871f, 17.3190575f, 54.6566658f, 16.6798992f, 50.2089729f, 16.6798992f);\npath.cubicTo(46.8161964f, 16.6798992f, 43.5915604f, 17.2914181f, 40.5350685f, 18.5144558f);\npath.cubicTo(37.7549744f, 19.6822147f, 35.308857f, 21.3497849f, 33.1967201f, 23.5171623f);\npath.cubicTo(31.139864f, 25.6292629f, 29.5828247f, 28.1317673f, 28.5256062f, 31.0246773f);\npath.cubicTo(27.4131069f, 33.8600044f, 26.8015785f, 37.0569458f, 26.6910191f, 40.6155014f);\npath.lineTo(40.8702011f, 40.6155014f);\npath.cubicTo(40.8702011f, 39.0584908f, 41.0648308f, 37.41856f, 41.4540901f, 35.695713f);\npath.cubicTo(41.8986282f, 34.0834236f, 42.5101585f, 32.7763138f, 43.2886772f, 31.7743931f);\npath.cubicTo(44.0119171f, 30.6619129f, 45.0403442f, 29.7440586f, 46.3739624f, 29.0208321f);\npath.cubicTo(47.5970192f, 28.3528824f, 49.0987778f, 28.0189095f, 50.8792381f, 28.0189095f);\npath.cubicTo(53.4359131f, 28.0189095f, 55.4374886f, 28.742136f, 56.8839684f, 30.188591f);\npath.cubicTo(58.3304482f, 31.5797672f, 59.053688f, 33.7482986f, 59.053688f, 36.6941833f);\npath.cubicTo(59.1642456f, 38.4723091f, 58.8579063f, 39.917614f, 58.1346664f, 41.0300941f);\npath.cubicTo(57.4114265f, 42.3084106f, 56.5223503f, 43.3921013f, 55.4674339f, 44.2811623f);\npath.cubicTo(53.7998352f, 45.7276154f, 52.6320572f, 46.7007484f, 51.9640999f, 47.2005615f);\npath.cubicTo(50.6304817f, 48.1449013f, 49.4074249f, 49.2850227f, 48.2949257f, 50.6209221f);\npath.cubicTo(47.0165901f, 52.0673752f, 45.9881592f, 53.6520271f, 45.2096405f, 55.3748741f);\npath.cubicTo(44.3205643f, 57.3211403f, 43.791954f, 59.6290169f, 43.6238098f, 62.2985115f);\npath.lineTo(43.6238098f, 66.7173386f);\npath.lineTo(56.6352119f, 66.7173386f);\npath.close();\npath.moveTo(57.4643974f, 72.4732132f);\npath.lineTo(42.2867317f, 72.4732132f);\npath.lineTo(42.2867317f, 87.4018707f);\npath.lineTo(57.4643974f, 87.4018707f);\npath.close();\n",
+        "fillType": "winding",
+        "verbs": [
+          {
+            "move": [
+              50.2919,
+              2
+            ]
+          },
+          {
+            "line": [
+              50.4577,
+              2
+            ]
+          },
+          {
+            "cubic": [
+              [
+                59.1873,
+                2
+              ],
+              [
+                67.2777,
+                4.15471
+              ],
+              [
+                74.7289,
+                8.46413
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                82.1801,
+                12.7736
+              ],
+              [
+                88.0742,
+                18.64
+              ],
+              [
+                92.4114,
+                26.0634
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                96.7485,
+                33.4869
+              ],
+              [
+                98.9447,
+                41.5633
+              ],
+              [
+                99,
+                50.2927
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                99,
+                56.7419
+              ],
+              [
+                97.7908,
+                62.9273
+              ],
+              [
+                95.3723,
+                68.849
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                92.9538,
+                74.7707
+              ],
+              [
+                89.4643,
+                80.0395
+              ],
+              [
+                84.9037,
+                84.6552
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                75.5062,
+                94.1078
+              ],
+              [
+                64.1083,
+                98.8894
+              ],
+              [
+                50.7099,
+                99
+              ]
+            ]
+          },
+          {
+            "line": [
+              50.4612,
+              99
+            ]
+          },
+          {
+            "cubic": [
+              [
+                41.7316,
+                99
+              ],
+              [
+                33.6551,
+                96.8453
+              ],
+              [
+                26.2315,
+                92.5359
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                18.8079,
+                88.2264
+              ],
+              [
+                12.9138,
+                82.3462
+              ],
+              [
+                8.549,
+                74.8951
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                4.18423,
+                67.444
+              ],
+              [
+                2.00184,
+                59.3538
+              ],
+              [
+                2.00184,
+                50.6244
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                1.94656,
+                44.1752
+              ],
+              [
+                3.14198,
+                37.9898
+              ],
+              [
+                5.5881,
+                32.0681
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                8.03421,
+                26.1463
+              ],
+              [
+                11.5375,
+                20.9064
+              ],
+              [
+                16.0981,
+                16.3482
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                20.6564,
+                11.7325
+              ],
+              [
+                25.8826,
+                8.18774
+              ],
+              [
+                31.7767,
+                5.71402
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                37.6709,
+                3.24031
+              ],
+              [
+                43.8426,
+                2.00345
+              ],
+              [
+                50.2919,
+                2.00345
+              ]
+            ]
+          },
+          {
+            "line": [
+              50.2919,
+              2
+            ]
+          },
+          "close",
+          {
+            "move": [
+              56.6283,
+              66.7208
+            ]
+          },
+          {
+            "line": [
+              56.6283,
+              63.0517
+            ]
+          },
+          {
+            "cubic": [
+              [
+                56.9623,
+                60.9949
+              ],
+              [
+                57.6014,
+                59.3826
+              ],
+              [
+                58.5458,
+                58.2148
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                59.3796,
+                57.0471
+              ],
+              [
+                60.5197,
+                55.9069
+              ],
+              [
+                61.9662,
+                54.7944
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                63.7444,
+                53.4609
+              ],
+              [
+                65.1068,
+                52.4601
+              ],
+              [
+                66.0534,
+                51.7921
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                67.4999,
+                50.8478
+              ],
+              [
+                68.8347,
+                49.6248
+              ],
+              [
+                70.0577,
+                48.123
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                71.2255,
+                46.6766
+              ],
+              [
+                72.2263,
+                44.9802
+              ],
+              [
+                73.0601,
+                43.0339
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                73.8386,
+                41.143
+              ],
+              [
+                74.2279,
+                38.5852
+              ],
+              [
+                74.2279,
+                35.3606
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                74.2279,
+                33.359
+              ],
+              [
+                73.8386,
+                31.3575
+              ],
+              [
+                73.0601,
+                29.356
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                72.2263,
+                27.2439
+              ],
+              [
+                70.8915,
+                25.2147
+              ],
+              [
+                69.0558,
+                23.2684
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                67.0542,
+                21.3221
+              ],
+              [
+                64.5805,
+                19.7651
+              ],
+              [
+                61.6345,
+                18.5974
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                58.4652,
+                17.3191
+              ],
+              [
+                54.6567,
+                16.6799
+              ],
+              [
+                50.209,
+                16.6799
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                46.8162,
+                16.6799
+              ],
+              [
+                43.5916,
+                17.2914
+              ],
+              [
+                40.5351,
+                18.5145
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                37.755,
+                19.6822
+              ],
+              [
+                35.3089,
+                21.3498
+              ],
+              [
+                33.1967,
+                23.5172
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                31.1399,
+                25.6293
+              ],
+              [
+                29.5828,
+                28.1318
+              ],
+              [
+                28.5256,
+                31.0247
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                27.4131,
+                33.86
+              ],
+              [
+                26.8016,
+                37.0569
+              ],
+              [
+                26.691,
+                40.6155
+              ]
+            ]
+          },
+          {
+            "line": [
+              40.8702,
+              40.6155
+            ]
+          },
+          {
+            "cubic": [
+              [
+                40.8702,
+                39.0585
+              ],
+              [
+                41.0648,
+                37.4186
+              ],
+              [
+                41.4541,
+                35.6957
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                41.8986,
+                34.0834
+              ],
+              [
+                42.5102,
+                32.7763
+              ],
+              [
+                43.2887,
+                31.7744
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                44.0119,
+                30.6619
+              ],
+              [
+                45.0403,
+                29.7441
+              ],
+              [
+                46.374,
+                29.0208
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                47.597,
+                28.3529
+              ],
+              [
+                49.0988,
+                28.0189
+              ],
+              [
+                50.8792,
+                28.0189
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                53.4359,
+                28.0189
+              ],
+              [
+                55.4375,
+                28.7421
+              ],
+              [
+                56.884,
+                30.1886
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                58.3304,
+                31.5798
+              ],
+              [
+                59.0537,
+                33.7483
+              ],
+              [
+                59.0537,
+                36.6942
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                59.1642,
+                38.4723
+              ],
+              [
+                58.8579,
+                39.9176
+              ],
+              [
+                58.1347,
+                41.0301
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                57.4114,
+                42.3084
+              ],
+              [
+                56.5224,
+                43.3921
+              ],
+              [
+                55.4674,
+                44.2812
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                53.7998,
+                45.7276
+              ],
+              [
+                52.6321,
+                46.7007
+              ],
+              [
+                51.9641,
+                47.2006
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                50.6305,
+                48.1449
+              ],
+              [
+                49.4074,
+                49.285
+              ],
+              [
+                48.2949,
+                50.6209
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                47.0166,
+                52.0674
+              ],
+              [
+                45.9882,
+                53.652
+              ],
+              [
+                45.2096,
+                55.3749
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                44.3206,
+                57.3211
+              ],
+              [
+                43.792,
+                59.629
+              ],
+              [
+                43.6238,
+                62.2985
+              ]
+            ]
+          },
+          {
+            "line": [
+              43.6238,
+              66.7173
+            ]
+          },
+          {
+            "line": [
+              56.6352,
+              66.7173
+            ]
+          },
+          {
+            "line": [
+              56.6283,
+              66.7208
+            ]
+          },
+          "close",
+          {
+            "move": [
+              57.4644,
+              72.4732
+            ]
+          },
+          {
+            "line": [
+              42.2867,
+              72.4732
+            ]
+          },
+          {
+            "line": [
+              42.2867,
+              87.4019
+            ]
+          },
+          {
+            "line": [
+              57.4644,
+              87.4019
+            ]
+          },
+          {
+            "line": [
+              57.4644,
+              72.4732
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    }
+  ],
+  "dim": [
+    1310,
+    47
+  ],
+  "has_save_layer": true
+}

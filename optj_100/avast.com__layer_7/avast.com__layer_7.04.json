@@ -1,0 +1,242 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 1, 1, 55, 55 ], [ 27, 27 ], [ 27, 27 ], [ 27, 27 ], [ 27, 27 ] ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 1, 1, 55, 55 ], [ 27, 27 ], [ 27, 27 ], [ 27, 27 ], [ 27, 27 ] ],
+         "paint": {
+            "strokeWidth": 2,
+            "antiAlias": true,
+            "color": [ 255, 7, 29, 43 ],
+            "style": "stroke"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 0, 0, 56, 56 ], [ 28, 28 ], [ 28, 28 ], [ 28, 28 ], [ 28, 28 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 16, 16, 40, 40 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [16 16 40 40]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 16 ],
+            [ 0, 1, 0, 16 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 24, 24 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 24 24]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1.5, 0, 0, 0 ],
+            [ 0, 1.5, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(3.80749011f, 12.3290005f);\npath.cubicTo(6.13413f, 14.6556997f, 9.96812057f, 14.6536999f, 12.2927999f, 12.3290005f);\npath.cubicTo(13.1294003f, 11.4925003f, 13.6657f, 10.4617996f, 13.9012003f, 9.37652016f);\npath.cubicTo(13.1063995f, 9.60949039f, 12.2075996f, 9.41539955f, 11.5857f, 8.79349995f);\npath.cubicTo(10.8816996f, 8.08948994f, 10.7293997f, 7.01406002f, 11.1288004f, 6.14935017f);\npath.cubicTo(10.0529003f, 6.38391018f, 8.87922955f, 6.08706999f, 8.05012989f, 5.25796986f);\npath.cubicTo(7.22555017f, 4.43339014f, 6.93076992f, 3.25212002f, 7.16582012f, 2.17252994f);\npath.cubicTo(5.92975998f, 2.35177994f, 4.74223995f, 2.90900993f, 3.80749011f, 3.84376001f);\npath.cubicTo(1.49744999f, 6.15380001f, 1.49744999f, 10.0190001f, 3.80749011f, 12.3290005f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 3.80749, 12.329 ]
+               },
+               {
+                  "cubic": [
+                     [ 6.13413, 14.6557 ],
+                     [ 9.96812, 14.6537 ],
+                     [ 12.2928, 12.329 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 13.1294, 11.4925 ],
+                     [ 13.6657, 10.4618 ],
+                     [ 13.9012, 9.37652 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 13.1064, 9.60949 ],
+                     [ 12.2076, 9.4154 ],
+                     [ 11.5857, 8.7935 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 10.8817, 8.08949 ],
+                     [ 10.7294, 7.01406 ],
+                     [ 11.1288, 6.14935 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 10.0529, 6.38391 ],
+                     [ 8.87923, 6.08707 ],
+                     [ 8.05013, 5.25797 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 7.22555, 4.43339 ],
+                     [ 6.93077, 3.25212 ],
+                     [ 7.16582, 2.17253 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 5.92976, 2.35178 ],
+                     [ 4.74224, 2.90901 ],
+                     [ 3.80749, 3.84376 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 1.49745, 6.1538 ],
+                     [ 1.49745, 10.019 ],
+                     [ 3.80749, 12.329 ]
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "strokeWidth": 1.2,
+            "antiAlias": true,
+            "color": [ 255, 7, 29, 43 ],
+            "style": "stroke",
+            "cap": "round",
+            "strokeJoin": "round"
+         }
+      },
+      {
+         "command": "DrawOval",
+         "visible": true,
+         "coords": [ 4.61035, 6.72852, 6.61035, 8.72852 ],
+         "paint": {
+            "strokeWidth": 1.2,
+            "antiAlias": true,
+            "style": "stroke",
+            "cap": "round",
+            "strokeJoin": "round"
+         }
+      },
+      {
+         "command": "DrawOval",
+         "visible": true,
+         "coords": [ 9.5762, 1.62903, 11.5762, 3.62903 ],
+         "paint": {
+            "strokeWidth": 1.2,
+            "antiAlias": true,
+            "style": "stroke",
+            "cap": "round",
+            "strokeJoin": "round"
+         }
+      },
+      {
+         "command": "DrawOval",
+         "visible": true,
+         "coords": [ 13.2314, 6.0813, 14.2314, 7.0813 ],
+         "paint": {
+            "strokeWidth": 1.2,
+            "antiAlias": true,
+            "style": "stroke",
+            "cap": "round",
+            "strokeJoin": "round"
+         }
+      },
+      {
+         "command": "DrawOval",
+         "visible": true,
+         "coords": [ 8.2998, 10.2086, 9.2998, 11.2086 ],
+         "paint": {
+            "strokeWidth": 1.2,
+            "antiAlias": true,
+            "style": "stroke",
+            "cap": "round",
+            "strokeJoin": "round"
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

@@ -1,0 +1,711 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, -1196 ],
+            [ 0, 1, 0, -4370 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 1204, 4386, 1232, 4414 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [1204 4386 1232 4414]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 1204 ],
+            [ 0, 1, 0, 4386 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 28, 28 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 28 28]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.875, 0, 0, 0 ],
+            [ 0, 0.875, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 8, 4, 12, 28 ],
+         "paint": {
+            "imagefilter": {
+               "name": "SkCropImageFilter",
+               "data": "data/0",
+               "values": {
+                  "00_int": 1,
+                  "01_bool": true,
+                  "02_SkBlendImageFilter": {
+                     "00_int": 2,
+                     "01_bool": true,
+                     "02_SkCropImageFilter": {
+                        "00_int": 1,
+                        "01_bool": true,
+                        "02_SkBlendImageFilter": {
+                           "00_int": 2,
+                           "01_bool": true,
+                           "02_SkCropImageFilter": {
+                              "00_int": 1,
+                              "01_bool": true,
+                              "02_SkColorFilterImageFilter": {
+                                 "00_int": 1,
+                                 "01_bool": false,
+                                 "02_SkBlendModeColorFilter": {
+                                    "00_color": [ 0, 0, 0, 0 ],
+                                    "01_uint": 1
+                                 }
+                              },
+                              "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                              "04_int": 3
+                           },
+                           "03_bool": true,
+                           "04_SkCropImageFilter": {
+                              "00_int": 1,
+                              "01_bool": true,
+                              "02_SkColorFilterImageFilter": {
+                                 "00_int": 1,
+                                 "01_bool": true,
+                                 "02_SkCropImageFilter": {
+                                    "00_int": 1,
+                                    "01_bool": true,
+                                    "02_SkBlendImageFilter": {
+                                       "00_int": 2,
+                                       "01_bool": true,
+                                       "02_SkCropImageFilter": {
+                                          "00_int": 1,
+                                          "01_bool": true,
+                                          "02_SkColorFilterImageFilter": {
+                                             "00_int": 1,
+                                             "01_bool": false,
+                                             "02_SkComposeColorFilter": {
+                                                "00_SkMatrixColorFilter": {
+                                                   "00_scalarArray": [
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      127,
+                                                      0
+                                                   ],
+                                                   "01_bool": true,
+                                                   "02_bool": true
+                                                },
+                                                "01_SkMatrixColorFilter": {
+                                                   "00_scalarArray": [
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      1,
+                                                      0
+                                                   ],
+                                                   "01_bool": true,
+                                                   "02_bool": true
+                                                }
+                                             }
+                                          },
+                                          "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                                          "04_int": 3
+                                       },
+                                       "03_bool": true,
+                                       "04_SkCropImageFilter": {
+                                          "00_int": 1,
+                                          "01_bool": true,
+                                          "02_SkMatrixTransformImageFilter": {
+                                             "00_int": 1,
+                                             "01_bool": true,
+                                             "02_SkCropImageFilter": {
+                                                "00_int": 1,
+                                                "01_bool": true,
+                                                "02_SkColorFilterImageFilter": {
+                                                   "00_int": 1,
+                                                   "01_bool": false,
+                                                   "02_SkComposeColorFilter": {
+                                                      "00_SkMatrixColorFilter": {
+                                                         "00_scalarArray": [
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            127,
+                                                            0
+                                                         ],
+                                                         "01_bool": true,
+                                                         "02_bool": true
+                                                      },
+                                                      "01_SkMatrixColorFilter": {
+                                                         "00_scalarArray": [
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0
+                                                         ],
+                                                         "01_bool": true,
+                                                         "02_bool": true
+                                                      }
+                                                   }
+                                                },
+                                                "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                                                "04_int": 3
+                                             },
+                                             "03_matrix": [
+                                                [ 1, 0, 0 ],
+                                                [ 0, 1, 0 ],
+                                                [ 0, 0, 1 ]
+                                             ],
+                                             "04_sampling": {
+                                                "maxAniso": 0,
+                                                "useCubic": false,
+                                                "filter": 0,
+                                                "mipmap": 0,
+                                                "cubic.B": 0,
+                                                "cubic.C": 0
+                                             }
+                                          },
+                                          "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                                          "04_int": 3
+                                       },
+                                       "05_int": 7
+                                    },
+                                    "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                                    "04_int": 3
+                                 },
+                                 "03_SkMatrixColorFilter": {
+                                    "00_scalarArray": [
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0.25,
+                                       0
+                                    ],
+                                    "01_bool": true,
+                                    "02_bool": true
+                                 }
+                              },
+                              "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                              "04_int": 3
+                           },
+                           "05_int": 3
+                        },
+                        "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                        "04_int": 3
+                     },
+                     "03_bool": false,
+                     "04_int": 3
+                  },
+                  "03_rect": [ 4.36326, 0.363263, 15.5811, 31.3038 ],
+                  "04_int": 3
+               }
+            }
+         }
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(9.97221947f, 4);\npath.lineTo(9.97221947f, 4);\npath.conicTo(11.9444399f, 4, 11.9444399f, 5.97221994f, 0.707106769f);\npath.lineTo(11.9444399f, 25.6944809f);\npath.conicTo(11.9444399f, 27.6667004f, 9.97221947f, 27.6667004f, 0.707106769f);\npath.lineTo(9.97221947f, 27.6667004f);\npath.conicTo(8, 27.6667004f, 8, 25.6944809f, 0.707106769f);\npath.lineTo(8, 5.97221994f);\npath.conicTo(8, 4, 9.97221947f, 4, 0.707106769f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 9.97222, 4 ]
+               },
+               {
+                  "line": [ 9.97222, 4 ]
+               },
+               {
+                  "conic": [
+                     [ 11.9444, 4 ],
+                     [ 11.9444, 5.97222 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "line": [ 11.9444, 25.6945 ]
+               },
+               {
+                  "conic": [
+                     [ 11.9444, 27.6667 ],
+                     [ 9.97222, 27.6667 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "line": [ 9.97222, 27.6667 ]
+               },
+               {
+                  "conic": [
+                     [ 8, 27.6667 ],
+                     [ 8, 25.6945 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "line": [ 8, 5.97222 ]
+               },
+               {
+                  "conic": [
+                     [ 8, 4 ],
+                     [ 9.97222, 4 ],
+                     0.707107
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 11, 92, 255 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 19, 4, 24, 28 ],
+         "paint": {
+            "imagefilter": {
+               "name": "SkCropImageFilter",
+               "data": "data/1",
+               "values": {
+                  "00_int": 1,
+                  "01_bool": true,
+                  "02_SkBlendImageFilter": {
+                     "00_int": 2,
+                     "01_bool": true,
+                     "02_SkCropImageFilter": {
+                        "00_int": 1,
+                        "01_bool": true,
+                        "02_SkBlendImageFilter": {
+                           "00_int": 2,
+                           "01_bool": true,
+                           "02_SkCropImageFilter": {
+                              "00_int": 1,
+                              "01_bool": true,
+                              "02_SkColorFilterImageFilter": {
+                                 "00_int": 1,
+                                 "01_bool": false,
+                                 "02_SkBlendModeColorFilter": {
+                                    "00_color": [ 0, 0, 0, 0 ],
+                                    "01_uint": 1
+                                 }
+                              },
+                              "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                              "04_int": 3
+                           },
+                           "03_bool": true,
+                           "04_SkCropImageFilter": {
+                              "00_int": 1,
+                              "01_bool": true,
+                              "02_SkColorFilterImageFilter": {
+                                 "00_int": 1,
+                                 "01_bool": true,
+                                 "02_SkCropImageFilter": {
+                                    "00_int": 1,
+                                    "01_bool": true,
+                                    "02_SkBlendImageFilter": {
+                                       "00_int": 2,
+                                       "01_bool": true,
+                                       "02_SkCropImageFilter": {
+                                          "00_int": 1,
+                                          "01_bool": true,
+                                          "02_SkColorFilterImageFilter": {
+                                             "00_int": 1,
+                                             "01_bool": false,
+                                             "02_SkComposeColorFilter": {
+                                                "00_SkMatrixColorFilter": {
+                                                   "00_scalarArray": [
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      127,
+                                                      0
+                                                   ],
+                                                   "01_bool": true,
+                                                   "02_bool": true
+                                                },
+                                                "01_SkMatrixColorFilter": {
+                                                   "00_scalarArray": [
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      0,
+                                                      1,
+                                                      0
+                                                   ],
+                                                   "01_bool": true,
+                                                   "02_bool": true
+                                                }
+                                             }
+                                          },
+                                          "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                                          "04_int": 3
+                                       },
+                                       "03_bool": true,
+                                       "04_SkCropImageFilter": {
+                                          "00_int": 1,
+                                          "01_bool": true,
+                                          "02_SkMatrixTransformImageFilter": {
+                                             "00_int": 1,
+                                             "01_bool": true,
+                                             "02_SkCropImageFilter": {
+                                                "00_int": 1,
+                                                "01_bool": true,
+                                                "02_SkColorFilterImageFilter": {
+                                                   "00_int": 1,
+                                                   "01_bool": false,
+                                                   "02_SkComposeColorFilter": {
+                                                      "00_SkMatrixColorFilter": {
+                                                         "00_scalarArray": [
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            127,
+                                                            0
+                                                         ],
+                                                         "01_bool": true,
+                                                         "02_bool": true
+                                                      },
+                                                      "01_SkMatrixColorFilter": {
+                                                         "00_scalarArray": [
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0
+                                                         ],
+                                                         "01_bool": true,
+                                                         "02_bool": true
+                                                      }
+                                                   }
+                                                },
+                                                "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                                                "04_int": 3
+                                             },
+                                             "03_matrix": [
+                                                [ 1, 0, 0 ],
+                                                [ 0, 1, 0 ],
+                                                [ 0, 0, 1 ]
+                                             ],
+                                             "04_sampling": {
+                                                "maxAniso": 0,
+                                                "useCubic": false,
+                                                "filter": 0,
+                                                "mipmap": 0,
+                                                "cubic.B": 0,
+                                                "cubic.C": 0
+                                             }
+                                          },
+                                          "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                                          "04_int": 3
+                                       },
+                                       "05_int": 7
+                                    },
+                                    "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                                    "04_int": 3
+                                 },
+                                 "03_SkMatrixColorFilter": {
+                                    "00_scalarArray": [
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0,
+                                       0.25,
+                                       0
+                                    ],
+                                    "01_bool": true,
+                                    "02_bool": true
+                                 }
+                              },
+                              "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                              "04_int": 3
+                           },
+                           "05_int": 3
+                        },
+                        "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                        "04_int": 3
+                     },
+                     "03_bool": false,
+                     "04_int": 3
+                  },
+                  "03_rect": [ 16.1406, 0.363263, 27.3584, 31.3038 ],
+                  "04_int": 3
+               }
+            }
+         }
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(21.7495193f, 4);\npath.lineTo(21.7495213f, 4);\npath.conicTo(23.7217407f, 4, 23.7217407f, 5.97221994f, 0.707106769f);\npath.lineTo(23.7217407f, 25.6944809f);\npath.conicTo(23.7217407f, 27.6667004f, 21.7495213f, 27.6667004f, 0.707106769f);\npath.lineTo(21.7495193f, 27.6667004f);\npath.conicTo(19.7772999f, 27.6667004f, 19.7772999f, 25.6944809f, 0.707106769f);\npath.lineTo(19.7772999f, 5.97221994f);\npath.conicTo(19.7772999f, 4, 21.7495193f, 4, 0.707106769f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 21.7495, 4 ]
+               },
+               {
+                  "line": [ 21.7495, 4 ]
+               },
+               {
+                  "conic": [
+                     [ 23.7217, 4 ],
+                     [ 23.7217, 5.97222 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "line": [ 23.7217, 25.6945 ]
+               },
+               {
+                  "conic": [
+                     [ 23.7217, 27.6667 ],
+                     [ 21.7495, 27.6667 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "line": [ 21.7495, 27.6667 ]
+               },
+               {
+                  "conic": [
+                     [ 19.7773, 27.6667 ],
+                     [ 19.7773, 25.6945 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "line": [ 19.7773, 5.97222 ]
+               },
+               {
+                  "conic": [
+                     [ 19.7773, 4 ],
+                     [ 21.7495, 4 ],
+                     0.707107
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 11, 92, 255 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

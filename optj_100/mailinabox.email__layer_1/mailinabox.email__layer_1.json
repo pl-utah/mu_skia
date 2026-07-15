@@ -1,0 +1,4083 @@
+{
+  "version": 1,
+  "commands": [
+    {
+      "command": "DrawPaint",
+      "visible": true,
+      "paint": {
+        "color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "blendMode": "Src"
+      }
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        420,
+        315
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "shortDesc": " [0 0 420 315]"
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        420,
+        315
+      ],
+      "paint": {
+        "antiAlias": true
+      },
+      "shortDesc": " [0 0 420 315]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        420,
+        315
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 420 315]"
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        420,
+        315
+      ],
+      "paint": {
+        "antiAlias": true
+      },
+      "shortDesc": " [0 0 420 315]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        420,
+        158
+      ],
+      "paint": {
+        "antiAlias": true,
+        "shader": {
+          "name": "SkLocalMatrixShader",
+          "data": "data/0",
+          "values": {
+            "00_matrix": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1.00317,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "01_SkPictureShader": {
+              "00_int": 1,
+              "01_int": 1,
+              "02_rect": [
+                0,
+                0,
+                1,
+                157.5
+              ],
+              "03_int": 1,
+              "04_byteArray": [
+                "73",
+                "6b",
+                "69",
+                "61",
+                "70",
+                "69",
+                "63",
+                "74"
+              ],
+              "05_uint": 109,
+              "06_rect": [
+                0,
+                0,
+                1,
+                157.5
+              ],
+              "07_int": 1,
+              "08_uint": 1919246692,
+              "09_uint": 24,
+              "10_byteArray": [
+                "18",
+                "00",
+                "00",
+                "15",
+                "01",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "80",
+                "3f",
+                "00",
+                "80",
+                "1d",
+                "43"
+              ],
+              "11_uint": 1886286880,
+              "12_uint": 1,
+              "13_paint": {
+                "antiAlias": true,
+                "dither": true,
+                "shader": {
+                  "name": "SkLocalMatrixShader",
+                  "data": "data/1",
+                  "values": {
+                    "00_matrix": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        1,
+                        0
+                      ],
+                      [
+                        0,
+                        0,
+                        1
+                      ]
+                    ],
+                    "01_SkLinearGradient": {
+                      "00_uint": 536871041,
+                      "01_colorArray": [
+                        [
+                          0.6,
+                          0,
+                          0,
+                          0
+                        ],
+                        [
+                          0.541176,
+                          0,
+                          0,
+                          0
+                        ],
+                        [
+                          0.360784,
+                          0,
+                          0,
+                          0
+                        ],
+                        [
+                          0.180392,
+                          0,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      ],
+                      "02_byteArray": [
+                        "01",
+                        "00",
+                        "00",
+                        "00",
+                        "9a",
+                        "99",
+                        "19",
+                        "40",
+                        "6e",
+                        "a7",
+                        "72",
+                        "3f",
+                        "19",
+                        "89",
+                        "55",
+                        "3d",
+                        "91",
+                        "83",
+                        "9e",
+                        "3d",
+                        "e6",
+                        "ae",
+                        "25",
+                        "3d",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "44",
+                        "df",
+                        "3e",
+                        "00",
+                        "32",
+                        "c5",
+                        "3e",
+                        "00",
+                        "80",
+                        "12",
+                        "3e",
+                        "00",
+                        "d4",
+                        "63",
+                        "3e",
+                        "00",
+                        "85",
+                        "37",
+                        "3f",
+                        "00",
+                        "40",
+                        "78",
+                        "3d",
+                        "00",
+                        "00",
+                        "64",
+                        "3c",
+                        "00",
+                        "d0",
+                        "c6",
+                        "3d",
+                        "00",
+                        "cf",
+                        "36",
+                        "3f"
+                      ],
+                      "03_point": [
+                        0,
+                        0
+                      ],
+                      "04_point": [
+                        0,
+                        157.5
+                      ]
+                    }
+                  }
+                }
+              },
+              "14_uint": 1936487783,
+              "15_uint": 0,
+              "16_int": 1701799456
+            }
+          }
+        }
+      },
+      "shortDesc": " [0 0 420 158]"
+    },
+    {
+      "command": "DrawImageRect",
+      "visible": true,
+      "image": {
+        "data": "data/2"
+      },
+      "src": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "dst": [
+        0,
+        0,
+        420,
+        315
+      ],
+      "sampling": {
+        "maxAniso": 0,
+        "useCubic": false,
+        "filter": 1,
+        "mipmap": 2,
+        "cubic.B": 0,
+        "cubic.C": 0
+      },
+      "paint": {
+        "antiAlias": true
+      },
+      "shortDesc": " [0 0 420 315]"
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        420,
+        70
+      ],
+      "paint": {
+        "antiAlias": true,
+        "dither": true,
+        "shader": {
+          "name": "SkLocalMatrixShader",
+          "data": "data/3",
+          "values": {
+            "00_matrix": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "01_SkLinearGradient": {
+              "00_uint": 536871041,
+              "01_colorArray": [
+                [
+                  0.8,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0.6,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "02_byteArray": [
+                "01",
+                "00",
+                "00",
+                "00",
+                "9a",
+                "99",
+                "19",
+                "40",
+                "6e",
+                "a7",
+                "72",
+                "3f",
+                "19",
+                "89",
+                "55",
+                "3d",
+                "91",
+                "83",
+                "9e",
+                "3d",
+                "e6",
+                "ae",
+                "25",
+                "3d",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "44",
+                "df",
+                "3e",
+                "00",
+                "32",
+                "c5",
+                "3e",
+                "00",
+                "80",
+                "12",
+                "3e",
+                "00",
+                "d4",
+                "63",
+                "3e",
+                "00",
+                "85",
+                "37",
+                "3f",
+                "00",
+                "40",
+                "78",
+                "3d",
+                "00",
+                "00",
+                "64",
+                "3c",
+                "00",
+                "d0",
+                "c6",
+                "3d",
+                "00",
+                "cf",
+                "36",
+                "3f"
+              ],
+              "03_point": [
+                0,
+                0
+              ],
+              "04_point": [
+                0,
+                70
+              ]
+            }
+          }
+        }
+      },
+      "shortDesc": " [0 0 420 70]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          174
+        ],
+        [
+          0,
+          1,
+          0,
+          122
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        72,
+        72
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 72 72]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1.07463,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1.07463,
+          0,
+          3.76119
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(63, 14.8699999f);\npath.conicTo(61.8190842f, 10.4909182f, 57.4399986f, 9.30999947f, 0.866828203f);\npath.cubicTo(52.5400009f, 8, 32.8800011f, 8, 32.8800011f, 8);\npath.cubicTo(32.8800011f, 8, 13.2299995f, 8, 8.31999969f, 9.31000042f);\npath.cubicTo(5.61999989f, 10.0300007f, 3.48999977f, 12.1599998f, 2.75999975f, 14.8700008f);\npath.cubicTo(1.45000005f, 19.7700005f, 1.45000005f, 30, 1.45000005f, 30);\npath.cubicTo(1.45000005f, 30, 1.45000005f, 40.2299995f, 2.75999999f, 45.1300011f);\npath.cubicTo(3.48000002f, 47.8300018f, 5.60999966f, 49.9599991f, 8.31999969f, 50.6900024f);\npath.cubicTo(13.2299995f, 52, 32.8800011f, 52, 32.8800011f, 52);\npath.cubicTo(32.8800011f, 52, 52.5400009f, 52, 57.4400024f, 50.6899986f);\npath.cubicTo(60.1400032f, 49.9699974f, 62.2700043f, 47.8400002f, 63.0000038f, 45.1299973f);\npath.cubicTo(64.3099976f, 40.2299995f, 64.3099976f, 30, 64.3099976f, 30);\npath.cubicTo(64.3099976f, 30, 64.3099976f, 19.7700005f, 62.9999962f, 14.8699999f);\npath.close();\n",
+        "fillType": "winding",
+        "verbs": [
+          {
+            "move": [
+              63,
+              14.87
+            ]
+          },
+          {
+            "conic": [
+              [
+                61.8191,
+                10.4909
+              ],
+              [
+                57.44,
+                9.31
+              ],
+              0.866828
+            ]
+          },
+          {
+            "cubic": [
+              [
+                52.54,
+                8
+              ],
+              [
+                32.88,
+                8
+              ],
+              [
+                32.88,
+                8
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                32.88,
+                8
+              ],
+              [
+                13.23,
+                8
+              ],
+              [
+                8.32,
+                9.31
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                5.62,
+                10.03
+              ],
+              [
+                3.49,
+                12.16
+              ],
+              [
+                2.76,
+                14.87
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                1.45,
+                19.77
+              ],
+              [
+                1.45,
+                30
+              ],
+              [
+                1.45,
+                30
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                1.45,
+                30
+              ],
+              [
+                1.45,
+                40.23
+              ],
+              [
+                2.76,
+                45.13
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                3.48,
+                47.83
+              ],
+              [
+                5.61,
+                49.96
+              ],
+              [
+                8.32,
+                50.69
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                13.23,
+                52
+              ],
+              [
+                32.88,
+                52
+              ],
+              [
+                32.88,
+                52
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                32.88,
+                52
+              ],
+              [
+                52.54,
+                52
+              ],
+              [
+                57.44,
+                50.69
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                60.14,
+                49.97
+              ],
+              [
+                62.27,
+                47.84
+              ],
+              [
+                63,
+                45.13
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                64.31,
+                40.23
+              ],
+              [
+                64.31,
+                30
+              ],
+              [
+                64.31,
+                30
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                64.31,
+                30
+              ],
+              [
+                64.31,
+                19.77
+              ],
+              [
+                63,
+                14.87
+              ]
+            ]
+          },
+          {
+            "line": [
+              63,
+              14.87
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(26.6000004f, 39.4300003f);\npath.lineTo(42.9300003f, 30);\npath.lineTo(26.6000004f, 20.5699997f);\npath.close();\n",
+        "fillType": "winding",
+        "verbs": [
+          {
+            "move": [
+              26.6,
+              39.43
+            ]
+          },
+          {
+            "line": [
+              42.93,
+              30
+            ]
+          },
+          {
+            "line": [
+              26.6,
+              20.57
+            ]
+          },
+          {
+            "line": [
+              26.6,
+              39.43
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        78,
+        36,
+        384,
+        49
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [78 36 384 49]"
+    },
+    {
+      "command": "DrawTextBlob",
+      "visible": true,
+      "x": 78,
+      "y": 46,
+      "bounds": [
+        -1,
+        -10,
+        90.2129,
+        2
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "runs": [
+        {
+          "font": {
+            "linearText": true,
+            "subpixelText": true,
+            "edging": "subpixelantialias",
+            "typeface": {
+              "data": "data/4"
+            }
+          },
+          "coords": [
+            0,
+            0
+          ],
+          "glyphs": [
+            46,
+            83,
+            87,
+            76,
+            89,
+            69,
+            4,
+            56,
+            69,
+            89,
+            70,
+            73,
+            86,
+            73,
+            86
+          ],
+          "positions": [
+            0,
+            6.62109,
+            13.4648,
+            19.6582,
+            26.2676,
+            32.8828,
+            39.4102,
+            42.1523,
+            48.6504,
+            55.1777,
+            61.793,
+            68.5312,
+            74.8945,
+            78.8496,
+            85.2129
+          ]
+        }
+      ],
+      "shortDesc": " [77 36 168.213 48]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        26,
+        0,
+        384,
+        52
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [26 0 384 52]"
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        78,
+        0,
+        469,
+        36
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        78,
+        0,
+        384,
+        36
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [78 0 384 36]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        78,
+        0,
+        384,
+        36
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [78 0 384 36]"
+    },
+    {
+      "command": "DrawTextBlob",
+      "visible": true,
+      "x": 78,
+      "y": 29,
+      "bounds": [
+        -1,
+        -15,
+        391.009,
+        5
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "runs": [
+        {
+          "font": {
+            "fakeBoldText": true,
+            "linearText": true,
+            "subpixelText": true,
+            "textSize": 18,
+            "edging": "subpixelantialias",
+            "typeface": {
+              "data": "data/5"
+            }
+          },
+          "coords": [
+            0,
+            0
+          ],
+          "glyphs": [
+            49,
+            69,
+            77,
+            80,
+            17,
+            77,
+            82,
+            17,
+            69,
+            17,
+            38,
+            83,
+            92,
+            4,
+            55,
+            73,
+            88,
+            89,
+            84,
+            4,
+            43,
+            89,
+            77,
+            72,
+            73,
+            4,
+            12,
+            90,
+            20,
+            18,
+            21,
+            26,
+            16,
+            4,
+            46,
+            69,
+            82,
+            89,
+            69,
+            86,
+            93,
+            4,
+            22,
+            20,
+            21,
+            26,
+            13
+          ],
+          "positions": [
+            0,
+            15.7374,
+            25.4445,
+            30.0313,
+            34.6181,
+            40.739,
+            45.3258,
+            55.347,
+            61.4678,
+            71.1749,
+            77.2957,
+            88.659,
+            98.6852,
+            107.741,
+            112.212,
+            123.113,
+            132.754,
+            138.753,
+            148.763,
+            158.88,
+            163.351,
+            175.615,
+            185.625,
+            190.212,
+            200.354,
+            209.996,
+            214.467,
+            220.699,
+            229.631,
+            239.863,
+            244.868,
+            255.1,
+            265.333,
+            269.356,
+            273.827,
+            283.826,
+            293.534,
+            303.555,
+            313.565,
+            323.272,
+            329.794,
+            338.608,
+            343.079,
+            353.312,
+            363.544,
+            373.777,
+            384.009
+          ]
+        }
+      ],
+      "shortDesc": " [77 14 469.009 34]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        78,
+        0,
+        384,
+        36
+      ],
+      "paint": {
+        "blendMode": "DstIn"
+      }
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        78,
+        0,
+        384,
+        36
+      ],
+      "paint": {
+        "antiAlias": true,
+        "dither": true,
+        "shader": {
+          "name": "SkLocalMatrixShader",
+          "data": "data/6",
+          "values": {
+            "00_matrix": [
+              [
+                1,
+                0,
+                78
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "01_SkLinearGradient": {
+              "00_uint": 2684354689,
+              "01_colorArray": [
+                [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "02_byteArray": [
+                "01",
+                "00",
+                "00",
+                "00",
+                "9a",
+                "99",
+                "19",
+                "40",
+                "6e",
+                "a7",
+                "72",
+                "3f",
+                "19",
+                "89",
+                "55",
+                "3d",
+                "91",
+                "83",
+                "9e",
+                "3d",
+                "e6",
+                "ae",
+                "25",
+                "3d",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "00",
+                "44",
+                "df",
+                "3e",
+                "00",
+                "32",
+                "c5",
+                "3e",
+                "00",
+                "80",
+                "12",
+                "3e",
+                "00",
+                "d4",
+                "63",
+                "3e",
+                "00",
+                "85",
+                "37",
+                "3f",
+                "00",
+                "40",
+                "78",
+                "3d",
+                "00",
+                "00",
+                "64",
+                "3c",
+                "00",
+                "d0",
+                "c6",
+                "3d",
+                "00",
+                "cf",
+                "36",
+                "3f"
+              ],
+              "03_scalarArray": [
+                0,
+                0.95,
+                1
+              ],
+              "04_point": [
+                0,
+                0
+              ],
+              "05_point": [
+                306,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "shortDesc": " [78 0 384 36]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRRect",
+      "visible": true,
+      "coords": [
+        [
+          30,
+          16,
+          66,
+          52
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          18,
+          18
+        ]
+      ],
+      "op": "intersect",
+      "antiAlias": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.529412,
+          0,
+          0,
+          30
+        ],
+        [
+          0,
+          0.529412,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawImageRect",
+      "visible": true,
+      "image": {
+        "data": "data/7"
+      },
+      "src": [
+        0,
+        0,
+        68,
+        68
+      ],
+      "dst": [
+        0,
+        0,
+        68,
+        68
+      ],
+      "sampling": {
+        "maxAniso": 0,
+        "useCubic": false,
+        "filter": 1,
+        "mipmap": 2,
+        "cubic.B": 0,
+        "cubic.C": 0
+      },
+      "paint": {
+        "antiAlias": true
+      },
+      "shortDesc": " [0 0 68 68]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "DrawRRect",
+      "visible": true,
+      "coords": [
+        [
+          30,
+          255,
+          86,
+          303
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          24
+        ]
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          77,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          46
+        ],
+        [
+          0,
+          1,
+          0,
+          267
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        1,
+        5,
+        23,
+        18
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkMergeImageFilter",
+          "data": "data/8",
+          "values": {
+            "00_int": 2,
+            "01_bool": true,
+            "02_SkMatrixTransformImageFilter": {
+              "00_int": 1,
+              "01_bool": true,
+              "02_SkColorFilterImageFilter": {
+                "00_int": 1,
+                "01_bool": true,
+                "02_SkBlurImageFilter": {
+                  "00_int": 1,
+                  "01_bool": false,
+                  "02_scalar": 1,
+                  "03_scalar": 1,
+                  "04_int": 3
+                },
+                "03_SkBlendModeColorFilter": {
+                  "00_color": [
+                    0.8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "01_uint": 5
+                }
+              },
+              "03_matrix": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ]
+              ],
+              "04_sampling": {
+                "maxAniso": 0,
+                "useCubic": false,
+                "filter": 1,
+                "mipmap": 0,
+                "cubic.B": 0,
+                "cubic.C": 0
+              }
+            },
+            "03_bool": false
+          }
+        }
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        24,
+        24
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 24 24]"
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(9, 18);\npath.cubicTo(9.22599983f, 18, 9.44799995f, 17.9880009f, 9.66699982f, 17.9629993f);\npath.conicTo(8.71130657f, 17.1093845f, 8.06999969f, 16, 0.987416565f);\npath.lineTo(7, 16);\npath.conicTo(3, 16, 3, 12, 0.707106769f);\npath.conicTo(3, 8, 7, 8, 0.707106769f);\npath.lineTo(9, 8);\npath.conicTo(13, 8, 13, 12, 0.707106769f);\npath.conicTo(12.9993668f, 13.692111f, 14.6680002f, 13.9729996f, 0.763423383f);\npath.conicTo(17.4477863f, 5.99566317f, 9, 6, 0.578990638f);\npath.lineTo(7, 6);\npath.conicTo(1, 6, 1, 12, 0.707106769f);\npath.conicTo(1, 18, 7, 18, 0.707106769f);\npath.lineTo(9, 18);\npath.close();\npath.moveTo(17, 18);\npath.conicTo(23, 18, 23, 12, 0.707106769f);\npath.conicTo(23, 6, 17, 6, 0.707106769f);\npath.lineTo(15, 6);\npath.cubicTo(14.7749996f, 6, 14.552f, 6.01200008f, 14.3330002f, 6.03599977f);\npath.conicTo(15.2888432f, 6.89005804f, 15.9300003f, 8, 0.987405598f);\npath.lineTo(17, 8);\npath.conicTo(21, 8, 21, 12, 0.707106769f);\npath.conicTo(21, 16, 17, 16, 0.707106769f);\npath.lineTo(15, 16);\npath.conicTo(11, 16, 11, 12, 0.707106888f);\npath.conicTo(11.0006332f, 10.3078899f, 9.33199978f, 10.0270004f, 0.763423443f);\npath.conicTo(6.55500317f, 18.0023556f, 15, 18, 0.57918185f);\npath.lineTo(17, 18);\npath.close();\n",
+        "fillType": "winding",
+        "verbs": [
+          {
+            "move": [
+              9,
+              18
+            ]
+          },
+          {
+            "cubic": [
+              [
+                9.226,
+                18
+              ],
+              [
+                9.448,
+                17.988
+              ],
+              [
+                9.667,
+                17.963
+              ]
+            ]
+          },
+          {
+            "conic": [
+              [
+                8.71131,
+                17.1094
+              ],
+              [
+                8.07,
+                16
+              ],
+              0.987417
+            ]
+          },
+          {
+            "line": [
+              7,
+              16
+            ]
+          },
+          {
+            "conic": [
+              [
+                3,
+                16
+              ],
+              [
+                3,
+                12
+              ],
+              0.707107
+            ]
+          },
+          {
+            "conic": [
+              [
+                3,
+                8
+              ],
+              [
+                7,
+                8
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              9,
+              8
+            ]
+          },
+          {
+            "conic": [
+              [
+                13,
+                8
+              ],
+              [
+                13,
+                12
+              ],
+              0.707107
+            ]
+          },
+          {
+            "conic": [
+              [
+                12.9994,
+                13.6921
+              ],
+              [
+                14.668,
+                13.973
+              ],
+              0.763423
+            ]
+          },
+          {
+            "conic": [
+              [
+                17.4478,
+                5.99566
+              ],
+              [
+                9,
+                6
+              ],
+              0.578991
+            ]
+          },
+          {
+            "line": [
+              7,
+              6
+            ]
+          },
+          {
+            "conic": [
+              [
+                1,
+                6
+              ],
+              [
+                1,
+                12
+              ],
+              0.707107
+            ]
+          },
+          {
+            "conic": [
+              [
+                1,
+                18
+              ],
+              [
+                7,
+                18
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              9,
+              18
+            ]
+          },
+          "close",
+          {
+            "move": [
+              17,
+              18
+            ]
+          },
+          {
+            "conic": [
+              [
+                23,
+                18
+              ],
+              [
+                23,
+                12
+              ],
+              0.707107
+            ]
+          },
+          {
+            "conic": [
+              [
+                23,
+                6
+              ],
+              [
+                17,
+                6
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              15,
+              6
+            ]
+          },
+          {
+            "cubic": [
+              [
+                14.775,
+                6
+              ],
+              [
+                14.552,
+                6.012
+              ],
+              [
+                14.333,
+                6.036
+              ]
+            ]
+          },
+          {
+            "conic": [
+              [
+                15.2888,
+                6.89006
+              ],
+              [
+                15.93,
+                8
+              ],
+              0.987406
+            ]
+          },
+          {
+            "line": [
+              17,
+              8
+            ]
+          },
+          {
+            "conic": [
+              [
+                21,
+                8
+              ],
+              [
+                21,
+                12
+              ],
+              0.707107
+            ]
+          },
+          {
+            "conic": [
+              [
+                21,
+                16
+              ],
+              [
+                17,
+                16
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              15,
+              16
+            ]
+          },
+          {
+            "conic": [
+              [
+                11,
+                16
+              ],
+              [
+                11,
+                12
+              ],
+              0.707107
+            ]
+          },
+          {
+            "conic": [
+              [
+                11.0006,
+                10.3079
+              ],
+              [
+                9.332,
+                10.027
+              ],
+              0.763423
+            ]
+          },
+          {
+            "conic": [
+              [
+                6.555,
+                18.0024
+              ],
+              [
+                15,
+                18
+              ],
+              0.579182
+            ]
+          },
+          {
+            "line": [
+              17,
+              18
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "DrawRRect",
+      "visible": true,
+      "coords": [
+        [
+          177,
+          255,
+          390,
+          303
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          24
+        ]
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          77,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        201,
+        255,
+        366,
+        303
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [201 255 366 303]"
+    },
+    {
+      "command": "DrawTextBlob",
+      "visible": true,
+      "x": 200.625,
+      "y": 285,
+      "bounds": [
+        -1,
+        -15,
+        75.4258,
+        2
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "runs": [
+        {
+          "font": {
+            "linearText": true,
+            "subpixelText": true,
+            "textSize": 18,
+            "edging": "subpixelantialias",
+            "typeface": {
+              "data": "data/4"
+            }
+          },
+          "coords": [
+            0,
+            0
+          ],
+          "glyphs": [
+            59,
+            69,
+            88,
+            71,
+            76,
+            4,
+            83,
+            82
+          ],
+          "positions": [
+            0,
+            15.6797,
+            25.4707,
+            31.3594,
+            40.7812,
+            50.6953,
+            55.1602,
+            65.4258
+          ]
+        }
+      ],
+      "shortDesc": " [199.625 270 276.051 287]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          276
+        ],
+        [
+          0,
+          1,
+          0,
+          269
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        90,
+        20
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 90 20]"
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0.769231,
+          0,
+          0,
+          2.69231
+        ],
+        [
+          0,
+          0.769231,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(16.687006f, 0.999985218f);\npath.cubicTo(13.5510693f, 1.03279722f, 7.02451134f, 1.16248524f, 4.99951267f, 1.68748522f);\npath.cubicTo(3.49951363f, 2.08748531f, 2.3995142f, 3.28748512f, 1.99951458f, 4.68748522f);\npath.cubicTo(1.29951501f, 7.3874855f, 1.31201506f, 12.9999847f, 1.31201506f, 12.9999847f);\npath.cubicTo(1.31201506f, 12.9999847f, 1.29951501f, 18.612484f, 1.99951458f, 21.3124847f);\npath.cubicTo(2.39951444f, 22.8124847f, 3.59951377f, 23.9124851f, 4.99951267f, 24.3124847f);\npath.cubicTo(7.69951105f, 25.0124855f, 18.4057541f, 24.9999847f, 18.4057541f, 24.9999847f);\npath.cubicTo(18.4057541f, 24.9999847f, 29.1119957f, 25.0124855f, 31.8119965f, 24.3124847f);\npath.cubicTo(33.3119965f, 23.9124851f, 34.4119949f, 22.7124844f, 34.8119965f, 21.3124847f);\npath.cubicTo(35.5119972f, 18.612484f, 35.4994965f, 12.9999847f, 35.4994965f, 12.9999847f);\npath.cubicTo(35.4994965f, 12.9999847f, 35.6119957f, 7.38748503f, 34.8119965f, 4.68748474f);\npath.cubicTo(34.4119949f, 3.18748474f, 33.211998f, 2.08748484f, 31.8119965f, 1.68748474f);\npath.cubicTo(29.1119976f, 0.98748529f, 18.4057541f, 0.999985218f, 18.4057541f, 0.999985218f);\npath.cubicTo(18.4057541f, 0.999985218f, 17.732317f, 0.989047229f, 16.6870041f, 0.999985218f);\npath.close();\npath.moveTo(88.9057083f, 1.90623522f);\npath.lineTo(88.9057083f, 23.1874847f);\npath.lineTo(91.6869583f, 23.1874847f);\npath.lineTo(91.9994583f, 21.8124847f);\npath.lineTo(92.0932083f, 21.8124847f);\npath.cubicTo(92.3932114f, 22.3124847f, 92.8119583f, 22.6999855f, 93.3119583f, 22.9999847f);\npath.cubicTo(93.8119583f, 23.299984f, 94.3994598f, 23.4062347f, 94.9994583f, 23.4062347f);\npath.cubicTo(96.0994568f, 23.4062347f, 96.9994583f, 22.9124851f, 97.4994583f, 21.8124847f);\npath.cubicTo(97.9994583f, 20.7124844f, 98.3119583f, 19.1062355f, 98.3119583f, 16.9062347f);\npath.lineTo(98.3119583f, 14.4999847f);\npath.cubicTo(98.3119583f, 12.8999844f, 98.1994553f, 11.5937347f, 97.9994583f, 10.5937347f);\npath.cubicTo(97.7994614f, 9.69373512f, 97.4994583f, 8.99998474f, 96.9994583f, 8.49998474f);\npath.cubicTo(96.4994583f, 8.09998512f, 95.8932114f, 7.90623474f, 95.0932083f, 7.90623474f);\npath.cubicTo(94.4932098f, 7.90623474f, 93.9057083f, 8.10623455f, 93.4057083f, 8.40623474f);\npath.cubicTo(92.9057083f, 8.70623493f, 92.3869629f, 9.21248436f, 92.1869583f, 9.81248474f);\npath.lineTo(92.1869583f, 1.90623474f);\npath.lineTo(88.9057083f, 1.90623474f);\npath.close();\npath.moveTo(38.9057388f, 2.68748522f);\npath.lineTo(42.8119888f, 16.5937347f);\npath.lineTo(42.9994888f, 23.3124847f);\npath.lineTo(46.3119888f, 23.3124847f);\npath.lineTo(46.3119888f, 16.5937347f);\npath.lineTo(50.186985f, 2.68748474f);\npath.lineTo(46.8119888f, 2.68748474f);\npath.lineTo(45.4057388f, 8.99998474f);\npath.cubicTo(45.0057373f, 10.8999844f, 44.6932411f, 12.1999846f, 44.5932388f, 12.9999847f);\npath.lineTo(44.4994888f, 12.9999847f);\npath.cubicTo(44.2994881f, 11.8999844f, 43.9869881f, 10.5999851f, 43.6869888f, 8.99998474f);\npath.lineTo(42.3119888f, 2.68748474f);\npath.lineTo(38.9057388f, 2.68748474f);\npath.close();\npath.moveTo(68.4994736f, 2.68748522f);\npath.lineTo(68.4994736f, 5.40623522f);\npath.lineTo(71.9057236f, 5.40623522f);\npath.lineTo(71.9057236f, 23.3124847f);\npath.lineTo(75.1869736f, 23.3124847f);\npath.lineTo(75.1869736f, 5.40623474f);\npath.lineTo(78.5932236f, 5.40623474f);\npath.cubicTo(78.5932236f, 5.40623474f, 78.5994263f, 2.68748474f, 78.4994736f, 2.68748474f);\npath.lineTo(68.4994812f, 2.68748474f);\npath.close();\npath.moveTo(14.9995079f, 7.81248522f);\npath.lineTo(23.9057522f, 12.9999847f);\npath.lineTo(14.9995079f, 18.0937347f);\npath.lineTo(14.9995079f, 7.81248474f);\npath.close();\npath.moveTo(104.405701f, 7.90623522f);\npath.cubicTo(102.705704f, 7.90623522f, 101.511948f, 8.49998474f, 100.811951f, 9.49998474f);\npath.cubicTo(100.111961f, 10.4999847f, 99.8119583f, 12.1062346f, 99.8119583f, 14.4062347f);\npath.lineTo(99.8119583f, 16.9999847f);\npath.cubicTo(99.8119583f, 19.1999855f, 100.111961f, 20.9062347f, 100.811951f, 21.9062347f);\npath.cubicTo(101.511948f, 23.0062351f, 102.611954f, 23.4999847f, 104.311951f, 23.4999847f);\npath.cubicTo(105.711952f, 23.4999847f, 106.699448f, 23.1999855f, 107.499451f, 22.4999847f);\npath.cubicTo(108.199448f, 21.799984f, 108.593201f, 20.8062344f, 108.593201f, 19.4062347f);\npath.lineTo(108.593201f, 18.9062347f);\npath.lineTo(105.686951f, 18.6874847f);\npath.cubicTo(105.686951f, 19.6874847f, 105.605751f, 20.2874851f, 105.405701f, 20.6874847f);\npath.cubicTo(105.305702f, 21.0874844f, 104.905701f, 21.3124847f, 104.405701f, 21.3124847f);\npath.cubicTo(104.105698f, 21.3124847f, 103.793198f, 21.1999855f, 103.593201f, 20.9999847f);\npath.cubicTo(103.393204f, 20.6999855f, 103.286949f, 20.4062347f, 103.186951f, 19.9062347f);\npath.cubicTo(103.086952f, 19.4062347f, 103.093254f, 18.6874847f, 103.093254f, 17.6874847f);\npath.lineTo(103.093254f, 16.9062347f);\npath.lineTo(108.812004f, 16.8124847f);\npath.lineTo(108.812004f, 14.1874847f);\npath.cubicTo(108.812004f, 12.5874844f, 108.705757f, 11.3999844f, 108.405754f, 10.4999847f);\npath.cubicTo(108.205757f, 9.59998512f, 107.693253f, 8.89998436f, 107.093254f, 8.49998474f);\npath.cubicTo(106.393257f, 8.09998512f, 105.605751f, 7.90623474f, 104.405754f, 7.90623474f);\npath.close();\npath.moveTo(53.905735f, 7.99998522f);\npath.cubicTo(52.8057365f, 7.99998522f, 51.8869858f, 8.18748474f, 51.1869888f, 8.68748474f);\npath.cubicTo(50.4869881f, 9.08748436f, 49.9869881f, 9.81248474f, 49.6869888f, 10.8124847f);\npath.cubicTo(49.3869896f, 11.8124847f, 49.1869888f, 13.0874844f, 49.1869888f, 14.6874847f);\npath.lineTo(49.1869888f, 16.9062347f);\npath.cubicTo(49.1869888f, 18.4062347f, 49.2932396f, 19.6874847f, 49.5932388f, 20.6874847f);\npath.cubicTo(49.7932396f, 21.5874844f, 50.2994881f, 22.3124847f, 50.9994888f, 22.8124847f);\npath.cubicTo(51.6994896f, 23.3124847f, 52.7119865f, 23.4937344f, 53.8119888f, 23.5937347f);\npath.cubicTo(55.0119896f, 23.5937347f, 55.8932381f, 23.3062344f, 56.5932388f, 22.9062347f);\npath.cubicTo(57.2932396f, 22.5062351f, 57.6932373f, 21.8124847f, 58.0932388f, 20.8124847f);\npath.cubicTo(58.4932365f, 19.8124847f, 58.5932388f, 18.5062351f, 58.5932388f, 16.9062347f);\npath.lineTo(58.5932388f, 14.6874847f);\npath.cubicTo(58.5932388f, 13.0874844f, 58.3932381f, 11.8124847f, 58.0932388f, 10.8124847f);\npath.cubicTo(57.7932396f, 9.91248512f, 57.2932396f, 9.18748474f, 56.5932388f, 8.68748474f);\npath.cubicTo(55.8932381f, 8.18748474f, 55.0057373f, 7.99998474f, 53.9057388f, 7.99998474f);\npath.close();\npath.moveTo(66.0932312f, 8.09373474f);\npath.lineTo(66.0932312f, 19.9999847f);\npath.cubicTo(65.9932327f, 20.299984f, 65.7994843f, 20.487484f, 65.4994812f, 20.6874847f);\npath.cubicTo(65.2994843f, 20.8874855f, 64.9869843f, 20.9999847f, 64.6869812f, 20.9999847f);\npath.cubicTo(64.3869781f, 20.9999847f, 64.0994797f, 20.893734f, 63.9994812f, 20.5937347f);\npath.cubicTo(63.8994827f, 20.2937355f, 63.8119812f, 19.8874855f, 63.8119812f, 19.1874847f);\npath.lineTo(63.8119812f, 8.18748474f);\npath.lineTo(60.4057312f, 8.18748474f);\npath.lineTo(60.4057312f, 19.4062347f);\npath.cubicTo(60.4057312f, 20.8062344f, 60.5932312f, 21.799984f, 61.0932312f, 22.4999847f);\npath.cubicTo(61.5932312f, 23.1999855f, 62.3119812f, 23.4999847f, 63.3119812f, 23.4999847f);\npath.cubicTo(64.7119827f, 23.4999847f, 65.7994766f, 22.8062344f, 66.4994812f, 21.4062347f);\npath.lineTo(66.5932312f, 21.4062347f);\npath.lineTo(66.9057312f, 23.1874847f);\npath.lineTo(69.4994812f, 23.1874847f);\npath.lineTo(69.4994812f, 8.18748474f);\npath.cubicTo(69.4994812f, 8.18748474f, 66.0932312f, 8.19368458f, 66.0932312f, 8.09373474f);\npath.close();\npath.moveTo(83.4057159f, 8.09373474f);\npath.lineTo(83.4057159f, 19.9999847f);\npath.cubicTo(83.3057175f, 20.299984f, 83.111969f, 20.487484f, 82.8119659f, 20.6874847f);\npath.cubicTo(82.611969f, 20.8874855f, 82.299469f, 20.9999847f, 81.9994659f, 20.9999847f);\npath.cubicTo(81.6994629f, 20.9999847f, 81.4119644f, 20.893734f, 81.3119659f, 20.5937347f);\npath.cubicTo(81.2119675f, 20.2937355f, 81.0932159f, 19.8874855f, 81.0932159f, 19.1874847f);\npath.lineTo(81.0932159f, 8.18748474f);\npath.lineTo(77.6869659f, 8.18748474f);\npath.lineTo(77.6869659f, 19.4062347f);\npath.cubicTo(77.6869659f, 20.8062344f, 77.9057159f, 21.799984f, 78.4057159f, 22.4999847f);\npath.cubicTo(78.9057159f, 23.1999855f, 79.5932159f, 23.4999847f, 80.5932159f, 23.4999847f);\npath.cubicTo(81.9932175f, 23.4999847f, 83.1119614f, 22.8062344f, 83.8119659f, 21.4062347f);\npath.lineTo(83.9057159f, 21.4062347f);\npath.lineTo(84.1869659f, 23.1874847f);\npath.lineTo(86.8119659f, 23.1874847f);\npath.lineTo(86.8119659f, 8.18748474f);\npath.cubicTo(86.8119659f, 8.18748474f, 83.4057159f, 8.19368458f, 83.4057159f, 8.09373474f);\npath.close();\npath.moveTo(104.311951f, 10.1874847f);\npath.cubicTo(104.711952f, 10.1874847f, 104.893204f, 10.2999849f, 105.093201f, 10.4999847f);\npath.cubicTo(105.293198f, 10.7999849f, 105.399452f, 11.0937347f, 105.499451f, 11.5937347f);\npath.cubicTo(105.599449f, 12.0937347f, 105.593147f, 12.8124847f, 105.593147f, 13.8124847f);\npath.lineTo(105.593147f, 14.9062347f);\npath.lineTo(103.093147f, 14.9062347f);\npath.lineTo(103.093147f, 13.8124847f);\npath.cubicTo(103.093147f, 12.8124847f, 103.087151f, 12.0937347f, 103.186844f, 11.5937347f);\npath.cubicTo(103.186844f, 11.1937351f, 103.299347f, 10.7937346f, 103.499344f, 10.5937347f);\npath.cubicTo(103.699341f, 10.2937346f, 104.011841f, 10.1874847f, 104.311844f, 10.1874847f);\npath.close();\npath.moveTo(53.811985f, 10.3124847f);\npath.cubicTo(54.311985f, 10.3124847f, 54.6119843f, 10.4999847f, 54.811985f, 10.9999847f);\npath.cubicTo(55.0119858f, 11.4999847f, 55.093235f, 12.3062344f, 55.093235f, 13.4062347f);\npath.lineTo(55.093235f, 18.0937347f);\npath.cubicTo(55.093235f, 19.1937351f, 55.0119858f, 19.9999847f, 54.811985f, 20.4999847f);\npath.cubicTo(54.6119843f, 20.9999847f, 54.311985f, 21.1874847f, 53.811985f, 21.1874847f);\npath.cubicTo(53.311985f, 21.1874847f, 53.0119858f, 20.9999847f, 52.811985f, 20.4999847f);\npath.cubicTo(52.6119843f, 19.9999847f, 52.499485f, 19.1937351f, 52.499485f, 18.0937347f);\npath.lineTo(52.499485f, 13.4062347f);\npath.cubicTo(52.499485f, 12.3062344f, 52.6119843f, 11.4999847f, 52.811985f, 10.9999847f);\npath.cubicTo(53.0119858f, 10.4999847f, 53.311985f, 10.3124847f, 53.811985f, 10.3124847f);\npath.close();\npath.moveTo(93.4994659f, 10.4062347f);\npath.cubicTo(93.799469f, 10.4062347f, 94.111969f, 10.5124846f, 94.3119659f, 10.8124847f);\npath.cubicTo(94.5119629f, 11.1124849f, 94.5869675f, 11.4874849f, 94.6869659f, 12.1874847f);\npath.cubicTo(94.7869644f, 12.7874851f, 94.8119659f, 13.7062349f, 94.8119659f, 14.9062347f);\npath.lineTo(94.9057159f, 16.8124847f);\npath.cubicTo(94.9057159f, 17.9124851f, 94.9119186f, 18.8062344f, 94.8119659f, 19.4062347f);\npath.cubicTo(94.7119675f, 20.0062351f, 94.611969f, 20.487484f, 94.3119659f, 20.6874847f);\npath.cubicTo(94.111969f, 20.987484f, 93.8057175f, 21.0937347f, 93.4057159f, 21.0937347f);\npath.cubicTo(93.1057129f, 21.0937347f, 92.893219f, 21.0062351f, 92.5932159f, 20.9062347f);\npath.cubicTo(92.393219f, 20.8062344f, 92.1994629f, 20.612484f, 91.9994659f, 20.3124847f);\npath.lineTo(91.9994659f, 11.8124847f);\npath.cubicTo(92.0994644f, 11.4124851f, 92.2932129f, 11.1124849f, 92.5932159f, 10.8124847f);\npath.cubicTo(92.893219f, 10.5124846f, 93.1994629f, 10.4062347f, 93.4994659f, 10.4062347f);\npath.close();\n",
+        "fillType": "winding",
+        "verbs": [
+          {
+            "move": [
+              16.687,
+              0.999985
+            ]
+          },
+          {
+            "cubic": [
+              [
+                13.5511,
+                1.0328
+              ],
+              [
+                7.02451,
+                1.16249
+              ],
+              [
+                4.99951,
+                1.68749
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                3.49951,
+                2.08749
+              ],
+              [
+                2.39951,
+                3.28749
+              ],
+              [
+                1.99951,
+                4.68749
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                1.29952,
+                7.38749
+              ],
+              [
+                1.31202,
+                13
+              ],
+              [
+                1.31202,
+                13
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                1.31202,
+                13
+              ],
+              [
+                1.29952,
+                18.6125
+              ],
+              [
+                1.99951,
+                21.3125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                2.39951,
+                22.8125
+              ],
+              [
+                3.59951,
+                23.9125
+              ],
+              [
+                4.99951,
+                24.3125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                7.69951,
+                25.0125
+              ],
+              [
+                18.4058,
+                25
+              ],
+              [
+                18.4058,
+                25
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                18.4058,
+                25
+              ],
+              [
+                29.112,
+                25.0125
+              ],
+              [
+                31.812,
+                24.3125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                33.312,
+                23.9125
+              ],
+              [
+                34.412,
+                22.7125
+              ],
+              [
+                34.812,
+                21.3125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                35.512,
+                18.6125
+              ],
+              [
+                35.4995,
+                13
+              ],
+              [
+                35.4995,
+                13
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                35.4995,
+                13
+              ],
+              [
+                35.612,
+                7.38749
+              ],
+              [
+                34.812,
+                4.68748
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                34.412,
+                3.18748
+              ],
+              [
+                33.212,
+                2.08748
+              ],
+              [
+                31.812,
+                1.68748
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                29.112,
+                0.987485
+              ],
+              [
+                18.4058,
+                0.999985
+              ],
+              [
+                18.4058,
+                0.999985
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                18.4058,
+                0.999985
+              ],
+              [
+                17.7323,
+                0.989047
+              ],
+              [
+                16.687,
+                0.999985
+              ]
+            ]
+          },
+          {
+            "line": [
+              16.687,
+              0.999985
+            ]
+          },
+          "close",
+          {
+            "move": [
+              88.9057,
+              1.90624
+            ]
+          },
+          {
+            "line": [
+              88.9057,
+              23.1875
+            ]
+          },
+          {
+            "line": [
+              91.687,
+              23.1875
+            ]
+          },
+          {
+            "line": [
+              91.9995,
+              21.8125
+            ]
+          },
+          {
+            "line": [
+              92.0932,
+              21.8125
+            ]
+          },
+          {
+            "cubic": [
+              [
+                92.3932,
+                22.3125
+              ],
+              [
+                92.812,
+                22.7
+              ],
+              [
+                93.312,
+                23
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                93.812,
+                23.3
+              ],
+              [
+                94.3995,
+                23.4062
+              ],
+              [
+                94.9995,
+                23.4062
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                96.0995,
+                23.4062
+              ],
+              [
+                96.9995,
+                22.9125
+              ],
+              [
+                97.4995,
+                21.8125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                97.9995,
+                20.7125
+              ],
+              [
+                98.312,
+                19.1062
+              ],
+              [
+                98.312,
+                16.9062
+              ]
+            ]
+          },
+          {
+            "line": [
+              98.312,
+              14.5
+            ]
+          },
+          {
+            "cubic": [
+              [
+                98.312,
+                12.9
+              ],
+              [
+                98.1995,
+                11.5937
+              ],
+              [
+                97.9995,
+                10.5937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                97.7995,
+                9.69374
+              ],
+              [
+                97.4995,
+                8.99998
+              ],
+              [
+                96.9995,
+                8.49998
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                96.4995,
+                8.09999
+              ],
+              [
+                95.8932,
+                7.90623
+              ],
+              [
+                95.0932,
+                7.90623
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                94.4932,
+                7.90623
+              ],
+              [
+                93.9057,
+                8.10623
+              ],
+              [
+                93.4057,
+                8.40623
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                92.9057,
+                8.70623
+              ],
+              [
+                92.387,
+                9.21248
+              ],
+              [
+                92.187,
+                9.81248
+              ]
+            ]
+          },
+          {
+            "line": [
+              92.187,
+              1.90623
+            ]
+          },
+          {
+            "line": [
+              88.9057,
+              1.90623
+            ]
+          },
+          {
+            "line": [
+              88.9057,
+              1.90624
+            ]
+          },
+          "close",
+          {
+            "move": [
+              38.9057,
+              2.68749
+            ]
+          },
+          {
+            "line": [
+              42.812,
+              16.5937
+            ]
+          },
+          {
+            "line": [
+              42.9995,
+              23.3125
+            ]
+          },
+          {
+            "line": [
+              46.312,
+              23.3125
+            ]
+          },
+          {
+            "line": [
+              46.312,
+              16.5937
+            ]
+          },
+          {
+            "line": [
+              50.187,
+              2.68748
+            ]
+          },
+          {
+            "line": [
+              46.812,
+              2.68748
+            ]
+          },
+          {
+            "line": [
+              45.4057,
+              8.99998
+            ]
+          },
+          {
+            "cubic": [
+              [
+                45.0057,
+                10.9
+              ],
+              [
+                44.6932,
+                12.2
+              ],
+              [
+                44.5932,
+                13
+              ]
+            ]
+          },
+          {
+            "line": [
+              44.4995,
+              13
+            ]
+          },
+          {
+            "cubic": [
+              [
+                44.2995,
+                11.9
+              ],
+              [
+                43.987,
+                10.6
+              ],
+              [
+                43.687,
+                8.99998
+              ]
+            ]
+          },
+          {
+            "line": [
+              42.312,
+              2.68748
+            ]
+          },
+          {
+            "line": [
+              38.9057,
+              2.68748
+            ]
+          },
+          {
+            "line": [
+              38.9057,
+              2.68749
+            ]
+          },
+          "close",
+          {
+            "move": [
+              68.4995,
+              2.68749
+            ]
+          },
+          {
+            "line": [
+              68.4995,
+              5.40624
+            ]
+          },
+          {
+            "line": [
+              71.9057,
+              5.40624
+            ]
+          },
+          {
+            "line": [
+              71.9057,
+              23.3125
+            ]
+          },
+          {
+            "line": [
+              75.187,
+              23.3125
+            ]
+          },
+          {
+            "line": [
+              75.187,
+              5.40623
+            ]
+          },
+          {
+            "line": [
+              78.5932,
+              5.40623
+            ]
+          },
+          {
+            "cubic": [
+              [
+                78.5932,
+                5.40623
+              ],
+              [
+                78.5994,
+                2.68748
+              ],
+              [
+                78.4995,
+                2.68748
+              ]
+            ]
+          },
+          {
+            "line": [
+              68.4995,
+              2.68748
+            ]
+          },
+          {
+            "line": [
+              68.4995,
+              2.68749
+            ]
+          },
+          "close",
+          {
+            "move": [
+              14.9995,
+              7.81249
+            ]
+          },
+          {
+            "line": [
+              23.9058,
+              13
+            ]
+          },
+          {
+            "line": [
+              14.9995,
+              18.0937
+            ]
+          },
+          {
+            "line": [
+              14.9995,
+              7.81248
+            ]
+          },
+          {
+            "line": [
+              14.9995,
+              7.81249
+            ]
+          },
+          "close",
+          {
+            "move": [
+              104.406,
+              7.90624
+            ]
+          },
+          {
+            "cubic": [
+              [
+                102.706,
+                7.90624
+              ],
+              [
+                101.512,
+                8.49998
+              ],
+              [
+                100.812,
+                9.49998
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                100.112,
+                10.5
+              ],
+              [
+                99.812,
+                12.1062
+              ],
+              [
+                99.812,
+                14.4062
+              ]
+            ]
+          },
+          {
+            "line": [
+              99.812,
+              17
+            ]
+          },
+          {
+            "cubic": [
+              [
+                99.812,
+                19.2
+              ],
+              [
+                100.112,
+                20.9062
+              ],
+              [
+                100.812,
+                21.9062
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                101.512,
+                23.0062
+              ],
+              [
+                102.612,
+                23.5
+              ],
+              [
+                104.312,
+                23.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                105.712,
+                23.5
+              ],
+              [
+                106.699,
+                23.2
+              ],
+              [
+                107.499,
+                22.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                108.199,
+                21.8
+              ],
+              [
+                108.593,
+                20.8062
+              ],
+              [
+                108.593,
+                19.4062
+              ]
+            ]
+          },
+          {
+            "line": [
+              108.593,
+              18.9062
+            ]
+          },
+          {
+            "line": [
+              105.687,
+              18.6875
+            ]
+          },
+          {
+            "cubic": [
+              [
+                105.687,
+                19.6875
+              ],
+              [
+                105.606,
+                20.2875
+              ],
+              [
+                105.406,
+                20.6875
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                105.306,
+                21.0875
+              ],
+              [
+                104.906,
+                21.3125
+              ],
+              [
+                104.406,
+                21.3125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                104.106,
+                21.3125
+              ],
+              [
+                103.793,
+                21.2
+              ],
+              [
+                103.593,
+                21
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                103.393,
+                20.7
+              ],
+              [
+                103.287,
+                20.4062
+              ],
+              [
+                103.187,
+                19.9062
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                103.087,
+                19.4062
+              ],
+              [
+                103.093,
+                18.6875
+              ],
+              [
+                103.093,
+                17.6875
+              ]
+            ]
+          },
+          {
+            "line": [
+              103.093,
+              16.9062
+            ]
+          },
+          {
+            "line": [
+              108.812,
+              16.8125
+            ]
+          },
+          {
+            "line": [
+              108.812,
+              14.1875
+            ]
+          },
+          {
+            "cubic": [
+              [
+                108.812,
+                12.5875
+              ],
+              [
+                108.706,
+                11.4
+              ],
+              [
+                108.406,
+                10.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                108.206,
+                9.59999
+              ],
+              [
+                107.693,
+                8.89998
+              ],
+              [
+                107.093,
+                8.49998
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                106.393,
+                8.09999
+              ],
+              [
+                105.606,
+                7.90623
+              ],
+              [
+                104.406,
+                7.90623
+              ]
+            ]
+          },
+          {
+            "line": [
+              104.406,
+              7.90624
+            ]
+          },
+          "close",
+          {
+            "move": [
+              53.9057,
+              7.99999
+            ]
+          },
+          {
+            "cubic": [
+              [
+                52.8057,
+                7.99999
+              ],
+              [
+                51.887,
+                8.18748
+              ],
+              [
+                51.187,
+                8.68748
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                50.487,
+                9.08748
+              ],
+              [
+                49.987,
+                9.81248
+              ],
+              [
+                49.687,
+                10.8125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                49.387,
+                11.8125
+              ],
+              [
+                49.187,
+                13.0875
+              ],
+              [
+                49.187,
+                14.6875
+              ]
+            ]
+          },
+          {
+            "line": [
+              49.187,
+              16.9062
+            ]
+          },
+          {
+            "cubic": [
+              [
+                49.187,
+                18.4062
+              ],
+              [
+                49.2932,
+                19.6875
+              ],
+              [
+                49.5932,
+                20.6875
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                49.7932,
+                21.5875
+              ],
+              [
+                50.2995,
+                22.3125
+              ],
+              [
+                50.9995,
+                22.8125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                51.6995,
+                23.3125
+              ],
+              [
+                52.712,
+                23.4937
+              ],
+              [
+                53.812,
+                23.5937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                55.012,
+                23.5937
+              ],
+              [
+                55.8932,
+                23.3062
+              ],
+              [
+                56.5932,
+                22.9062
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                57.2932,
+                22.5062
+              ],
+              [
+                57.6932,
+                21.8125
+              ],
+              [
+                58.0932,
+                20.8125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                58.4932,
+                19.8125
+              ],
+              [
+                58.5932,
+                18.5062
+              ],
+              [
+                58.5932,
+                16.9062
+              ]
+            ]
+          },
+          {
+            "line": [
+              58.5932,
+              14.6875
+            ]
+          },
+          {
+            "cubic": [
+              [
+                58.5932,
+                13.0875
+              ],
+              [
+                58.3932,
+                11.8125
+              ],
+              [
+                58.0932,
+                10.8125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                57.7932,
+                9.91249
+              ],
+              [
+                57.2932,
+                9.18748
+              ],
+              [
+                56.5932,
+                8.68748
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                55.8932,
+                8.18748
+              ],
+              [
+                55.0057,
+                7.99998
+              ],
+              [
+                53.9057,
+                7.99998
+              ]
+            ]
+          },
+          {
+            "line": [
+              53.9057,
+              7.99999
+            ]
+          },
+          "close",
+          {
+            "move": [
+              66.0932,
+              8.09373
+            ]
+          },
+          {
+            "line": [
+              66.0932,
+              20
+            ]
+          },
+          {
+            "cubic": [
+              [
+                65.9932,
+                20.3
+              ],
+              [
+                65.7995,
+                20.4875
+              ],
+              [
+                65.4995,
+                20.6875
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                65.2995,
+                20.8875
+              ],
+              [
+                64.987,
+                21
+              ],
+              [
+                64.687,
+                21
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                64.387,
+                21
+              ],
+              [
+                64.0995,
+                20.8937
+              ],
+              [
+                63.9995,
+                20.5937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                63.8995,
+                20.2937
+              ],
+              [
+                63.812,
+                19.8875
+              ],
+              [
+                63.812,
+                19.1875
+              ]
+            ]
+          },
+          {
+            "line": [
+              63.812,
+              8.18748
+            ]
+          },
+          {
+            "line": [
+              60.4057,
+              8.18748
+            ]
+          },
+          {
+            "line": [
+              60.4057,
+              19.4062
+            ]
+          },
+          {
+            "cubic": [
+              [
+                60.4057,
+                20.8062
+              ],
+              [
+                60.5932,
+                21.8
+              ],
+              [
+                61.0932,
+                22.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                61.5932,
+                23.2
+              ],
+              [
+                62.312,
+                23.5
+              ],
+              [
+                63.312,
+                23.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                64.712,
+                23.5
+              ],
+              [
+                65.7995,
+                22.8062
+              ],
+              [
+                66.4995,
+                21.4062
+              ]
+            ]
+          },
+          {
+            "line": [
+              66.5932,
+              21.4062
+            ]
+          },
+          {
+            "line": [
+              66.9057,
+              23.1875
+            ]
+          },
+          {
+            "line": [
+              69.4995,
+              23.1875
+            ]
+          },
+          {
+            "line": [
+              69.4995,
+              8.18748
+            ]
+          },
+          {
+            "cubic": [
+              [
+                69.4995,
+                8.18748
+              ],
+              [
+                66.0932,
+                8.19368
+              ],
+              [
+                66.0932,
+                8.09373
+              ]
+            ]
+          },
+          "close",
+          {
+            "move": [
+              83.4057,
+              8.09373
+            ]
+          },
+          {
+            "line": [
+              83.4057,
+              20
+            ]
+          },
+          {
+            "cubic": [
+              [
+                83.3057,
+                20.3
+              ],
+              [
+                83.112,
+                20.4875
+              ],
+              [
+                82.812,
+                20.6875
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                82.612,
+                20.8875
+              ],
+              [
+                82.2995,
+                21
+              ],
+              [
+                81.9995,
+                21
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                81.6995,
+                21
+              ],
+              [
+                81.412,
+                20.8937
+              ],
+              [
+                81.312,
+                20.5937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                81.212,
+                20.2937
+              ],
+              [
+                81.0932,
+                19.8875
+              ],
+              [
+                81.0932,
+                19.1875
+              ]
+            ]
+          },
+          {
+            "line": [
+              81.0932,
+              8.18748
+            ]
+          },
+          {
+            "line": [
+              77.687,
+              8.18748
+            ]
+          },
+          {
+            "line": [
+              77.687,
+              19.4062
+            ]
+          },
+          {
+            "cubic": [
+              [
+                77.687,
+                20.8062
+              ],
+              [
+                77.9057,
+                21.8
+              ],
+              [
+                78.4057,
+                22.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                78.9057,
+                23.2
+              ],
+              [
+                79.5932,
+                23.5
+              ],
+              [
+                80.5932,
+                23.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                81.9932,
+                23.5
+              ],
+              [
+                83.112,
+                22.8062
+              ],
+              [
+                83.812,
+                21.4062
+              ]
+            ]
+          },
+          {
+            "line": [
+              83.9057,
+              21.4062
+            ]
+          },
+          {
+            "line": [
+              84.187,
+              23.1875
+            ]
+          },
+          {
+            "line": [
+              86.812,
+              23.1875
+            ]
+          },
+          {
+            "line": [
+              86.812,
+              8.18748
+            ]
+          },
+          {
+            "cubic": [
+              [
+                86.812,
+                8.18748
+              ],
+              [
+                83.4057,
+                8.19368
+              ],
+              [
+                83.4057,
+                8.09373
+              ]
+            ]
+          },
+          "close",
+          {
+            "move": [
+              104.312,
+              10.1875
+            ]
+          },
+          {
+            "cubic": [
+              [
+                104.712,
+                10.1875
+              ],
+              [
+                104.893,
+                10.3
+              ],
+              [
+                105.093,
+                10.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                105.293,
+                10.8
+              ],
+              [
+                105.399,
+                11.0937
+              ],
+              [
+                105.499,
+                11.5937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                105.599,
+                12.0937
+              ],
+              [
+                105.593,
+                12.8125
+              ],
+              [
+                105.593,
+                13.8125
+              ]
+            ]
+          },
+          {
+            "line": [
+              105.593,
+              14.9062
+            ]
+          },
+          {
+            "line": [
+              103.093,
+              14.9062
+            ]
+          },
+          {
+            "line": [
+              103.093,
+              13.8125
+            ]
+          },
+          {
+            "cubic": [
+              [
+                103.093,
+                12.8125
+              ],
+              [
+                103.087,
+                12.0937
+              ],
+              [
+                103.187,
+                11.5937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                103.187,
+                11.1937
+              ],
+              [
+                103.299,
+                10.7937
+              ],
+              [
+                103.499,
+                10.5937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                103.699,
+                10.2937
+              ],
+              [
+                104.012,
+                10.1875
+              ],
+              [
+                104.312,
+                10.1875
+              ]
+            ]
+          },
+          {
+            "line": [
+              104.312,
+              10.1875
+            ]
+          },
+          "close",
+          {
+            "move": [
+              53.812,
+              10.3125
+            ]
+          },
+          {
+            "cubic": [
+              [
+                54.312,
+                10.3125
+              ],
+              [
+                54.612,
+                10.5
+              ],
+              [
+                54.812,
+                11
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                55.012,
+                11.5
+              ],
+              [
+                55.0932,
+                12.3062
+              ],
+              [
+                55.0932,
+                13.4062
+              ]
+            ]
+          },
+          {
+            "line": [
+              55.0932,
+              18.0937
+            ]
+          },
+          {
+            "cubic": [
+              [
+                55.0932,
+                19.1937
+              ],
+              [
+                55.012,
+                20
+              ],
+              [
+                54.812,
+                20.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                54.612,
+                21
+              ],
+              [
+                54.312,
+                21.1875
+              ],
+              [
+                53.812,
+                21.1875
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                53.312,
+                21.1875
+              ],
+              [
+                53.012,
+                21
+              ],
+              [
+                52.812,
+                20.5
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                52.612,
+                20
+              ],
+              [
+                52.4995,
+                19.1937
+              ],
+              [
+                52.4995,
+                18.0937
+              ]
+            ]
+          },
+          {
+            "line": [
+              52.4995,
+              13.4062
+            ]
+          },
+          {
+            "cubic": [
+              [
+                52.4995,
+                12.3062
+              ],
+              [
+                52.612,
+                11.5
+              ],
+              [
+                52.812,
+                11
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                53.012,
+                10.5
+              ],
+              [
+                53.312,
+                10.3125
+              ],
+              [
+                53.812,
+                10.3125
+              ]
+            ]
+          },
+          "close",
+          {
+            "move": [
+              93.4995,
+              10.4062
+            ]
+          },
+          {
+            "cubic": [
+              [
+                93.7995,
+                10.4062
+              ],
+              [
+                94.112,
+                10.5125
+              ],
+              [
+                94.312,
+                10.8125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                94.512,
+                11.1125
+              ],
+              [
+                94.587,
+                11.4875
+              ],
+              [
+                94.687,
+                12.1875
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                94.787,
+                12.7875
+              ],
+              [
+                94.812,
+                13.7062
+              ],
+              [
+                94.812,
+                14.9062
+              ]
+            ]
+          },
+          {
+            "line": [
+              94.9057,
+              16.8125
+            ]
+          },
+          {
+            "cubic": [
+              [
+                94.9057,
+                17.9125
+              ],
+              [
+                94.9119,
+                18.8062
+              ],
+              [
+                94.812,
+                19.4062
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                94.712,
+                20.0062
+              ],
+              [
+                94.612,
+                20.4875
+              ],
+              [
+                94.312,
+                20.6875
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                94.112,
+                20.9875
+              ],
+              [
+                93.8057,
+                21.0937
+              ],
+              [
+                93.4057,
+                21.0937
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                93.1057,
+                21.0937
+              ],
+              [
+                92.8932,
+                21.0062
+              ],
+              [
+                92.5932,
+                20.9062
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                92.3932,
+                20.8062
+              ],
+              [
+                92.1995,
+                20.6125
+              ],
+              [
+                91.9995,
+                20.3125
+              ]
+            ]
+          },
+          {
+            "line": [
+              91.9995,
+              11.8125
+            ]
+          },
+          {
+            "cubic": [
+              [
+                92.0995,
+                11.4125
+              ],
+              [
+                92.2932,
+                11.1125
+              ],
+              [
+                92.5932,
+                10.8125
+              ]
+            ]
+          },
+          {
+            "cubic": [
+              [
+                92.8932,
+                10.5125
+              ],
+              [
+                93.1995,
+                10.4062
+              ],
+              [
+                93.4995,
+                10.4062
+              ]
+            ]
+          },
+          "close"
+        ]
+      },
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    }
+  ],
+  "dim": [
+    420,
+    315
+  ],
+  "has_save_layer": true
+}

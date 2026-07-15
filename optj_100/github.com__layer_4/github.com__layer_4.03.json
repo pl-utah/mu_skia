@@ -1,0 +1,559 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, -0 ],
+            [ 0, 1, 0, -718 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 17.5, 824.5, 1262.5, 1528 ], [ 23.5, 23.5 ], [ 23.5, 23.5 ], [ 0, 0 ], [ 0, 0 ] ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 38, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 17, 824, 1263, 1528 ], [ 24, 24 ], [ 24, 24 ], [ 0, 0 ], [ 0, 0 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 18, 825, 1262, 1528 ], [ 23, 23 ], [ 23, 23 ], [ 0, 0 ], [ 0, 0 ] ],
+         "op": "difference",
+         "antiAlias": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(17, 824);\npath.lineTo(29.5f, 836.5f);\npath.lineTo(1250.5f, 836.5f);\npath.lineTo(1263, 824);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 17, 824 ]
+               },
+               {
+                  "line": [ 29.5, 836.5 ]
+               },
+               {
+                  "line": [ 1250.5, 836.5 ]
+               },
+               {
+                  "line": [ 1263, 824 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 17, 824, 1263, 1528 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 140, 147, 251 ]
+         },
+         "shortDesc": " [17 824 1263 1528]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(1263, 823.900024f);\npath.lineTo(1250.5f, 836.400024f);\npath.lineTo(1250.5f, 1528);\npath.lineTo(1263, 1528);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 1263, 823.9 ]
+               },
+               {
+                  "line": [ 1250.5, 836.4 ]
+               },
+               {
+                  "line": [ 1250.5, 1528 ]
+               },
+               {
+                  "line": [ 1263, 1528 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 1250.5, 824, 1263, 1528.1 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [1250.5 824 1263 1528.1]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 17, 824, 1263, 1528 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 140, 147, 251 ]
+         },
+         "shortDesc": " [17 824 1263 1528]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 17, 824, 29.5, 1528.1 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [17 824 29.5 1528.1]"
+      },
+      {
+         "command": "ClipPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(17, 1528);\npath.lineTo(29.5f, 1528);\npath.lineTo(29.5f, 836.400024f);\npath.lineTo(17, 823.900024f);\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 17, 1528 ]
+               },
+               {
+                  "line": [ 29.5, 1528 ]
+               },
+               {
+                  "line": [ 29.5, 836.4 ]
+               },
+               {
+                  "line": [ 17, 823.9 ]
+               }
+            ]
+         },
+         "op": "intersect",
+         "antiAlias": false
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 17, 824, 1263, 1528 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 140, 147, 251 ]
+         },
+         "shortDesc": " [17 824 1263 1528]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ -623, 718, 1297, 1528 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ -623, 718, 1297, 1528 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [-623 718 1297 1528]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ -623, 718, 1297, 1528 ],
+         "paint": {
+            "antiAlias": true,
+            "dither": true,
+            "shader": {
+               "name": "SkLocalMatrixShader",
+               "data": "data/0",
+               "values": {
+                  "00_matrix": [
+                     [ 1, 0, -623 ],
+                     [ 0, 1, 718 ],
+                     [ 0, 0, 1 ]
+                  ],
+                  "01_SkLinearGradient": {
+                     "00_uint": 536871041,
+                     "01_colorArray": [
+                        [ 0, 0.152941, 0.196078, 0.905882 ],
+                        [ 0.501961, 0.372549, 0.929412, 0.513726 ]
+                     ],
+                     "02_byteArray": [
+                        "01",
+                        "00",
+                        "00",
+                        "00",
+                        "9a",
+                        "99",
+                        "19",
+                        "40",
+                        "6e",
+                        "a7",
+                        "72",
+                        "3f",
+                        "19",
+                        "89",
+                        "55",
+                        "3d",
+                        "91",
+                        "83",
+                        "9e",
+                        "3d",
+                        "e6",
+                        "ae",
+                        "25",
+                        "3d",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "44",
+                        "df",
+                        "3e",
+                        "00",
+                        "32",
+                        "c5",
+                        "3e",
+                        "00",
+                        "80",
+                        "12",
+                        "3e",
+                        "00",
+                        "d4",
+                        "63",
+                        "3e",
+                        "00",
+                        "85",
+                        "37",
+                        "3f",
+                        "00",
+                        "40",
+                        "78",
+                        "3d",
+                        "00",
+                        "00",
+                        "64",
+                        "3c",
+                        "00",
+                        "d0",
+                        "c6",
+                        "3d",
+                        "00",
+                        "cf",
+                        "36",
+                        "3f"
+                     ],
+                     "03_point": [ 0, 465.426 ],
+                     "04_point": [ 0, 914.976 ]
+                  }
+               }
+            }
+         },
+         "shortDesc": " [-623 718 1297 1528]"
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ -623, 718, 1297, 1528 ],
+         "paint": {
+            "blendMode": "Plus"
+         }
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ -623, 718, 1297, 1528 ],
+         "paint": {
+            "antiAlias": true,
+            "dither": true,
+            "shader": {
+               "name": "SkLocalMatrixShader",
+               "data": "data/1",
+               "values": {
+                  "00_matrix": [
+                     [ 1, 0, -623 ],
+                     [ 0, 1, 718 ],
+                     [ 0, 0, 1 ]
+                  ],
+                  "01_SkLinearGradient": {
+                     "00_uint": 536871041,
+                     "01_colorArray": [
+                        [ 0, 0, 0, 0 ],
+                        [ 0.501961, 0.054902, 0.0392157, 0.635294 ]
+                     ],
+                     "02_byteArray": [
+                        "01",
+                        "00",
+                        "00",
+                        "00",
+                        "9a",
+                        "99",
+                        "19",
+                        "40",
+                        "6e",
+                        "a7",
+                        "72",
+                        "3f",
+                        "19",
+                        "89",
+                        "55",
+                        "3d",
+                        "91",
+                        "83",
+                        "9e",
+                        "3d",
+                        "e6",
+                        "ae",
+                        "25",
+                        "3d",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "44",
+                        "df",
+                        "3e",
+                        "00",
+                        "32",
+                        "c5",
+                        "3e",
+                        "00",
+                        "80",
+                        "12",
+                        "3e",
+                        "00",
+                        "d4",
+                        "63",
+                        "3e",
+                        "00",
+                        "85",
+                        "37",
+                        "3f",
+                        "00",
+                        "40",
+                        "78",
+                        "3d",
+                        "00",
+                        "00",
+                        "64",
+                        "3c",
+                        "00",
+                        "d0",
+                        "c6",
+                        "3d",
+                        "00",
+                        "cf",
+                        "36",
+                        "3f"
+                     ],
+                     "03_point": [ 0, 384.102 ],
+                     "04_point": [ 0, 846.936 ]
+                  }
+               }
+            }
+         },
+         "shortDesc": " [-623 718 1297 1528]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ -623, 718, 1297, 1528 ],
+         "paint": {
+            "blendMode": "DstIn"
+         }
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ -623, 718, 1297, 1528 ],
+         "paint": {
+            "antiAlias": true,
+            "dither": true,
+            "shader": {
+               "name": "SkLocalMatrixShader",
+               "data": "data/2",
+               "values": {
+                  "00_matrix": [
+                     [ 1, 0, -623 ],
+                     [ 0, 1, 718 ],
+                     [ 0, 0, 1 ]
+                  ],
+                  "01_SkLinearGradient": {
+                     "00_uint": 2684354689,
+                     "01_colorArray": [
+                        [ 0, 1, 1, 1 ],
+                        [ 1, 1, 1, 1 ],
+                        [ 1, 1, 1, 1 ]
+                     ],
+                     "02_byteArray": [
+                        "01",
+                        "00",
+                        "00",
+                        "00",
+                        "9a",
+                        "99",
+                        "19",
+                        "40",
+                        "6e",
+                        "a7",
+                        "72",
+                        "3f",
+                        "19",
+                        "89",
+                        "55",
+                        "3d",
+                        "91",
+                        "83",
+                        "9e",
+                        "3d",
+                        "e6",
+                        "ae",
+                        "25",
+                        "3d",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "00",
+                        "44",
+                        "df",
+                        "3e",
+                        "00",
+                        "32",
+                        "c5",
+                        "3e",
+                        "00",
+                        "80",
+                        "12",
+                        "3e",
+                        "00",
+                        "d4",
+                        "63",
+                        "3e",
+                        "00",
+                        "85",
+                        "37",
+                        "3f",
+                        "00",
+                        "40",
+                        "78",
+                        "3d",
+                        "00",
+                        "00",
+                        "64",
+                        "3c",
+                        "00",
+                        "d0",
+                        "c6",
+                        "3d",
+                        "00",
+                        "cf",
+                        "36",
+                        "3f"
+                     ],
+                     "03_scalarArray": [
+                        0,
+                        0.25,
+                        1
+                     ],
+                     "04_point": [ 0, 0 ],
+                     "05_point": [ 0, 810 ]
+                  }
+               }
+            }
+         },
+         "shortDesc": " [-623 718 1297 1528]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

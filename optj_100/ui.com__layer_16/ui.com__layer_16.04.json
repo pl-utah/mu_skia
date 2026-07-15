@@ -1,0 +1,1120 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 0, 0, 1280, 48 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [0 0 1280 48]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 1280, 48 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [0 0 1280 48]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 0 ],
+            [ 0, 1, 0, -1 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawDRRect",
+         "visible": true,
+         "outer": [ [ 0, 0, 1280, 49 ], [ 0, 0 ], [ 0, 0 ], [ 0, 0 ], [ 0, 0 ] ],
+         "inner": [ [ 0, 0, 1280, 48 ], [ 0, 0 ], [ 0, 0 ], [ 0, 0 ], [ 0, 0 ] ],
+         "paint": {
+            "antiAlias": true,
+            "colorfilter": {
+               "name": "SkBlendModeColorFilter",
+               "data": "data/0",
+               "values": {
+                  "00_color": [ 0.0509804, 0, 0, 0 ],
+                  "01_uint": 5
+               }
+            }
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 240.062,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 120.47, 3.64 ],
+         "paint": {
+            "antiAlias": true
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  38,
+                  78,
+                  81,
+                  87,
+                  70,
+                  3,
+                  42,
+                  67,
+                  86,
+                  71,
+                  89,
+                  67,
+                  91,
+                  85
+               ],
+               "positions": [
+                  0,
+                  9.51999,
+                  12.572,
+                  20.286,
+                  27.65,
+                  35.252,
+                  38.9619,
+                  49.0979,
+                  55.8879,
+                  60.4939,
+                  67.4239,
+                  77.4619,
+                  84.0979,
+                  91.2099
+               ]
+            }
+         ],
+         "shortDesc": " [239.419 15.434 360.532 32.64]"
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 359.266,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 79.7439, 3.64 ],
+         "paint": {
+            "antiAlias": true
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  54,
+                  89,
+                  75,
+                  86,
+                  69,
+                  74,
+                  75,
+                  80,
+                  73
+               ],
+               "positions": [
+                  0,
+                  7.7,
+                  17.864,
+                  21.056,
+                  25.6479,
+                  32.5919,
+                  40.1239,
+                  43.2319,
+                  50.4839
+               ]
+            }
+         ],
+         "shortDesc": " [358.622 15.434 439.01 32.64]"
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 439.328,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 53.116, 3.64 ],
+         "paint": {
+            "antiAlias": true
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  58,
+                  75,
+                  41,
+                  75
+               ],
+               "positions": [
+                  0,
+                  13.3,
+                  16.492,
+                  23.856
+               ]
+            }
+         ],
+         "shortDesc": " [438.684 15.434 492.444 32.64]"
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 488.391,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 121.296, 3.64 ],
+         "paint": {
+            "antiAlias": true
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  38,
+                  67,
+                  79,
+                  71,
+                  84,
+                  67,
+                  3,
+                  54,
+                  71,
+                  69,
+                  87,
+                  84,
+                  75,
+                  86,
+                  91
+               ],
+               "positions": [
+                  0,
+                  9.51999,
+                  16.436,
+                  27.538,
+                  34.678,
+                  39.3259,
+                  46.2419,
+                  49.9519,
+                  57.6519,
+                  64.7919,
+                  71.7359,
+                  79.0999,
+                  83.9579,
+                  87.1499,
+                  92.0359
+               ]
+            }
+         ],
+         "shortDesc": " [487.747 15.434 609.686 32.64]"
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 609.828,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 99.0779, 3.64 ],
+         "paint": {
+            "antiAlias": true
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  39,
+                  81,
+                  81,
+                  84,
+                  3,
+                  36,
+                  69,
+                  69,
+                  71,
+                  85,
+                  85
+               ],
+               "positions": [
+                  0,
+                  9.674,
+                  17.388,
+                  24.962,
+                  29.82,
+                  33.53,
+                  42.9099,
+                  49.8539,
+                  56.6859,
+                  63.8259,
+                  69.8179
+               ]
+            }
+         ],
+         "shortDesc": " [609.184 15.434 708.906 32.64]"
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 707.641,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 93.8699, 3.64 ],
+         "paint": {
+            "antiAlias": true
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  44,
+                  80,
+                  86,
+                  71,
+                  73,
+                  84,
+                  67,
+                  86,
+                  75,
+                  81,
+                  80,
+                  85
+               ],
+               "positions": [
+                  0,
+                  3.41599,
+                  10.668,
+                  15.274,
+                  22.554,
+                  30.128,
+                  34.7759,
+                  41.5659,
+                  46.4519,
+                  49.6439,
+                  57.3579,
+                  64.6099
+               ]
+            }
+         ],
+         "shortDesc": " [706.997 15.434 801.51 32.64]"
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 984.344,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 92.1759, 3.64 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 33, 35, 39 ]
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  58,
+                  74,
+                  67,
+                  86,
+                  10,
+                  85,
+                  3,
+                  49,
+                  71,
+                  89
+               ],
+               "positions": [
+                  0,
+                  13.3,
+                  20.832,
+                  27.622,
+                  32.5079,
+                  35.7419,
+                  41.7339,
+                  45.4439,
+                  55.9859,
+                  62.9159
+               ]
+            }
+         ],
+         "shortDesc": " [983.7 15.434 1076.52 32.64]"
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 1071.94,
+         "y": 29,
+         "bounds": [ -0.644, -13.566, 71.9179, 3.64 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 33, 35, 39 ]
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 14,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  54,
+                  87,
+                  82,
+                  82,
+                  81,
+                  84,
+                  86
+               ],
+               "positions": [
+                  0,
+                  7.7,
+                  15.064,
+                  22.428,
+                  30.03,
+                  37.604,
+                  42.6579
+               ]
+            }
+         ],
+         "shortDesc": " [1071.29 15.434 1143.86 32.64]"
+      },
+      {
+         "command": "DrawRRect",
+         "visible": true,
+         "coords": [ [ 1130, 10, 1182, 39 ], [ 4, 4 ], [ 4, 4 ], [ 4, 4 ], [ 4, 4 ] ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 0, 111, 255 ]
+         }
+      },
+      {
+         "command": "DrawTextBlob",
+         "visible": true,
+         "x": 1141.98,
+         "y": 29,
+         "bounds": [ -0.598, -12.597, 48.867, 3.38 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "runs": [
+            {
+               "font": {
+                  "linearText": true,
+                  "subpixelText": true,
+                  "textSize": 13,
+                  "edging": "antialias",
+                  "hinting": "none",
+                  "typeface": {
+                     "data": "data/1"
+                  }
+               },
+               "coords": [ 0, 0 ],
+               "glyphs": [
+                  54,
+                  86,
+                  81,
+                  84,
+                  71
+               ],
+               "positions": [
+                  0,
+                  6.89,
+                  10.907,
+                  17.68,
+                  21.697
+               ]
+            }
+         ],
+         "shortDesc": " [1141.39 16.403 1190.85 32.38]"
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 1192, 15, 1212, 33 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 1192, 15, 1212, 33 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [1192 15 1212 33]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 1193, 15, 1212, 33 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 33, 35, 39 ]
+         },
+         "shortDesc": " [1193 15 1212 33]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 1192, 15, 1212, 33 ],
+         "paint": {
+            "blendMode": "DstIn"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 1193, 15, 1211, 33 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [1193 15 1211 33]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 1193 ],
+            [ 0, 1, 0, 15 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 18, 18 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 18 18]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.9, 0, 0, 0 ],
+            [ 0, 0.9, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(17.9839993f, 9.5f);\npath.conicTo(17.4380856f, 0.770744681f, 8.79199886f, 2.09100008f, 0.674924254f);\npath.conicTo(1.71120858f, 3.18585253f, 2.02020645f, 10.344121f, 0.744998336f);\npath.conicTo(2.32920456f, 17.502388f, 9.47799873f, 17.9829998f, 0.744998336f);\npath.conicTo(10.3469267f, 18.0378437f, 11.2079983f, 17.9090004f, 0.994410336f);\npath.conicTo(18.442091f, 16.8036938f, 17.9839993f, 9.5f, 0.73785609f);\npath.moveTo(10.5f, 3.2980001f);\npath.conicTo(13.2797537f, 5.77948284f, 13.4860001f, 9.5f, 0.923639655f);\npath.lineTo(10.5f, 9.5f);\npath.close();\npath.moveTo(10.5f, 10.5f);\npath.lineTo(13.4860001f, 10.5f);\npath.conicTo(13.2797537f, 14.2205172f, 10.5f, 16.7019997f, 0.923639655f);\npath.close();\npath.moveTo(9.5f, 16.7019997f);\npath.conicTo(6.72024822f, 14.2205181f, 6.51399994f, 10.5f, 0.923639655f);\npath.lineTo(9.5f, 10.5f);\npath.close();\npath.moveTo(9.5f, 3.29799938f);\npath.lineTo(9.5f, 9.5f);\npath.lineTo(6.51399994f, 9.5f);\npath.conicTo(6.72024822f, 5.77948284f, 9.5f, 3.2980001f, 0.923639655f);\npath.moveTo(8.11400032f, 3.25800014f);\npath.conicTo(5.68655586f, 5.90943766f, 5.51200008f, 9.5f, 0.94061017f);\npath.lineTo(3.01799989f, 9.5f);\npath.conicTo(3.37396693f, 4.58941317f, 8.11400032f, 3.2579999f, 0.818327546f);\npath.moveTo(3.01799989f, 10.5f);\npath.lineTo(5.51200008f, 10.5f);\npath.conicTo(5.68655682f, 14.0905647f, 8.11400032f, 16.7420006f, 0.940610111f);\npath.conicTo(3.37396693f, 15.4105873f, 3.01799989f, 10.5f, 0.818327546f);\npath.moveTo(11.8859997f, 16.7420006f);\npath.conicTo(14.3134432f, 14.0905619f, 14.4879999f, 10.5f, 0.940610111f);\npath.lineTo(16.9820004f, 10.5f);\npath.conicTo(16.6260338f, 15.4105873f, 11.8859997f, 16.7420006f, 0.818327487f);\npath.moveTo(14.4879999f, 9.5f);\npath.conicTo(14.3134432f, 5.90943766f, 11.8859997f, 3.2579999f, 0.940610111f);\npath.conicTo(16.6260338f, 4.58941174f, 16.9820004f, 9.5f, 0.818327487f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 17.984, 9.5 ]
+               },
+               {
+                  "conic": [
+                     [ 17.4381, 0.770745 ],
+                     [ 8.792, 2.091 ],
+                     0.674924
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 1.71121, 3.18585 ],
+                     [ 2.02021, 10.3441 ],
+                     0.744998
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 2.3292, 17.5024 ],
+                     [ 9.478, 17.983 ],
+                     0.744998
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 10.3469, 18.0378 ],
+                     [ 11.208, 17.909 ],
+                     0.99441
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 18.4421, 16.8037 ],
+                     [ 17.984, 9.5 ],
+                     0.737856
+                  ]
+               },
+               {
+                  "move": [ 10.5, 3.298 ]
+               },
+               {
+                  "conic": [
+                     [ 13.2798, 5.77948 ],
+                     [ 13.486, 9.5 ],
+                     0.92364
+                  ]
+               },
+               {
+                  "line": [ 10.5, 9.5 ]
+               },
+               {
+                  "line": [ 10.5, 3.298 ]
+               },
+               "close",
+               {
+                  "move": [ 10.5, 10.5 ]
+               },
+               {
+                  "line": [ 13.486, 10.5 ]
+               },
+               {
+                  "conic": [
+                     [ 13.2798, 14.2205 ],
+                     [ 10.5, 16.702 ],
+                     0.92364
+                  ]
+               },
+               {
+                  "line": [ 10.5, 10.5 ]
+               },
+               "close",
+               {
+                  "move": [ 9.5, 16.702 ]
+               },
+               {
+                  "conic": [
+                     [ 6.72025, 14.2205 ],
+                     [ 6.514, 10.5 ],
+                     0.92364
+                  ]
+               },
+               {
+                  "line": [ 9.5, 10.5 ]
+               },
+               {
+                  "line": [ 9.5, 16.702 ]
+               },
+               "close",
+               {
+                  "move": [ 9.5, 3.298 ]
+               },
+               {
+                  "line": [ 9.5, 9.5 ]
+               },
+               {
+                  "line": [ 6.514, 9.5 ]
+               },
+               {
+                  "conic": [
+                     [ 6.72025, 5.77948 ],
+                     [ 9.5, 3.298 ],
+                     0.92364
+                  ]
+               },
+               {
+                  "move": [ 8.114, 3.258 ]
+               },
+               {
+                  "conic": [
+                     [ 5.68656, 5.90944 ],
+                     [ 5.512, 9.5 ],
+                     0.94061
+                  ]
+               },
+               {
+                  "line": [ 3.018, 9.5 ]
+               },
+               {
+                  "conic": [
+                     [ 3.37397, 4.58941 ],
+                     [ 8.114, 3.258 ],
+                     0.818328
+                  ]
+               },
+               {
+                  "move": [ 3.018, 10.5 ]
+               },
+               {
+                  "line": [ 5.512, 10.5 ]
+               },
+               {
+                  "conic": [
+                     [ 5.68656, 14.0906 ],
+                     [ 8.114, 16.742 ],
+                     0.94061
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 3.37397, 15.4106 ],
+                     [ 3.018, 10.5 ],
+                     0.818328
+                  ]
+               },
+               {
+                  "move": [ 11.886, 16.742 ]
+               },
+               {
+                  "conic": [
+                     [ 14.3134, 14.0906 ],
+                     [ 14.488, 10.5 ],
+                     0.94061
+                  ]
+               },
+               {
+                  "line": [ 16.982, 10.5 ]
+               },
+               {
+                  "conic": [
+                     [ 16.626, 15.4106 ],
+                     [ 11.886, 16.742 ],
+                     0.818327
+                  ]
+               },
+               {
+                  "move": [ 14.488, 9.5 ]
+               },
+               {
+                  "conic": [
+                     [ 14.3134, 5.90944 ],
+                     [ 11.886, 3.258 ],
+                     0.94061
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 16.626, 4.58941 ],
+                     [ 16.982, 9.5 ],
+                     0.818327
+                  ]
+               },
+               {
+                  "line": [ 14.488, 9.5 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 33, 35, 39 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 1222, 14, 1240, 34 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 1222, 14, 1240, 34 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [1222 14 1240 34]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 1222, 15, 1240, 34 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 33, 35, 39 ]
+         },
+         "shortDesc": " [1222 15 1240 34]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 1222, 14, 1240, 34 ],
+         "paint": {
+            "blendMode": "DstIn"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 1222, 15, 1240, 33 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [1222 15 1240 33]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 1222 ],
+            [ 0, 1, 0, 15 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 18, 18 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 18 18]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.9, 0, 0, 0 ],
+            [ 0, 0.9, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(2, 10);\npath.conicTo(2, 2, 10, 2, 0.707106709f);\npath.conicTo(18, 2, 18, 10, 0.707106709f);\npath.conicTo(18, 18, 10, 18, 0.707106829f);\npath.conicTo(2, 18, 2, 10, 0.707106829f);\npath.moveTo(5.49399996f, 15.3509998f);\npath.conicTo(7.44423771f, 17.0028172f, 10, 17, 0.93871212f);\npath.conicTo(12.5557623f, 17.0028191f, 14.5060005f, 15.3509998f, 0.93871212f);\npath.conicTo(10, 8.89142418f, 5.49400043f, 15.3509998f, 0.572123468f);\npath.moveTo(10, 12);\npath.conicTo(13.2858124f, 11.9972954f, 15.2329998f, 14.6440001f, 0.892171681f);\npath.conicTo(17.0023422f, 12.6590548f, 17, 10, 0.93431735f);\npath.cubicTo(17, 6.13999987f, 13.8599997f, 3, 10, 3);\npath.cubicTo(6.14000034f, 3, 3, 6.14000034f, 3, 10);\npath.cubicTo(3, 11.7810001f, 3.66799998f, 13.408f, 4.7670002f, 14.6440001f);\npath.conicTo(6.71418715f, 11.9972963f, 10, 12, 0.892171681f);\npath.moveTo(12.0319996f, 8);\npath.cubicTo(12.0319996f, 6.89699984f, 11.1349993f, 6, 10.0319996f, 6);\npath.cubicTo(8.9289999f, 6, 8.03199959f, 6.89699984f, 8.03199959f, 8);\npath.cubicTo(8.03199959f, 9.10300064f, 8.9289999f, 10, 10.0319996f, 10);\npath.cubicTo(11.1349993f, 10, 12.0319996f, 9.10299969f, 12.0319996f, 8);\npath.moveTo(7.03199959f, 8);\npath.conicTo(7.03199959f, 5, 10.0319996f, 5, 0.707106709f);\npath.conicTo(13.0319996f, 5, 13.0319996f, 8, 0.707106709f);\npath.conicTo(13.0319996f, 11, 10.0319996f, 11, 0.707106829f);\npath.conicTo(7.03199959f, 11, 7.03199959f, 8, 0.707106829f);\n",
+            "fillType": "evenOdd",
+            "verbs": [
+               {
+                  "move": [ 2, 10 ]
+               },
+               {
+                  "conic": [
+                     [ 2, 2 ],
+                     [ 10, 2 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 18, 2 ],
+                     [ 18, 10 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 18, 18 ],
+                     [ 10, 18 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 2, 18 ],
+                     [ 2, 10 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "move": [ 5.494, 15.351 ]
+               },
+               {
+                  "conic": [
+                     [ 7.44424, 17.0028 ],
+                     [ 10, 17 ],
+                     0.938712
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 12.5558, 17.0028 ],
+                     [ 14.506, 15.351 ],
+                     0.938712
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 10, 8.89142 ],
+                     [ 5.494, 15.351 ],
+                     0.572123
+                  ]
+               },
+               {
+                  "move": [ 10, 12 ]
+               },
+               {
+                  "conic": [
+                     [ 13.2858, 11.9973 ],
+                     [ 15.233, 14.644 ],
+                     0.892172
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 17.0023, 12.6591 ],
+                     [ 17, 10 ],
+                     0.934317
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 17, 6.14 ],
+                     [ 13.86, 3 ],
+                     [ 10, 3 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 6.14, 3 ],
+                     [ 3, 6.14 ],
+                     [ 3, 10 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 3, 11.781 ],
+                     [ 3.668, 13.408 ],
+                     [ 4.767, 14.644 ]
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 6.71419, 11.9973 ],
+                     [ 10, 12 ],
+                     0.892172
+                  ]
+               },
+               {
+                  "move": [ 12.032, 8 ]
+               },
+               {
+                  "cubic": [
+                     [ 12.032, 6.897 ],
+                     [ 11.135, 6 ],
+                     [ 10.032, 6 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 8.929, 6 ],
+                     [ 8.032, 6.897 ],
+                     [ 8.032, 8 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 8.032, 9.103 ],
+                     [ 8.929, 10 ],
+                     [ 10.032, 10 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 11.135, 10 ],
+                     [ 12.032, 9.103 ],
+                     [ 12.032, 8 ]
+                  ]
+               },
+               {
+                  "move": [ 7.032, 8 ]
+               },
+               {
+                  "conic": [
+                     [ 7.032, 5 ],
+                     [ 10.032, 5 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 13.032, 5 ],
+                     [ 13.032, 8 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 13.032, 11 ],
+                     [ 10.032, 11 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 7.032, 11 ],
+                     [ 7.032, 8 ],
+                     0.707107
+                  ]
+               }
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 33, 35, 39 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

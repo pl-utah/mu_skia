@@ -1,0 +1,279 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, -88 ],
+            [ 0, 1, 0, -1942 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 88, 1943, 120, 1975 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 88, 1943, 120, 1975 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [88 1943 120 1975]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 136, 1943, 168, 1975 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ], [ 16, 16 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 136, 1943, 168, 1975 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [136 1943 168 1975]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 144 ],
+            [ 0, 1, 0, 1951 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.666667, 0, 0, 0 ],
+            [ 0, 0.666667, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(12.6000004f, 6.4000001f);\npath.lineTo(17.2000008f, 11);\npath.lineTo(3, 11);\npath.lineTo(3, 13);\npath.lineTo(17.2000008f, 13);\npath.lineTo(12.6000004f, 17.6000004f);\npath.lineTo(14, 19);\npath.lineTo(21, 12);\npath.lineTo(14, 5);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 12.6, 6.4 ]
+               },
+               {
+                  "line": [ 17.2, 11 ]
+               },
+               {
+                  "line": [ 3, 11 ]
+               },
+               {
+                  "line": [ 3, 13 ]
+               },
+               {
+                  "line": [ 17.2, 13 ]
+               },
+               {
+                  "line": [ 12.6, 17.6 ]
+               },
+               {
+                  "line": [ 14, 19 ]
+               },
+               {
+                  "line": [ 21, 12 ]
+               },
+               {
+                  "line": [ 14, 5 ]
+               },
+               {
+                  "line": [ 12.6, 6.4 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 51, 51, 51 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 96 ],
+            [ 0, 1, 0, 1951 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 2, 3.33333, 14, 12.6667 ],
+         "paint": {
+            "color": [ 102, 0, 0, 0 ]
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.666667, 0, 0, 0 ],
+            [ 0, 0.666667, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(10, 5);\npath.lineTo(3, 12);\npath.lineTo(10, 19);\npath.lineTo(11.3999996f, 17.6000004f);\npath.lineTo(6.80000019f, 13);\npath.lineTo(21, 13);\npath.lineTo(21, 11);\npath.lineTo(6.80000019f, 11);\npath.lineTo(11.3999996f, 6.4000001f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 10, 5 ]
+               },
+               {
+                  "line": [ 3, 12 ]
+               },
+               {
+                  "line": [ 10, 19 ]
+               },
+               {
+                  "line": [ 11.4, 17.6 ]
+               },
+               {
+                  "line": [ 6.8, 13 ]
+               },
+               {
+                  "line": [ 21, 13 ]
+               },
+               {
+                  "line": [ 21, 11 ]
+               },
+               {
+                  "line": [ 6.8, 11 ]
+               },
+               {
+                  "line": [ 11.4, 6.4 ]
+               },
+               {
+                  "line": [ 10, 5 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 51, 51, 51 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

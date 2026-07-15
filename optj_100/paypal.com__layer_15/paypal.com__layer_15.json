@@ -1,0 +1,10760 @@
+{
+  "version": 1,
+  "commands": [
+    {
+      "command": "DrawPaint",
+      "visible": true,
+      "paint": {
+        "color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "blendMode": "Src"
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          -1021
+        ],
+        [
+          0,
+          1,
+          0,
+          124
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawRRect",
+      "visible": true,
+      "coords": [
+        [
+          1021,
+          -124,
+          1256,
+          -24
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ]
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRRect",
+      "visible": true,
+      "coords": [
+        [
+          1021,
+          -124,
+          1256,
+          -24
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ]
+      ],
+      "op": "intersect",
+      "antiAlias": true
+    },
+    {
+      "command": "DrawTextBlob",
+      "visible": true,
+      "x": 1037,
+      "y": -79,
+      "bounds": [
+        -8.1807,
+        -25.7226,
+        124.074,
+        5.49459
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          96,
+          205,
+          255
+        ]
+      },
+      "runs": [
+        {
+          "font": {
+            "linearText": true,
+            "subpixelText": true,
+            "textSize": 20.35,
+            "edging": "antialias",
+            "hinting": "none",
+            "typeface": {
+              "data": "data/0"
+            }
+          },
+          "coords": [
+            0,
+            0
+          ],
+          "glyphs": [
+            42,
+            72,
+            87,
+            3,
+            87,
+            75,
+            72
+          ],
+          "positions": [
+            0,
+            16.6463,
+            28.0219,
+            36.3858,
+            40.4151,
+            48.7789,
+            61.0907
+          ]
+        }
+      ],
+      "shortDesc": " [1028.82 -104.723 1161.07 -73.5054]"
+    },
+    {
+      "command": "DrawTextBlob",
+      "visible": true,
+      "x": 1037,
+      "y": -55,
+      "bounds": [
+        -8.1807,
+        -25.7226,
+        160.643,
+        5.49459
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          96,
+          205,
+          255
+        ]
+      },
+      "runs": [
+        {
+          "font": {
+            "linearText": true,
+            "subpixelText": true,
+            "textSize": 20.35,
+            "edging": "antialias",
+            "hinting": "none",
+            "typeface": {
+              "data": "data/0"
+            }
+          },
+          "coords": [
+            0,
+            0
+          ],
+          "glyphs": [
+            51,
+            68,
+            92,
+            51,
+            68,
+            79,
+            3,
+            68,
+            83,
+            83
+          ],
+          "positions": [
+            0,
+            11.8437,
+            24.5828,
+            37.2405,
+            49.0842,
+            62.0268,
+            67.7248,
+            71.7541,
+            84.6967,
+            97.6596
+          ]
+        }
+      ],
+      "shortDesc": " [1028.82 -80.7226 1197.64 -49.5054]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "DrawRRect",
+      "visible": true,
+      "coords": [
+        [
+          1156,
+          -124,
+          1256,
+          -24
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ]
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRRect",
+      "visible": true,
+      "coords": [
+        [
+          1156,
+          -124,
+          1256,
+          -24
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          12
+        ]
+      ],
+      "op": "intersect",
+      "antiAlias": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1.02439,
+          0,
+          0,
+          1162.98
+        ],
+        [
+          0,
+          1.02439,
+          0,
+          -117.024
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        84,
+        84
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [0 0 84 84]"
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        0,
+        0,
+        84,
+        84
+      ],
+      "paint": {
+        "antiAlias": true
+      },
+      "shortDesc": " [0 0 84 84]"
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        1,
+        1,
+        83,
+        83
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "ClipRect",
+      "visible": true,
+      "coords": [
+        1,
+        1,
+        83,
+        83
+      ],
+      "op": "intersect",
+      "antiAlias": true,
+      "shortDesc": " [1 1 83 83]"
+    },
+    {
+      "command": "DrawRect",
+      "visible": true,
+      "coords": [
+        1,
+        1,
+        83,
+        83
+      ],
+      "paint": {
+        "antiAlias": true,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "shortDesc": " [1 1 83 83]"
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        1,
+        1,
+        83,
+        83
+      ],
+      "paint": {
+        "blendMode": "DstIn"
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        19,
+        3,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        23,
+        3,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        25,
+        3,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        41,
+        3,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        45,
+        3,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        51,
+        3,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        59,
+        3,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        61,
+        3,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        1,
+        65,
+        3,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        21,
+        5,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        27,
+        5,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        29,
+        5,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        33,
+        5,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        35,
+        5,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        41,
+        5,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        49,
+        5,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        51,
+        5,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        53,
+        5,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        3,
+        65,
+        5,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        21,
+        7,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        23,
+        7,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        25,
+        7,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        27,
+        7,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        31,
+        7,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        35,
+        7,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        37,
+        7,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        41,
+        7,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        43,
+        7,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        45,
+        7,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        47,
+        7,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        49,
+        7,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        55,
+        7,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        61,
+        7,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        65,
+        7,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        17,
+        9,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        19,
+        9,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        23,
+        9,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        43,
+        9,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        51,
+        9,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        57,
+        9,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        59,
+        9,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        61,
+        9,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        7,
+        63,
+        9,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        17,
+        11,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        21,
+        11,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        31,
+        11,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        37,
+        11,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        43,
+        11,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        47,
+        11,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        49,
+        11,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        57,
+        11,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        59,
+        11,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        9,
+        63,
+        11,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        19,
+        13,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        23,
+        13,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        25,
+        13,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        27,
+        13,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        33,
+        13,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        35,
+        13,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        37,
+        13,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        41,
+        13,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        45,
+        13,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        57,
+        13,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        59,
+        13,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        11,
+        65,
+        13,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        17,
+        15,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        21,
+        15,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        25,
+        15,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        29,
+        15,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        33,
+        15,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        37,
+        15,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        41,
+        15,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        45,
+        15,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        49,
+        15,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        53,
+        15,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        57,
+        15,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        61,
+        15,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        13,
+        65,
+        15,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        15,
+        23,
+        17,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        15,
+        25,
+        17,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        15,
+        37,
+        17,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        15,
+        49,
+        17,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        15,
+        57,
+        17,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        15,
+        65,
+        17,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        1,
+        19,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        3,
+        19,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        11,
+        19,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        13,
+        19,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        15,
+        19,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        19,
+        19,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        23,
+        19,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        27,
+        19,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        29,
+        19,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        31,
+        19,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        33,
+        19,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        35,
+        19,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        37,
+        19,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        47,
+        19,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        51,
+        19,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        57,
+        19,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        59,
+        19,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        63,
+        19,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        73,
+        19,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        17,
+        75,
+        19,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        1,
+        21,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        3,
+        21,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        5,
+        21,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        7,
+        21,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        11,
+        21,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        19,
+        21,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        23,
+        21,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        29,
+        21,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        31,
+        21,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        39,
+        21,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        41,
+        21,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        47,
+        21,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        53,
+        21,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        55,
+        21,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        61,
+        21,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        63,
+        21,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        67,
+        21,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        71,
+        21,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        73,
+        21,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        75,
+        21,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        77,
+        21,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        19,
+        79,
+        21,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        1,
+        23,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        3,
+        23,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        5,
+        23,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        13,
+        23,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        15,
+        23,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        17,
+        23,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        19,
+        23,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        21,
+        23,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        25,
+        23,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        31,
+        23,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        33,
+        23,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        37,
+        23,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        41,
+        23,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        43,
+        23,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        53,
+        23,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        55,
+        23,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        57,
+        23,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        65,
+        23,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        67,
+        23,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        71,
+        23,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        73,
+        23,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        21,
+        79,
+        23,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        3,
+        25,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        9,
+        25,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        19,
+        25,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        23,
+        25,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        29,
+        25,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        31,
+        25,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        33,
+        25,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        41,
+        25,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        45,
+        25,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        49,
+        25,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        53,
+        25,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        63,
+        25,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        65,
+        25,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        67,
+        25,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        73,
+        25,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        23,
+        75,
+        25,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        1,
+        27,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        5,
+        27,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        7,
+        27,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        9,
+        27,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        13,
+        27,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        15,
+        27,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        21,
+        27,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        23,
+        27,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        25,
+        27,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        27,
+        27,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        29,
+        27,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        33,
+        27,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        35,
+        27,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        37,
+        27,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        41,
+        27,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        43,
+        27,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        45,
+        27,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        47,
+        27,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        53,
+        27,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        55,
+        27,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        57,
+        27,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        61,
+        27,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        65,
+        27,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        67,
+        27,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        69,
+        27,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        25,
+        81,
+        27,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        5,
+        29,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        7,
+        29,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        9,
+        29,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        15,
+        29,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        17,
+        29,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        19,
+        29,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        29,
+        29,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        33,
+        29,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        41,
+        29,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        43,
+        29,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        47,
+        29,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        49,
+        29,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        51,
+        29,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        53,
+        29,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        55,
+        29,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        59,
+        29,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        63,
+        29,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        67,
+        29,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        69,
+        29,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        73,
+        29,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        75,
+        29,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        77,
+        29,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        79,
+        29,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        27,
+        81,
+        29,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        9,
+        31,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        11,
+        31,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        13,
+        31,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        15,
+        31,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        17,
+        31,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        19,
+        31,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        23,
+        31,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        25,
+        31,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        27,
+        31,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        39,
+        31,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        45,
+        31,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        51,
+        31,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        53,
+        31,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        55,
+        31,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        67,
+        31,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        69,
+        31,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        73,
+        31,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        29,
+        75,
+        31,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        15,
+        33,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        17,
+        33,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        21,
+        33,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        23,
+        33,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        31,
+        33,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        39,
+        33,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        47,
+        33,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        49,
+        33,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        55,
+        33,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        57,
+        33,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        65,
+        33,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        67,
+        33,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        69,
+        33,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        77,
+        33,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        31,
+        81,
+        33,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        1,
+        35,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        5,
+        35,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        7,
+        35,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        9,
+        35,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        13,
+        35,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        17,
+        35,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        23,
+        35,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        25,
+        35,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        27,
+        35,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        33,
+        35,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        35,
+        35,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        37,
+        35,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        39,
+        35,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        41,
+        35,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        45,
+        35,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        49,
+        35,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        51,
+        35,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        53,
+        35,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        55,
+        35,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        59,
+        35,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        63,
+        35,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        75,
+        35,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        33,
+        77,
+        35,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        5,
+        37,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        7,
+        37,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        9,
+        37,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        11,
+        37,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        19,
+        37,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        21,
+        37,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        23,
+        37,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        27,
+        37,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        33,
+        37,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        35,
+        37,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        39,
+        37,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        43,
+        37,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        45,
+        37,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        47,
+        37,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        55,
+        37,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        57,
+        37,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        61,
+        37,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        63,
+        37,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        65,
+        37,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        67,
+        37,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        69,
+        37,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        71,
+        37,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        73,
+        37,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        35,
+        81,
+        37,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        3,
+        39,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        5,
+        39,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        13,
+        39,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        17,
+        39,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        19,
+        39,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        23,
+        39,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        31,
+        39,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        39,
+        39,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        47,
+        39,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        51,
+        39,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        53,
+        39,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        55,
+        39,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        61,
+        39,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        63,
+        39,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        69,
+        39,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        71,
+        39,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        73,
+        39,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        75,
+        39,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        77,
+        39,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        37,
+        81,
+        39,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        1,
+        41,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        3,
+        41,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        5,
+        41,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        7,
+        41,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        11,
+        41,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        19,
+        41,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        21,
+        41,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        27,
+        41,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        33,
+        41,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        35,
+        41,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        37,
+        41,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        41,
+        41,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        43,
+        41,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        47,
+        41,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        53,
+        41,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        57,
+        41,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        63,
+        41,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        73,
+        41,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        75,
+        41,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        39,
+        79,
+        41,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        1,
+        43,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        3,
+        43,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        5,
+        43,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        13,
+        43,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        21,
+        43,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        29,
+        43,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        31,
+        43,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        33,
+        43,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        41,
+        43,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        43,
+        43,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        45,
+        43,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        47,
+        43,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        49,
+        43,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        51,
+        43,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        59,
+        43,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        61,
+        43,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        65,
+        43,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        67,
+        43,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        71,
+        43,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        75,
+        43,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        77,
+        43,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        79,
+        43,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        41,
+        81,
+        43,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        5,
+        45,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        17,
+        45,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        25,
+        45,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        29,
+        45,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        33,
+        45,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        37,
+        45,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        41,
+        45,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        45,
+        45,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        47,
+        45,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        55,
+        45,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        59,
+        45,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        63,
+        45,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        65,
+        45,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        73,
+        45,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        43,
+        79,
+        45,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        3,
+        47,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        7,
+        47,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        13,
+        47,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        17,
+        47,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        19,
+        47,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        21,
+        47,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        27,
+        47,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        29,
+        47,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        31,
+        47,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        33,
+        47,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        35,
+        47,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        37,
+        47,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        41,
+        47,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        49,
+        47,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        53,
+        47,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        55,
+        47,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        57,
+        47,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        59,
+        47,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        65,
+        47,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        67,
+        47,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        45,
+        71,
+        47,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        1,
+        49,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        3,
+        49,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        5,
+        49,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        7,
+        49,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        11,
+        49,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        15,
+        49,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        17,
+        49,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        19,
+        49,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        21,
+        49,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        25,
+        49,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        37,
+        49,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        45,
+        49,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        47,
+        49,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        49,
+        49,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        73,
+        49,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        47,
+        75,
+        49,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        1,
+        51,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        3,
+        51,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        5,
+        51,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        13,
+        51,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        15,
+        51,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        17,
+        51,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        21,
+        51,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        23,
+        51,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        25,
+        51,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        31,
+        51,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        33,
+        51,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        35,
+        51,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        39,
+        51,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        41,
+        51,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        47,
+        51,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        49,
+        51,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        55,
+        51,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        57,
+        51,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        63,
+        51,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        65,
+        51,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        69,
+        51,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        75,
+        51,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        49,
+        79,
+        51,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        17,
+        53,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        19,
+        53,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        21,
+        53,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        23,
+        53,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        29,
+        53,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        31,
+        53,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        33,
+        53,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        37,
+        53,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        39,
+        53,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        41,
+        53,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        47,
+        53,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        55,
+        53,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        59,
+        53,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        61,
+        53,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        63,
+        53,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        65,
+        53,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        69,
+        53,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        71,
+        53,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        73,
+        53,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        51,
+        81,
+        53,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        1,
+        55,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        11,
+        55,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        13,
+        55,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        19,
+        55,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        21,
+        55,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        25,
+        55,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        31,
+        55,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        33,
+        55,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        37,
+        55,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        41,
+        55,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        43,
+        55,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        49,
+        55,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        51,
+        55,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        55,
+        55,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        57,
+        55,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        61,
+        55,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        69,
+        55,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        71,
+        55,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        75,
+        55,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        53,
+        77,
+        55,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        1,
+        57,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        3,
+        57,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        5,
+        57,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        7,
+        57,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        9,
+        57,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        17,
+        57,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        19,
+        57,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        23,
+        57,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        25,
+        57,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        39,
+        57,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        41,
+        57,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        47,
+        57,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        49,
+        57,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        53,
+        57,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        61,
+        57,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        63,
+        57,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        67,
+        57,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        69,
+        57,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        71,
+        57,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        77,
+        57,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        55,
+        79,
+        57,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        1,
+        59,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        5,
+        59,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        13,
+        59,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        15,
+        59,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        17,
+        59,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        21,
+        59,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        25,
+        59,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        37,
+        59,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        43,
+        59,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        51,
+        59,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        55,
+        59,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        57,
+        59,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        59,
+        59,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        61,
+        59,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        63,
+        59,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        75,
+        59,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        77,
+        59,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        57,
+        81,
+        59,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        1,
+        61,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        5,
+        61,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        7,
+        61,
+        9
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        15,
+        61,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        17,
+        61,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        29,
+        61,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        33,
+        61,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        41,
+        61,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        43,
+        61,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        45,
+        61,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        47,
+        61,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        49,
+        61,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        53,
+        61,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        55,
+        61,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        61,
+        61,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        63,
+        61,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        65,
+        61,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        69,
+        61,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        71,
+        61,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        73,
+        61,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        75,
+        61,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        59,
+        81,
+        61,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        1,
+        63,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        3,
+        63,
+        5
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        5,
+        63,
+        7
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        13,
+        63,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        15,
+        63,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        17,
+        63,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        25,
+        63,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        27,
+        63,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        29,
+        63,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        33,
+        63,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        41,
+        63,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        47,
+        63,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        51,
+        63,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        53,
+        63,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        55,
+        63,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        57,
+        63,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        61,
+        63,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        63,
+        63,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        65,
+        63,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        67,
+        63,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        69,
+        63,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        71,
+        63,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        73,
+        63,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        75,
+        63,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        61,
+        81,
+        63,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        1,
+        65,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        9,
+        65,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        11,
+        65,
+        13
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        15,
+        65,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        23,
+        65,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        31,
+        65,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        33,
+        65,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        37,
+        65,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        39,
+        65,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        41,
+        65,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        45,
+        65,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        49,
+        65,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        53,
+        65,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        55,
+        65,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        57,
+        65,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        61,
+        65,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        65,
+        65,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        67,
+        65,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        71,
+        65,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        73,
+        65,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        79,
+        65,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        63,
+        81,
+        65,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        1,
+        67,
+        3
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        13,
+        67,
+        15
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        15,
+        67,
+        17
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        17,
+        67,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        21,
+        67,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        23,
+        67,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        27,
+        67,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        29,
+        67,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        35,
+        67,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        39,
+        67,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        45,
+        67,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        49,
+        67,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        51,
+        67,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        53,
+        67,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        55,
+        67,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        59,
+        67,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        65,
+        67,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        67,
+        67,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        69,
+        67,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        71,
+        67,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        73,
+        67,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        75,
+        67,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        77,
+        67,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        79,
+        67,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        65,
+        81,
+        67,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        17,
+        69,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        19,
+        69,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        23,
+        69,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        27,
+        69,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        31,
+        69,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        35,
+        69,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        37,
+        69,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        39,
+        69,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        43,
+        69,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        47,
+        69,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        51,
+        69,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        55,
+        69,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        59,
+        69,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        61,
+        69,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        65,
+        69,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        73,
+        69,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        79,
+        69,
+        81
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        67,
+        81,
+        69,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        17,
+        71,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        19,
+        71,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        27,
+        71,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        29,
+        71,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        31,
+        71,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        33,
+        71,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        35,
+        71,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        45,
+        71,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        49,
+        71,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        55,
+        71,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        63,
+        71,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        65,
+        71,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        69,
+        71,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        73,
+        71,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        69,
+        77,
+        71,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        17,
+        73,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        23,
+        73,
+        25
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        27,
+        73,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        31,
+        73,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        33,
+        73,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        35,
+        73,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        37,
+        73,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        39,
+        73,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        43,
+        73,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        49,
+        73,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        53,
+        73,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        57,
+        73,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        65,
+        73,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        73,
+        73,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        71,
+        81,
+        73,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        27,
+        75,
+        29
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        35,
+        75,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        39,
+        75,
+        41
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        43,
+        75,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        49,
+        75,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        53,
+        75,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        63,
+        75,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        65,
+        75,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        67,
+        75,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        69,
+        75,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        71,
+        75,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        73,
+        75,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        75,
+        75,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        81,
+        75,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        19,
+        77,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        21,
+        77,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        25,
+        77,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        35,
+        77,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        37,
+        77,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        47,
+        77,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        53,
+        77,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        55,
+        77,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        59,
+        77,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        61,
+        77,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        67,
+        77,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        75,
+        77,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        75,
+        81,
+        77,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        19,
+        79,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        31,
+        79,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        33,
+        79,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        37,
+        79,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        41,
+        79,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        43,
+        79,
+        45
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        45,
+        79,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        49,
+        79,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        51,
+        79,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        55,
+        79,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        61,
+        79,
+        63
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        63,
+        79,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        65,
+        79,
+        67
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        67,
+        79,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        69,
+        79,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        73,
+        79,
+        75
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        75,
+        79,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        77,
+        77,
+        79,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        17,
+        81,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        19,
+        81,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        21,
+        81,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        25,
+        81,
+        27
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        29,
+        81,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        33,
+        81,
+        35
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        37,
+        81,
+        39
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        41,
+        81,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        49,
+        81,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        55,
+        81,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        57,
+        81,
+        59
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        63,
+        81,
+        65
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        67,
+        81,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        69,
+        81,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        71,
+        81,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        77,
+        81,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        79,
+        81,
+        81,
+        83
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        17,
+        83,
+        19
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        19,
+        83,
+        21
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        21,
+        83,
+        23
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        29,
+        83,
+        31
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        31,
+        83,
+        33
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        35,
+        83,
+        37
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        41,
+        83,
+        43
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        45,
+        83,
+        47
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        47,
+        83,
+        49
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        49,
+        83,
+        51
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        51,
+        83,
+        53
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        53,
+        83,
+        55
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        55,
+        83,
+        57
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        59,
+        83,
+        61
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        67,
+        83,
+        69
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        69,
+        83,
+        71
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        71,
+        83,
+        73
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        75,
+        83,
+        77
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        81,
+        77,
+        83,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(1, 6);\npath.lineTo(1, 10);\npath.conicTo(1, 15, 6, 15, 0.707106888f);\npath.lineTo(10, 15);\npath.conicTo(15, 15, 15, 10, 0.707106769f);\npath.lineTo(15, 6);\npath.conicTo(15, 1, 10, 1, 0.707106769f);\npath.lineTo(6, 1);\npath.conicTo(1, 1, 1, 6, 0.707106709f);\npath.moveTo(6, 3);\npath.lineTo(10, 3);\npath.conicTo(13, 3, 13, 6, 0.707106769f);\npath.lineTo(13, 10);\npath.conicTo(13, 13, 10, 13, 0.707106769f);\npath.lineTo(6, 13);\npath.conicTo(3, 13, 3, 10, 0.707106888f);\npath.lineTo(3, 6);\npath.conicTo(3, 3, 6, 3, 0.707106709f);\n",
+        "fillType": "evenOdd",
+        "verbs": [
+          {
+            "move": [
+              1,
+              6
+            ]
+          },
+          {
+            "line": [
+              1,
+              10
+            ]
+          },
+          {
+            "conic": [
+              [
+                1,
+                15
+              ],
+              [
+                6,
+                15
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              10,
+              15
+            ]
+          },
+          {
+            "conic": [
+              [
+                15,
+                15
+              ],
+              [
+                15,
+                10
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              15,
+              6
+            ]
+          },
+          {
+            "conic": [
+              [
+                15,
+                1
+              ],
+              [
+                10,
+                1
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              6,
+              1
+            ]
+          },
+          {
+            "conic": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                6
+              ],
+              0.707107
+            ]
+          },
+          {
+            "move": [
+              6,
+              3
+            ]
+          },
+          {
+            "line": [
+              10,
+              3
+            ]
+          },
+          {
+            "conic": [
+              [
+                13,
+                3
+              ],
+              [
+                13,
+                6
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              13,
+              10
+            ]
+          },
+          {
+            "conic": [
+              [
+                13,
+                13
+              ],
+              [
+                10,
+                13
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              6,
+              13
+            ]
+          },
+          {
+            "conic": [
+              [
+                3,
+                13
+              ],
+              [
+                3,
+                10
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              3,
+              6
+            ]
+          },
+          {
+            "conic": [
+              [
+                3,
+                3
+              ],
+              [
+                6,
+                3
+              ],
+              0.707107
+            ]
+          }
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        5,
+        11,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0,
+          -1,
+          0,
+          84
+        ],
+        [
+          1,
+          0,
+          0,
+          -68
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(69, 6);\npath.lineTo(69, 10);\npath.conicTo(69, 15, 74, 15, 0.707106888f);\npath.lineTo(78, 15);\npath.conicTo(83, 15, 83, 10, 0.707106769f);\npath.lineTo(83, 6);\npath.conicTo(83, 1, 78, 1, 0.707106769f);\npath.lineTo(74, 1);\npath.conicTo(69, 1, 69, 6, 0.707106709f);\npath.moveTo(74, 3);\npath.lineTo(78, 3);\npath.conicTo(81, 3, 81, 6, 0.707106769f);\npath.lineTo(81, 10);\npath.conicTo(81, 13, 78, 13, 0.707106769f);\npath.lineTo(74, 13);\npath.conicTo(71, 13, 71, 10, 0.707106888f);\npath.lineTo(71, 6);\npath.conicTo(71, 3, 74, 3, 0.707106709f);\n",
+        "fillType": "evenOdd",
+        "verbs": [
+          {
+            "move": [
+              69,
+              6
+            ]
+          },
+          {
+            "line": [
+              69,
+              10
+            ]
+          },
+          {
+            "conic": [
+              [
+                69,
+                15
+              ],
+              [
+                74,
+                15
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              78,
+              15
+            ]
+          },
+          {
+            "conic": [
+              [
+                83,
+                15
+              ],
+              [
+                83,
+                10
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              83,
+              6
+            ]
+          },
+          {
+            "conic": [
+              [
+                83,
+                1
+              ],
+              [
+                78,
+                1
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              74,
+              1
+            ]
+          },
+          {
+            "conic": [
+              [
+                69,
+                1
+              ],
+              [
+                69,
+                6
+              ],
+              0.707107
+            ]
+          },
+          {
+            "move": [
+              74,
+              3
+            ]
+          },
+          {
+            "line": [
+              78,
+              3
+            ]
+          },
+          {
+            "conic": [
+              [
+                81,
+                3
+              ],
+              [
+                81,
+                6
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              81,
+              10
+            ]
+          },
+          {
+            "conic": [
+              [
+                81,
+                13
+              ],
+              [
+                78,
+                13
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              74,
+              13
+            ]
+          },
+          {
+            "conic": [
+              [
+                71,
+                13
+              ],
+              [
+                71,
+                10
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              71,
+              6
+            ]
+          },
+          {
+            "conic": [
+              [
+                71,
+                3
+              ],
+              [
+                74,
+                3
+              ],
+              0.707107
+            ]
+          }
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0,
+          -1,
+          0,
+          84
+        ],
+        [
+          1,
+          0,
+          0,
+          -68
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        73,
+        5,
+        79,
+        11
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0,
+          1,
+          0,
+          -68
+        ],
+        [
+          -1,
+          0,
+          0,
+          84
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawPath",
+      "visible": true,
+      "path": {
+        "dump": "path.setFillType(SkPathFillType::kEvenOdd);\npath.moveTo(1, 74);\npath.lineTo(1, 78);\npath.conicTo(1, 83, 6, 83, 0.707106888f);\npath.lineTo(10, 83);\npath.conicTo(15, 83, 15, 78, 0.707106769f);\npath.lineTo(15, 74);\npath.conicTo(15, 69, 10, 69, 0.707106769f);\npath.lineTo(6, 69);\npath.conicTo(1, 69, 1, 74, 0.707106709f);\npath.moveTo(6, 71);\npath.lineTo(10, 71);\npath.conicTo(13, 71, 13, 74, 0.707106769f);\npath.lineTo(13, 78);\npath.conicTo(13, 81, 10, 81, 0.707106769f);\npath.lineTo(6, 81);\npath.conicTo(3, 81, 3, 78, 0.707106888f);\npath.lineTo(3, 74);\npath.conicTo(3, 71, 6, 71, 0.707106709f);\n",
+        "fillType": "evenOdd",
+        "verbs": [
+          {
+            "move": [
+              1,
+              74
+            ]
+          },
+          {
+            "line": [
+              1,
+              78
+            ]
+          },
+          {
+            "conic": [
+              [
+                1,
+                83
+              ],
+              [
+                6,
+                83
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              10,
+              83
+            ]
+          },
+          {
+            "conic": [
+              [
+                15,
+                83
+              ],
+              [
+                15,
+                78
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              15,
+              74
+            ]
+          },
+          {
+            "conic": [
+              [
+                15,
+                69
+              ],
+              [
+                10,
+                69
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              6,
+              69
+            ]
+          },
+          {
+            "conic": [
+              [
+                1,
+                69
+              ],
+              [
+                1,
+                74
+              ],
+              0.707107
+            ]
+          },
+          {
+            "move": [
+              6,
+              71
+            ]
+          },
+          {
+            "line": [
+              10,
+              71
+            ]
+          },
+          {
+            "conic": [
+              [
+                13,
+                71
+              ],
+              [
+                13,
+                74
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              13,
+              78
+            ]
+          },
+          {
+            "conic": [
+              [
+                13,
+                81
+              ],
+              [
+                10,
+                81
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              6,
+              81
+            ]
+          },
+          {
+            "conic": [
+              [
+                3,
+                81
+              ],
+              [
+                3,
+                78
+              ],
+              0.707107
+            ]
+          },
+          {
+            "line": [
+              3,
+              74
+            ]
+          },
+          {
+            "conic": [
+              [
+                3,
+                71
+              ],
+              [
+                6,
+                71
+              ],
+              0.707107
+            ]
+          }
+        ]
+      },
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          0,
+          1,
+          0,
+          -68
+        ],
+        [
+          -1,
+          0,
+          0,
+          84
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "DrawOval",
+      "visible": true,
+      "coords": [
+        5,
+        73,
+        11,
+        79
+      ],
+      "paint": {
+        "antiAlias": true
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    }
+  ],
+  "dim": [
+    235,
+    100
+  ],
+  "has_save_layer": true
+}

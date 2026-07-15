@@ -1,0 +1,1369 @@
+{
+   "version": 1,
+   "commands": [
+      {
+         "command": "DrawPaint",
+         "visible": true,
+         "paint": {
+            "color": [ 0, 0, 0, 0 ],
+            "blendMode": "Src"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, -568 ],
+            [ 0, 1, 0, -637 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 820, 638, 854, 672 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 820, 638, 854, 672 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 153, 18, 18, 18 ]
+         },
+         "shortDesc": " [820 638 854 672]"
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kInverseWinding);\npath.moveTo(821, 655);\npath.conicTo(821, 639, 837, 639, 0.707106769f);\npath.conicTo(853, 639, 853, 655, 0.707106769f);\npath.conicTo(853, 671, 837, 671, 0.707106769f);\npath.conicTo(821, 671, 821, 655, 0.707106769f);\npath.close();\n",
+            "fillType": "inverseWinding",
+            "verbs": [
+               {
+                  "move": [ 821, 655 ]
+               },
+               {
+                  "conic": [
+                     [ 821, 639 ],
+                     [ 837, 639 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 639 ],
+                     [ 853, 655 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 671 ],
+                     [ 837, 671 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 821, 671 ],
+                     [ 821, 655 ],
+                     0.707107
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 41, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 820, 688, 854, 722 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 820, 688, 854, 722 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 153, 18, 18, 18 ]
+         },
+         "shortDesc": " [820 688 854 722]"
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kInverseWinding);\npath.moveTo(821, 705);\npath.conicTo(821, 689, 837, 689, 0.707106769f);\npath.conicTo(853, 689, 853, 705, 0.707106769f);\npath.conicTo(853, 721, 837, 721, 0.707106769f);\npath.conicTo(821, 721, 821, 705, 0.707106769f);\npath.close();\n",
+            "fillType": "inverseWinding",
+            "verbs": [
+               {
+                  "move": [ 821, 705 ]
+               },
+               {
+                  "conic": [
+                     [ 821, 689 ],
+                     [ 837, 689 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 689 ],
+                     [ 853, 705 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 721 ],
+                     [ 837, 721 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 821, 721 ],
+                     [ 821, 705 ],
+                     0.707107
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 41, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 820, 738, 854, 772 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 820, 738, 854, 772 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 153, 18, 18, 18 ]
+         },
+         "shortDesc": " [820 738 854 772]"
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kInverseWinding);\npath.moveTo(821, 755);\npath.conicTo(821, 739, 837, 739, 0.707106769f);\npath.conicTo(853, 739, 853, 755, 0.707106769f);\npath.conicTo(853, 771, 837, 771, 0.707106769f);\npath.conicTo(821, 771, 821, 755, 0.707106769f);\npath.close();\n",
+            "fillType": "inverseWinding",
+            "verbs": [
+               {
+                  "move": [ 821, 755 ]
+               },
+               {
+                  "conic": [
+                     [ 821, 739 ],
+                     [ 837, 739 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 739 ],
+                     [ 853, 755 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 771 ],
+                     [ 837, 771 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 821, 771 ],
+                     [ 821, 755 ],
+                     0.707107
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 41, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRRect",
+         "visible": true,
+         "coords": [ [ 820, 788, 854, 822 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ], [ 17, 17 ] ],
+         "op": "intersect",
+         "antiAlias": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 820, 788, 854, 822 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 153, 18, 18, 18 ]
+         },
+         "shortDesc": " [820 788 854 822]"
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kInverseWinding);\npath.moveTo(821, 805);\npath.conicTo(821, 789, 837, 789, 0.707106769f);\npath.conicTo(853, 789, 853, 805, 0.707106769f);\npath.conicTo(853, 821, 837, 821, 0.707106769f);\npath.conicTo(821, 821, 821, 805, 0.707106769f);\npath.close();\n",
+            "fillType": "inverseWinding",
+            "verbs": [
+               {
+                  "move": [ 821, 805 ]
+               },
+               {
+                  "conic": [
+                     [ 821, 789 ],
+                     [ 837, 789 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 789 ],
+                     [ 853, 805 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 853, 821 ],
+                     [ 837, 821 ],
+                     0.707107
+                  ]
+               },
+               {
+                  "conic": [
+                     [ 821, 821 ],
+                     [ 821, 805 ],
+                     0.707107
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 41, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 646, 846, 663 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 646, 846, 663 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [829 646 846 663]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 829, 647, 845, 663 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [829 647 845 663]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 646, 846, 663 ],
+         "paint": {
+            "blendMode": "DstIn"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 647, 845, 663 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [829 647 845 663]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 829 ],
+            [ 0, 1, 0, 647 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.666667, 0, 0, 0 ],
+            [ 0, 0.666667, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(13.0700998f, 9.97002029f);\npath.lineTo(14.3100996f, 11.21f);\npath.lineTo(19.1201f, 6.40002012f);\npath.lineTo(19.1201f, 11.4899998f);\npath.lineTo(20.8701f, 11.4899998f);\npath.lineTo(20.8701f, 4.28001976f);\npath.cubicTo(20.8701f, 3.80001998f, 20.4801006f, 3.40002012f, 19.9901009f, 3.40002012f);\npath.lineTo(12.7800999f, 3.40002012f);\npath.lineTo(12.7800999f, 5.15002012f);\npath.lineTo(17.8801003f, 5.15002012f);\npath.lineTo(13.0700998f, 9.96002007f);\npath.lineTo(13.0700998f, 9.97002029f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 13.0701, 9.97002 ]
+               },
+               {
+                  "line": [ 14.3101, 11.21 ]
+               },
+               {
+                  "line": [ 19.1201, 6.40002 ]
+               },
+               {
+                  "line": [ 19.1201, 11.49 ]
+               },
+               {
+                  "line": [ 20.8701, 11.49 ]
+               },
+               {
+                  "line": [ 20.8701, 4.28002 ]
+               },
+               {
+                  "cubic": [
+                     [ 20.8701, 3.80002 ],
+                     [ 20.4801, 3.40002 ],
+                     [ 19.9901, 3.40002 ]
+                  ]
+               },
+               {
+                  "line": [ 12.7801, 3.40002 ]
+               },
+               {
+                  "line": [ 12.7801, 5.15002 ]
+               },
+               {
+                  "line": [ 17.8801, 5.15002 ]
+               },
+               {
+                  "line": [ 13.0701, 9.96002 ]
+               },
+               {
+                  "line": [ 13.0701, 9.97002 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(4.00012016f, 21.1599998f);\npath.lineTo(11.2101002f, 21.1599998f);\npath.lineTo(11.2101002f, 19.4099998f);\npath.lineTo(6.11011982f, 19.4099998f);\npath.lineTo(10.8301001f, 14.6900005f);\npath.lineTo(9.59012032f, 13.4499998f);\npath.lineTo(4.87012005f, 18.1700001f);\npath.lineTo(4.87012005f, 13.0799999f);\npath.lineTo(3.12012005f, 13.0799999f);\npath.lineTo(3.12012005f, 20.2900009f);\npath.cubicTo(3.12012005f, 20.7700005f, 3.51011992f, 21.1700001f, 4.00012016f, 21.1700001f);\npath.lineTo(4.00012016f, 21.1599998f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 4.00012, 21.16 ]
+               },
+               {
+                  "line": [ 11.2101, 21.16 ]
+               },
+               {
+                  "line": [ 11.2101, 19.41 ]
+               },
+               {
+                  "line": [ 6.11012, 19.41 ]
+               },
+               {
+                  "line": [ 10.8301, 14.69 ]
+               },
+               {
+                  "line": [ 9.59012, 13.45 ]
+               },
+               {
+                  "line": [ 4.87012, 18.17 ]
+               },
+               {
+                  "line": [ 4.87012, 13.08 ]
+               },
+               {
+                  "line": [ 3.12012, 13.08 ]
+               },
+               {
+                  "line": [ 3.12012, 20.29 ]
+               },
+               {
+                  "cubic": [
+                     [ 3.12012, 20.77 ],
+                     [ 3.51012, 21.17 ],
+                     [ 4.00012, 21.17 ]
+                  ]
+               },
+               {
+                  "line": [ 4.00012, 21.16 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 696, 846, 713 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 696, 846, 713 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [829 696 846 713]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 829, 697, 845, 713 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [829 697 845 713]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 696, 846, 713 ],
+         "paint": {
+            "blendMode": "DstIn"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 697, 845, 713 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [829 697 845 713]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 829 ],
+            [ 0, 1, 0, 697 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.666667, 0, 0, 0 ],
+            [ 0, 0.666667, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(11.25f, 7.63000011f);\npath.lineTo(11.25f, 16.2700005f);\npath.lineTo(7.03000021f, 13.9099998f);\npath.lineTo(6.63000011f, 13.6900005f);\npath.lineTo(3.75f, 13.6900005f);\npath.lineTo(3.75f, 10.04f);\npath.lineTo(6.5999999f, 10.04f);\npath.lineTo(6.98000002f, 9.84000015f);\npath.lineTo(11.25f, 7.61999989f);\npath.moveTo(13, 4.75f);\npath.lineTo(6.17000008f, 8.30000019f);\npath.lineTo(3.04999995f, 8.30000019f);\npath.cubicTo(2.47000003f, 8.30000019f, 2, 8.76000023f, 2, 9.34000015f);\npath.lineTo(2, 14.4099998f);\npath.cubicTo(2, 14.9799995f, 2.47000003f, 15.4499998f, 3.04999995f, 15.4499998f);\npath.lineTo(6.17000008f, 15.4499998f);\npath.lineTo(13, 19.2600002f);\npath.lineTo(13, 4.75f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 11.25, 7.63 ]
+               },
+               {
+                  "line": [ 11.25, 16.27 ]
+               },
+               {
+                  "line": [ 7.03, 13.91 ]
+               },
+               {
+                  "line": [ 6.63, 13.69 ]
+               },
+               {
+                  "line": [ 3.75, 13.69 ]
+               },
+               {
+                  "line": [ 3.75, 10.04 ]
+               },
+               {
+                  "line": [ 6.6, 10.04 ]
+               },
+               {
+                  "line": [ 6.98, 9.84 ]
+               },
+               {
+                  "line": [ 11.25, 7.62 ]
+               },
+               {
+                  "move": [ 13, 4.75 ]
+               },
+               {
+                  "line": [ 6.17, 8.3 ]
+               },
+               {
+                  "line": [ 3.05, 8.3 ]
+               },
+               {
+                  "cubic": [
+                     [ 2.47, 8.3 ],
+                     [ 2, 8.76 ],
+                     [ 2, 9.34 ]
+                  ]
+               },
+               {
+                  "line": [ 2, 14.41 ]
+               },
+               {
+                  "cubic": [
+                     [ 2, 14.98 ],
+                     [ 2.47, 15.45 ],
+                     [ 3.05, 15.45 ]
+                  ]
+               },
+               {
+                  "line": [ 6.17, 15.45 ]
+               },
+               {
+                  "line": [ 13, 19.26 ]
+               },
+               {
+                  "line": [ 13, 4.75 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(16.0202007f, 8.38413048f);\npath.lineTo(14.7826996f, 9.62156963f);\npath.lineTo(20.7861004f, 15.6248999f);\npath.lineTo(22.0235004f, 14.3874998f);\npath.lineTo(16.0202007f, 8.38413048f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 16.0202, 8.38413 ]
+               },
+               {
+                  "line": [ 14.7827, 9.62157 ]
+               },
+               {
+                  "line": [ 20.7861, 15.6249 ]
+               },
+               {
+                  "line": [ 22.0235, 14.3875 ]
+               },
+               {
+                  "line": [ 16.0202, 8.38413 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(20.7931995f, 8.37578964f);\npath.lineTo(14.7919998f, 14.3811998f);\npath.lineTo(16.0298996f, 15.6182003f);\npath.lineTo(22.0310993f, 9.61279964f);\npath.lineTo(20.7931995f, 8.37578964f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 20.7932, 8.37579 ]
+               },
+               {
+                  "line": [ 14.792, 14.3812 ]
+               },
+               {
+                  "line": [ 16.0299, 15.6182 ]
+               },
+               {
+                  "line": [ 22.0311, 9.6128 ]
+               },
+               {
+                  "line": [ 20.7932, 8.37579 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 746, 846, 763 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 746, 846, 763 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [829 746 846 763]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 829, 747, 845, 763 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [829 747 845 763]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 746, 846, 763 ],
+         "paint": {
+            "blendMode": "DstIn"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 747, 845, 763 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [829 747 845 763]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 829 ],
+            [ 0, 1, 0, 747 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.666667, 0, 0, 0 ],
+            [ 0, 0.666667, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(9.19989967f, 20.7199993f);\npath.cubicTo(7.69990015f, 20.7199993f, 6.19990015f, 20.1399994f, 5.02990007f, 18.9699993f);\npath.cubicTo(2.68989992f, 16.6299992f, 2.68989992f, 12.9700003f, 5.02990007f, 10.6300001f);\npath.lineTo(7.04990005f, 8.61001968f);\npath.lineTo(8.28989983f, 9.85002041f);\npath.lineTo(6.26989985f, 11.8699999f);\npath.cubicTo(4.59990025f, 13.54f, 4.59990025f, 16.0599995f, 6.26989985f, 17.7299995f);\npath.cubicTo(7.93989992f, 19.3999996f, 10.4598999f, 19.3999996f, 12.1299f, 17.7299995f);\npath.lineTo(14.1499004f, 15.71f);\npath.lineTo(15.3899002f, 16.9500008f);\npath.lineTo(13.3698997f, 18.9699993f);\npath.cubicTo(12.1998997f, 20.1399994f, 10.6998997f, 20.7199993f, 9.19989967f, 20.7199993f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 9.1999, 20.72 ]
+               },
+               {
+                  "cubic": [
+                     [ 7.6999, 20.72 ],
+                     [ 6.1999, 20.14 ],
+                     [ 5.0299, 18.97 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 2.6899, 16.63 ],
+                     [ 2.6899, 12.97 ],
+                     [ 5.0299, 10.63 ]
+                  ]
+               },
+               {
+                  "line": [ 7.0499, 8.61002 ]
+               },
+               {
+                  "line": [ 8.2899, 9.85002 ]
+               },
+               {
+                  "line": [ 6.2699, 11.87 ]
+               },
+               {
+                  "cubic": [
+                     [ 4.5999, 13.54 ],
+                     [ 4.5999, 16.06 ],
+                     [ 6.2699, 17.73 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 7.9399, 19.4 ],
+                     [ 10.4599, 19.4 ],
+                     [ 12.1299, 17.73 ]
+                  ]
+               },
+               {
+                  "line": [ 14.1499, 15.71 ]
+               },
+               {
+                  "line": [ 15.3899, 16.95 ]
+               },
+               {
+                  "line": [ 13.3699, 18.97 ]
+               },
+               {
+                  "cubic": [
+                     [ 12.1999, 20.14 ],
+                     [ 10.6999, 20.72 ],
+                     [ 9.1999, 20.72 ]
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(16.9498997f, 15.3900003f);\npath.lineTo(15.7098999f, 14.1499996f);\npath.lineTo(17.7299004f, 12.1300001f);\npath.cubicTo(19.3999004f, 10.46f, 19.3999004f, 7.94002008f, 17.7299004f, 6.27002001f);\npath.cubicTo(16.0599003f, 4.60001993f, 13.5398998f, 4.60001993f, 11.8698997f, 6.27002001f);\npath.lineTo(9.84990025f, 8.29001999f);\npath.lineTo(8.60989952f, 7.05002022f);\npath.lineTo(10.6299f, 5.03002024f);\npath.cubicTo(12.9699001f, 2.69002008f, 16.6299f, 2.69002008f, 18.9699001f, 5.03002024f);\npath.cubicTo(21.3099003f, 7.37001991f, 21.3099003f, 11.0299997f, 18.9699001f, 13.3699999f);\npath.lineTo(16.9498997f, 15.3900003f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 16.9499, 15.39 ]
+               },
+               {
+                  "line": [ 15.7099, 14.15 ]
+               },
+               {
+                  "line": [ 17.7299, 12.13 ]
+               },
+               {
+                  "cubic": [
+                     [ 19.3999, 10.46 ],
+                     [ 19.3999, 7.94002 ],
+                     [ 17.7299, 6.27002 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 16.0599, 4.60002 ],
+                     [ 13.5399, 4.60002 ],
+                     [ 11.8699, 6.27002 ]
+                  ]
+               },
+               {
+                  "line": [ 9.8499, 8.29002 ]
+               },
+               {
+                  "line": [ 8.6099, 7.05002 ]
+               },
+               {
+                  "line": [ 10.6299, 5.03002 ]
+               },
+               {
+                  "cubic": [
+                     [ 12.9699, 2.69002 ],
+                     [ 16.6299, 2.69002 ],
+                     [ 18.9699, 5.03002 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 21.3099, 7.37002 ],
+                     [ 21.3099, 11.03 ],
+                     [ 18.9699, 13.37 ]
+                  ]
+               },
+               {
+                  "line": [ 16.9499, 15.39 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(14.8513002f, 8.01951981f);\npath.lineTo(8.01360035f, 14.8571997f);\npath.lineTo(9.25102997f, 16.0946999f);\npath.lineTo(16.0888004f, 9.25695038f);\npath.lineTo(14.8513002f, 8.01951981f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 14.8513, 8.01952 ]
+               },
+               {
+                  "line": [ 8.0136, 14.8572 ]
+               },
+               {
+                  "line": [ 9.25103, 16.0947 ]
+               },
+               {
+                  "line": [ 16.0888, 9.25695 ]
+               },
+               {
+                  "line": [ 14.8513, 8.01952 ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 796, 846, 813 ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 796, 846, 813 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [829 796 846 813]"
+      },
+      {
+         "command": "DrawRect",
+         "visible": true,
+         "coords": [ 829, 797, 845, 813 ],
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         },
+         "shortDesc": " [829 797 845 813]"
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "SaveLayer",
+         "visible": true,
+         "bounds": [ 829, 796, 846, 813 ],
+         "paint": {
+            "blendMode": "DstIn"
+         }
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 829, 797, 845, 813 ],
+         "op": "intersect",
+         "antiAlias": false,
+         "shortDesc": " [829 797 845 813]"
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 1, 0, 0, 829 ],
+            [ 0, 1, 0, 797 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "ClipRect",
+         "visible": true,
+         "coords": [ 0, 0, 16, 16 ],
+         "op": "intersect",
+         "antiAlias": true,
+         "shortDesc": " [0 0 16 16]"
+      },
+      {
+         "command": "Save",
+         "visible": true
+      },
+      {
+         "command": "Concat44",
+         "visible": true,
+         "matrix": [
+            [ 0.666667, 0, 0, 0 ],
+            [ 0, 0.666667, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1 ]
+         ]
+      },
+      {
+         "command": "DrawPath",
+         "visible": true,
+         "path": {
+            "dump": "path.setFillType(SkPathFillType::kWinding);\npath.moveTo(21.1299f, 3.00487995f);\npath.cubicTo(21.6131001f, 3.00487995f, 22.0048008f, 3.39669013f, 22.0049f, 3.87987995f);\npath.lineTo(22.0049f, 20.1797009f);\npath.cubicTo(22.0049f, 20.662899f, 21.6131001f, 21.0547009f, 21.1299f, 21.0547009f);\npath.lineTo(2.87987995f, 21.0547009f);\npath.cubicTo(2.39669013f, 21.0545998f, 2.00487995f, 20.662899f, 2.00487995f, 20.1797009f);\npath.lineTo(2.00487995f, 3.87987995f);\npath.cubicTo(2.00495005f, 3.39672995f, 2.39672995f, 3.00495005f, 2.87987995f, 3.00487995f);\npath.lineTo(21.1299f, 3.00487995f);\npath.close();\npath.moveTo(8.83691025f, 8.52538967f);\npath.cubicTo(6.8139801f, 8.52538967f, 5.80273008f, 10.0424995f, 5.80273008f, 11.9209003f);\npath.cubicTo(5.80282021f, 13.7475996f, 6.7727499f, 15.2754002f, 8.69237995f, 15.2754002f);\npath.cubicTo(10.0340996f, 15.2754002f, 11.0873003f, 14.6554003f, 11.4794998f, 13.0557003f);\npath.lineTo(9.77637005f, 12.7567997f);\npath.cubicTo(9.61128044f, 13.4996004f, 9.27060032f, 13.7889004f, 8.84766006f, 13.7890997f);\npath.cubicTo(7.88800001f, 13.7890997f, 7.84572029f, 12.4785995f, 7.84570026f, 11.9004002f);\npath.cubicTo(7.84570026f, 11.4359999f, 7.92861986f, 9.99053001f, 8.80566025f, 9.99022961f);\npath.cubicTo(9.37320042f, 9.99022961f, 9.58028984f, 10.4652004f, 9.61133003f, 11.0430002f);\npath.lineTo(11.4277f, 10.8057003f);\npath.cubicTo(11.2624998f, 9.5363102f, 10.3850002f, 8.52540016f, 8.83691025f, 8.52538967f);\npath.close();\npath.moveTo(15.8555002f, 8.52538967f);\npath.cubicTo(13.8325005f, 8.52538967f, 12.8212996f, 10.0424995f, 12.8212996f, 11.9209003f);\npath.cubicTo(12.8213997f, 13.7475996f, 13.7912998f, 15.2754002f, 15.7109003f, 15.2754002f);\npath.cubicTo(17.0526009f, 15.2753f, 18.1049004f, 14.6554003f, 18.4971008f, 13.0557003f);\npath.lineTo(16.794899f, 12.7567997f);\npath.cubicTo(16.6298008f, 13.4998999f, 16.2884007f, 13.7890997f, 15.8652f, 13.7890997f);\npath.cubicTo(14.9059f, 13.7888002f, 14.8642998f, 12.4785004f, 14.8642998f, 11.9004002f);\npath.cubicTo(14.8642998f, 11.4358997f, 14.9470005f, 9.99028969f, 15.8241997f, 9.99022961f);\npath.cubicTo(16.3917007f, 9.99022961f, 16.5979004f, 10.4652004f, 16.6289005f, 11.0430002f);\npath.lineTo(18.4463005f, 10.8057003f);\npath.cubicTo(18.2810993f, 9.53635025f, 17.4034004f, 8.52548981f, 15.8555002f, 8.52538967f);\npath.close();\n",
+            "fillType": "winding",
+            "verbs": [
+               {
+                  "move": [ 21.1299, 3.00488 ]
+               },
+               {
+                  "cubic": [
+                     [ 21.6131, 3.00488 ],
+                     [ 22.0048, 3.39669 ],
+                     [ 22.0049, 3.87988 ]
+                  ]
+               },
+               {
+                  "line": [ 22.0049, 20.1797 ]
+               },
+               {
+                  "cubic": [
+                     [ 22.0049, 20.6629 ],
+                     [ 21.6131, 21.0547 ],
+                     [ 21.1299, 21.0547 ]
+                  ]
+               },
+               {
+                  "line": [ 2.87988, 21.0547 ]
+               },
+               {
+                  "cubic": [
+                     [ 2.39669, 21.0546 ],
+                     [ 2.00488, 20.6629 ],
+                     [ 2.00488, 20.1797 ]
+                  ]
+               },
+               {
+                  "line": [ 2.00488, 3.87988 ]
+               },
+               {
+                  "cubic": [
+                     [ 2.00495, 3.39673 ],
+                     [ 2.39673, 3.00495 ],
+                     [ 2.87988, 3.00488 ]
+                  ]
+               },
+               {
+                  "line": [ 21.1299, 3.00488 ]
+               },
+               "close",
+               {
+                  "move": [ 8.83691, 8.52539 ]
+               },
+               {
+                  "cubic": [
+                     [ 6.81398, 8.52539 ],
+                     [ 5.80273, 10.0425 ],
+                     [ 5.80273, 11.9209 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 5.80282, 13.7476 ],
+                     [ 6.77275, 15.2754 ],
+                     [ 8.69238, 15.2754 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 10.0341, 15.2754 ],
+                     [ 11.0873, 14.6554 ],
+                     [ 11.4795, 13.0557 ]
+                  ]
+               },
+               {
+                  "line": [ 9.77637, 12.7568 ]
+               },
+               {
+                  "cubic": [
+                     [ 9.61128, 13.4996 ],
+                     [ 9.2706, 13.7889 ],
+                     [ 8.84766, 13.7891 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 7.888, 13.7891 ],
+                     [ 7.84572, 12.4786 ],
+                     [ 7.8457, 11.9004 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 7.8457, 11.436 ],
+                     [ 7.92862, 9.99053 ],
+                     [ 8.80566, 9.99023 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 9.3732, 9.99023 ],
+                     [ 9.58029, 10.4652 ],
+                     [ 9.61133, 11.043 ]
+                  ]
+               },
+               {
+                  "line": [ 11.4277, 10.8057 ]
+               },
+               {
+                  "cubic": [
+                     [ 11.2625, 9.53631 ],
+                     [ 10.385, 8.5254 ],
+                     [ 8.83691, 8.52539 ]
+                  ]
+               },
+               "close",
+               {
+                  "move": [ 15.8555, 8.52539 ]
+               },
+               {
+                  "cubic": [
+                     [ 13.8325, 8.52539 ],
+                     [ 12.8213, 10.0425 ],
+                     [ 12.8213, 11.9209 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 12.8214, 13.7476 ],
+                     [ 13.7913, 15.2754 ],
+                     [ 15.7109, 15.2754 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 17.0526, 15.2753 ],
+                     [ 18.1049, 14.6554 ],
+                     [ 18.4971, 13.0557 ]
+                  ]
+               },
+               {
+                  "line": [ 16.7949, 12.7568 ]
+               },
+               {
+                  "cubic": [
+                     [ 16.6298, 13.4999 ],
+                     [ 16.2884, 13.7891 ],
+                     [ 15.8652, 13.7891 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 14.9059, 13.7888 ],
+                     [ 14.8643, 12.4785 ],
+                     [ 14.8643, 11.9004 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 14.8643, 11.4359 ],
+                     [ 14.947, 9.99029 ],
+                     [ 15.8242, 9.99023 ]
+                  ]
+               },
+               {
+                  "cubic": [
+                     [ 16.3917, 9.99023 ],
+                     [ 16.5979, 10.4652 ],
+                     [ 16.6289, 11.043 ]
+                  ]
+               },
+               {
+                  "line": [ 18.4463, 10.8057 ]
+               },
+               {
+                  "cubic": [
+                     [ 18.2811, 9.53635 ],
+                     [ 17.4034, 8.52549 ],
+                     [ 15.8555, 8.52539 ]
+                  ]
+               },
+               "close"
+            ]
+         },
+         "paint": {
+            "antiAlias": true,
+            "color": [ 255, 255, 255, 255 ]
+         }
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      },
+      {
+         "command": "Restore",
+         "visible": true
+      }
+   ]
+}

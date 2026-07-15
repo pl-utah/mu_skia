@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "commands": [
+    {
+      "command": "DrawPaint",
+      "visible": true,
+      "paint": {
+        "color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "blendMode": "Src"
+      }
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          96
+        ],
+        [
+          0,
+          1,
+          0,
+          -220
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "Save",
+      "visible": true
+    },
+    {
+      "command": "Concat44",
+      "visible": true,
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          300
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "command": "SaveLayer",
+      "visible": true,
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "paint": {
+        "imagefilter": {
+          "name": "SkMergeImageFilter",
+          "data": "data/0",
+          "values": {
+            "00_int": 2,
+            "01_bool": true,
+            "02_SkMatrixTransformImageFilter": {
+              "00_int": 1,
+              "01_bool": true,
+              "02_SkColorFilterImageFilter": {
+                "00_int": 1,
+                "01_bool": true,
+                "02_SkBlurImageFilter": {
+                  "00_int": 1,
+                  "01_bool": false,
+                  "02_scalar": 32,
+                  "03_scalar": 32,
+                  "04_int": 3
+                },
+                "03_SkBlendModeColorFilter": {
+                  "00_color": [
+                    0.301961,
+                    0,
+                    0,
+                    0
+                  ],
+                  "01_uint": 5
+                }
+              },
+              "03_matrix": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  16
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ]
+              ],
+              "04_sampling": {
+                "maxAniso": 0,
+                "useCubic": false,
+                "filter": 1,
+                "mipmap": 0,
+                "cubic.B": 0,
+                "cubic.C": 0
+              }
+            },
+            "03_bool": false
+          }
+        }
+      }
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    },
+    {
+      "command": "Restore",
+      "visible": true
+    }
+  ],
+  "dim": [
+    787,
+    672
+  ],
+  "has_save_layer": true
+}
