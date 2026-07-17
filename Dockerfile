@@ -12,7 +12,7 @@ RUN apt-get update \
        | sh
 
 ENV PATH="/root/.elan/bin:/root/.local/bin:${PATH}"
-ENV HOME_DIR=/home/mu_skia
+ENV HOME_DIR=/home
 ENV HOME=${HOME_DIR}
 ENV ELAN_HOME=/root/.elan
 ENV REPO_DIR=${HOME_DIR}/mu_skia
@@ -27,10 +27,6 @@ RUN lake update \
     && lake build \
     && uv sync --locked
 
-WORKDIR ${HOME_DIR}
-
-COPY kick_the_tires.sh ${HOME_DIR}/kick_the_tires.sh
-COPY evaluation.sh ${HOME_DIR}/evaluation.sh
-RUN chmod +x ${HOME_DIR}/kick_the_tires.sh ${HOME_DIR}/evaluation.sh
+RUN chmod +x ${REPO_DIR}/kick_the_tires.sh ${REPO_DIR}/evaluation.sh
 
 CMD ["bash"]
