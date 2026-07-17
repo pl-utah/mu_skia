@@ -7,7 +7,7 @@ echo "Running lake build"
 lake build
 
 echo "Running TV on pinterest.com__layer_97"
-uv run python make_report.py \
+uv run python -u make_report.py \
     --optj-dir optj_100 \
     --report-dir "$REPORT_DIR" \
     --filter pinterest.com__layer_97 \

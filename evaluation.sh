@@ -7,6 +7,6 @@ echo "Running lake build"
 lake build
 
 echo "Running TV on all benchmarks"
-uv run python make_report.py \
+uv run python -u make_report.py \
     --optj-dir optj_100 \
     --report-dir "$REPORT_DIR"
