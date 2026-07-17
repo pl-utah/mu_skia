@@ -7,6 +7,27 @@ defaultTargets = ["MuSkia"]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
 relaxedAutoImplicit = false
 weak.linter.mathlibStandardSet = true
+linter.style.cases = false
+linter.style.induction = false
+linter.style.refine = false
+linter.style.cdot = false
+linter.style.docString = false
+linter.style.dollarSyntax = false
+linter.style.emptyLine = false
+linter.style.header = false
+linter.style.lambdaSyntax = false
+linter.style.longLine = false
+linter.style.longFile = false
+linter.style.multiGoal = false
+linter.style.nativeDecide = false
+linter.style.openClassical = false
+linter.style.maxHeartbeats = false
+linter.style.missingEnd = false
+linter.style.setOption = false
+linter.style.show = false
+linter.style.whitespace = false
+linter.unnecessarySimpa = false
+linter.unusedSimpArgs = false
 maxSynthPendingDepth = 3
 
 [[require]]

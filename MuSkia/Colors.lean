@@ -4,6 +4,18 @@ import Mathlib.Tactic.Polyrith
 import Mathlib.Tactic.Ring
 import Mathlib.Data.Real.Basic
 
+/-
+Section 3.1 & 3.4: Pixel Alebra.
+  This file describes one possible concretization of the abstract Color type.
+  Here the Pixel type specifically encodes a premultiplied RGBA color.
+  We also define and show that certain blendmodes maintain the premultiplied property.
+  The blend modes, plus, overlay, softlight, and multiply, are not defined concretely,
+  but are instead axiomatized.
+  This is because the exact definition of these blendmodes is not important for the rewrites,
+  and is only needed for the translation validation.
+  They are not part of the main formalization, and only used for translation validation.
+-/
+
 structure Pixel where
   a : Real
   r : Real

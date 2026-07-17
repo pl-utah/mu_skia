@@ -1,17 +1,26 @@
 import MuSkia.Layer
 import MuSkia.Colors
 
+/-
+This is a helper file for Translation Validation.
+This containes a few definitions of various
+concrete objects and properties of the various types in the abstract model.
+As we only need to reason about their existence and their type,
+their definitions are not important, and are therefore left as `sorry` or axiomatized.
+They are not part of the main formalization, and only used for translation validation.
+-/
+
 open CoreSk
 open Layer
 open Pixel
 
-def Rect (x y w h : Float) : Geometry := sorry
-def RRect (x y w h a b c d : Float) : Geometry := sorry
-def Oval (l t r b : Float) : Geometry := sorry
-def TextBlob (x y w h a b : Float) : Geometry := sorry
-def ImageRect (l t r b : Float) : Geometry := sorry
-def Path (b : Float) : Geometry := sorry
-def Full : Geometry := sorry
+def Rect (x y w h : Float) : Shape := sorry
+def RRect (x y w h a b c d : Float) : Shape := sorry
+def Oval (l t r b : Float) : Shape := sorry
+def TextBlob (x y w h a b : Float) : Shape := sorry
+def ImageRect (l t r b : Float) : Shape := sorry
+def Path (b : Float) : Shape := sorry
+def Full : Shape := sorry
 
 def stroke : Style := sorry
 
@@ -29,60 +38,60 @@ axiom RadialGradient.opaque (pt : Point) :
 
 @[grind, simp]
 theorem LinearGradientFill.opaque (pt : Point) :
-  ((getFillFunc (Fill.shader (LinearGradient true))) pt).a = 1 := by
-  simp [CoreSk.getFillFunc, LinearGradient.opaque]
+  ((getImageFunc (Image.shader (LinearGradient true))) pt).a = 1 := by
+  simp [CoreSk.getImageFunc, LinearGradient.opaque]
 
 @[grind, simp]
 theorem RadialGradientFill.opaque (pt : Point) :
-  ((getFillFunc (Fill.shader (RadialGradient true))) pt).a = 1 := by
-  simp [CoreSk.getFillFunc, RadialGradient.opaque]
+  ((getImageFunc (Image.shader (RadialGradient true))) pt).a = 1 := by
+  simp [CoreSk.getImageFunc, RadialGradient.opaque]
 
 @[grind, simp]
 theorem GradientMaskRadialTrue
-  (shape clip1 clip2 : Geometry)
+  (shape clip1 clip2 : Shape)
   (style : Style)
   (color : Pixel)
   (Hsubset : ∀ pt, clip1 pt = true → clip2 pt = true) :
   denote
     (saveLayer
-      (draw empty shape (Fill.pixel color, BlendMode.srcover, style, Filter.id) clip1)
+      (draw empty shape (Image.pixel color, BlendMode.srcover, style, Filter.id) clip1)
       (draw empty shape
-                  (Fill.shader (RadialGradient true), BlendMode.srcover, style, Filter.id) clip2)
-      (Fill.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
+                  (Image.shader (RadialGradient true), BlendMode.srcover, style, Filter.id) clip2)
+      (Image.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
   =
-  denote (draw empty shape (Fill.pixel color, BlendMode.srcover, style, Filter.id) clip1) := by
-  apply GradientMask shape clip1 clip2 style color (Fill.shader (RadialGradient true)) Hsubset
+  denote (draw empty shape (Image.pixel color, BlendMode.srcover, style, Filter.id) clip1) := by
+  apply GradientMask shape clip1 clip2 style color (Image.shader (RadialGradient true)) Hsubset
   intro pt
   simp [RadialGradientFill.opaque pt]
 
 @[grind, simp]
 theorem GradientMaskLinearTrue
-  (shape clip1 clip2 : Geometry)
+  (shape clip1 clip2 : Shape)
   (style : Style)
   (color : Pixel)
   (Hsubset : ∀ pt, clip1 pt = true → clip2 pt = true) :
   denote
     (saveLayer
-      (draw empty shape (Fill.pixel color, BlendMode.srcover, style, Filter.id) clip1)
-      (draw empty shape (Fill.shader (LinearGradient true), BlendMode.srcover, style, Filter.id) clip2)
-      (Fill.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
+      (draw empty shape (Image.pixel color, BlendMode.srcover, style, Filter.id) clip1)
+      (draw empty shape (Image.shader (LinearGradient true), BlendMode.srcover, style, Filter.id) clip2)
+      (Image.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
   =
-  denote (draw empty shape (Fill.pixel color, BlendMode.srcover, style, Filter.id) clip1) := by
-  apply GradientMask shape clip1 clip2 style color (Fill.shader (LinearGradient true)) Hsubset
+  denote (draw empty shape (Image.pixel color, BlendMode.srcover, style, Filter.id) clip1) := by
+  apply GradientMask shape clip1 clip2 style color (Image.shader (LinearGradient true)) Hsubset
   intro pt
   simpa using LinearGradientFill.opaque pt
 
 @[grind, simp]
 theorem GradientMaskRadialRRectClip
-  (shape mask : Geometry)
+  (shape mask : Shape)
   (color : Pixel) :
   denote
     (saveLayer
-      (draw empty shape (Fill.pixel color, BlendMode.srcover, id, Filter.id) (intersect Full mask))
-      (draw empty mask (Fill.shader (RadialGradient true), BlendMode.srcover, id, Filter.id) Full)
-      (Fill.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
+      (draw empty shape (Image.pixel color, BlendMode.srcover, id, Filter.id) (intersect Full mask))
+      (draw empty mask (Image.shader (RadialGradient true), BlendMode.srcover, id, Filter.id) Full)
+      (Image.pixel (Alpha 1), BlendMode.dstin, id, Filter.id))
   =
-  denote (draw empty shape (Fill.pixel color, BlendMode.srcover, id, Filter.id) (intersect Full mask)) := by
+  denote (draw empty shape (Image.pixel color, BlendMode.srcover, id, Filter.id) (intersect Full mask)) := by
   funext pt
   by_cases hdraw : shape pt = true ∧ intersect Full mask pt = true
   · have hmaskfull : mask pt = true ∧ Full pt = true := by
@@ -90,14 +99,14 @@ theorem GradientMaskRadialRRectClip
         simpa [CoreSk.intersect] using hdraw.2
       exact ⟨hfullmask.2, hfullmask.1⟩
     have hα :
-        (applyAlpha (getAlpha (Fill.pixel (Alpha 1)))
-          (getFillFunc (Fill.shader (RadialGradient true)) pt)).a = 1 := by
+        (applyAlpha (getAlpha (Image.pixel (Alpha 1)))
+          (getImageFunc (Image.shader (RadialGradient true)) pt)).a = 1 := by
       simp [getAlpha.pixel, Alpha.alpha_proj_one, applyAlpha.one, RadialGradientFill.opaque]
     have hdst :
-        dstin (getFillFunc (Fill.pixel color) pt)
-          (applyAlpha (getAlpha (Fill.pixel (Alpha 1)))
-            (getFillFunc (Fill.shader (RadialGradient true)) pt))
-        = getFillFunc (Fill.pixel color) pt :=
+        dstin (getImageFunc (Image.pixel color) pt)
+          (applyAlpha (getAlpha (Image.pixel (Alpha 1)))
+            (getImageFunc (Image.shader (RadialGradient true)) pt))
+        = getImageFunc (Image.pixel color) pt :=
       dstin.right_opaque _ _ hα
     simp [denote, denote_bm, denote_filter, hdraw, hmaskfull, hdst, srcover.right_transparent]
   · simp [denote, denote_bm, denote_filter, hdraw, applyAlpha.one, srcover.right_transparent,
@@ -118,17 +127,17 @@ axiom LumaFilter.white_literal :
   LumaFilter ⟨1, 1.0, 1.0, 1.0, by norm_num⟩ = ⟨1, 0.0, 0.0, 0.0, by norm_num⟩
 
 @[grind, simp]
-theorem SubsumeColorFilter_luma_white (g clip : Geometry) :
+theorem SubsumeColorFilter_luma_white (g clip : Shape) :
   denote
     (saveLayer empty
       (draw empty g
-        (Fill.pixel ⟨1, 1.0, 1.0, 1.0, by norm_num⟩, BlendMode.srcover, id, Filter.id)
+        (Image.pixel ⟨1, 1.0, 1.0, 1.0, by norm_num⟩, BlendMode.srcover, id, Filter.id)
         clip)
-      (Fill.pixel (Pixel.Alpha 1), BlendMode.srcover, id, Filter.custom LumaFilter))
+      (Image.pixel (Pixel.Alpha 1), BlendMode.srcover, id, Filter.custom LumaFilter))
   =
   denote
     (draw empty g
-      (Fill.pixel ⟨1, 0.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id)
+      (Image.pixel ⟨1, 0.0, 0.0, 0.0, by norm_num⟩, BlendMode.srcover, id, Filter.id)
       clip) :=
 by
   have Ht : denote_filter (Filter.custom LumaFilter) Transparent = Transparent := by
@@ -137,25 +146,25 @@ by
     (SubsumeColorFilter g clip id ⟨1, 1.0, 1.0, 1.0, by norm_num⟩ (Filter.custom LumaFilter) Ht)
 
 @[grind, simp]
-axiom intersect.Full_right (g : Geometry) :
+axiom intersect.Full_right (g : Shape) :
   intersect g Full = g
 
 @[grind, simp]
-theorem intersect.assoc (a b c : Geometry) :
+theorem intersect.assoc (a b c : Shape) :
   intersect (intersect a b) c = intersect a (intersect b c) :=
 by
   funext pt
   simp [CoreSk.intersect, Bool.and_assoc]
 
 @[grind, simp]
-theorem intersect.comm (a b : Geometry) :
+theorem intersect.comm (a b : Shape) :
   intersect a b = intersect b a :=
 by
   funext pt
   simp [CoreSk.intersect, Bool.and_comm]
 
 @[grind, simp]
-theorem intersect.idem (a : Geometry) :
+theorem intersect.idem (a : Shape) :
   intersect a a = a :=
 by
   funext pt

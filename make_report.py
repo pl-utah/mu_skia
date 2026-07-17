@@ -289,7 +289,7 @@ def make_html(results: list[BenchmarkResult], started_at: str, timeout: int | No
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run TV over all optj benchmarks and generate HTML report")
+    parser = argparse.ArgumentParser(description="Run TV over optj benchmarks and optionally generate an HTML report")
     parser.add_argument("--optj-dir", type=Path, default=Path("optj"))
     parser.add_argument("--report-dir", type=Path, default=Path("report"))
     parser.add_argument(
@@ -299,6 +299,8 @@ def main() -> None:
         help="Subprocess timeout per step in seconds (0 disables wrapper timeout and relies on Lean/grind limits)",
     )
     parser.add_argument("--only", nargs="*", default=None, help="Optional explicit benchmark names")
+    parser.add_argument("--filter", help="Run benchmarks whose names contain this case-insensitive string")
+    parser.add_argument("--no-report", action="store_true", help="Skip writing results.json and index.html")
     parser.add_argument("--workers", type=int, default=1, help="Number of benchmarks to run in parallel")
     args = parser.parse_args()
 
@@ -306,6 +308,9 @@ def main() -> None:
         names = args.only
     else:
         names = sorted([p.name for p in args.optj_dir.iterdir() if p.is_dir()])
+    if args.filter:
+        filter_text = args.filter.casefold()
+        names = [name for name in names if filter_text in name.casefold()]
 
     args.report_dir.mkdir(parents=True, exist_ok=True)
     (args.report_dir / "generated").mkdir(parents=True, exist_ok=True)
@@ -347,20 +352,23 @@ def main() -> None:
         # Preserve deterministic output order
         results = [by_name[name] for name in names]
 
-    # Write machine-readable artifact
-    report_json = {
-        "started_at": started_at,
-        "timeout_seconds": timeout_value,
-        "total": len(results),
-        "results": [asdict(r) for r in results],
-    }
-    (args.report_dir / "results.json").write_text(json.dumps(report_json, indent=2))
+    if args.no_report:
+        print("\nReport generation disabled.")
+    else:
+        # Write machine-readable artifact
+        report_json = {
+            "started_at": started_at,
+            "timeout_seconds": timeout_value,
+            "total": len(results),
+            "results": [asdict(r) for r in results],
+        }
+        (args.report_dir / "results.json").write_text(json.dumps(report_json, indent=2))
 
-    # Write HTML dashboard
-    (args.report_dir / "index.html").write_text(make_html(results, started_at, timeout_value))
+        # Write HTML dashboard
+        (args.report_dir / "index.html").write_text(make_html(results, started_at, timeout_value))
 
-    print(f"\nReport written to: {args.report_dir / 'index.html'}")
-    print(f"JSON written to:   {args.report_dir / 'results.json'}")
+        print(f"\nReport written to: {args.report_dir / 'index.html'}")
+        print(f"JSON written to:   {args.report_dir / 'results.json'}")
 
 
 if __name__ == "__main__":
