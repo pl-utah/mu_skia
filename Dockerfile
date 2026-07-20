@@ -24,6 +24,7 @@ WORKDIR ${HOME_DIR}
 RUN git clone --depth 1 --branch "${REPO_REF}" "${REPO_URL}" "${REPO_DIR}"
 WORKDIR ${REPO_DIR}
 RUN lake update \
+    && lake exe cache get \
     && lake build \
     && uv sync --locked
 
