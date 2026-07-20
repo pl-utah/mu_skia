@@ -135,7 +135,7 @@ if __name__ == "__main__":
         "theorem opt2_eq_opt3 : denote opt2 = denote opt3 := by",
         "  unfold opt2",
         "  unfold opt3",
-        "  grind (gen := 80) [clip_mask, is_maskable, MaskIntoDstin]",
+        "  grind (gen := 80) [clip_mask, is_maskable, DstinToClip]",
         "",
         "theorem opt3_eq_opt4 : denote opt3 = denote opt4 := by",
         "  unfold opt3",

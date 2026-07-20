@@ -445,19 +445,19 @@ def paint_to_lean(paint: Paint, is_savelayer=False) -> str:
     if is_savelayer:
         match paint.fill:
             case Color(a, _, _, _):
-                fill = f'Fill.pixel (Alpha {1 if a == 1.0 else a})'
+                fill = f'Image.pixel (Alpha {1 if a == 1.0 else a})'
             case _:
-                fill = f'Fill.pixel (Alpha 1)'
+                fill = f'Image.pixel (Alpha 1)'
     else:
         match paint.fill:
             case Color(a, r, g, b):
                 fill = (
-                    f'Fill.pixel ⟨{1 if a == 1.0 else a}, {r * a}, {g * a}, {b * a}, by norm_num⟩'
+                    f'Image.pixel ⟨{1 if a == 1.0 else a}, {r * a}, {g * a}, {b * a}, by norm_num⟩'
                 )
             case LinearGradient(is_opaque):
-                fill = f"Fill.shader (LinearGradient {'true' if is_opaque else 'false'})"
+                fill = f"Image.shader (LinearGradient {'true' if is_opaque else 'false'})"
             case RadialGradient(is_opaque):
-                fill = f"Fill.shader (RadialGradient {'true' if is_opaque else 'false'})"
+                fill = f"Image.shader (RadialGradient {'true' if is_opaque else 'false'})"
 
     blend_mode = 'BlendMode.' + paint.blend_mode[1:-1].lower()
     style = paint.style[1:-1].lower()
