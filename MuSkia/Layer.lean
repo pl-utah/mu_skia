@@ -8,7 +8,7 @@ namespace CoreSk
 
 /-
 Fig 1: Abstract Model
-  See lines 13-49.
+  See lines 16-74.
   Our abstract model also encodes a notion of "Style",
   which describes whether the shape is filled, stroked, or both.
   This extension is discussed in Section 3.4.
@@ -46,15 +46,36 @@ inductive BlendMode : Type where
   | softlight : BlendMode
   | multiply : BlendMode
 
+@[simp]
+noncomputable def denote_bm (bm : BlendMode) : Pixel -> Pixel -> Pixel :=
+  match bm with
+  | BlendMode.srcover => srcover
+  | BlendMode.dstin => dstin
+  | BlendMode.srcin => srcin
+  | BlendMode.src => src
+  | BlendMode.plus => plus
+  | BlendMode.overlay => overlay
+  | BlendMode.softlight => softlight
+  | BlendMode.multiply => multiply
+
 def Style : Type := Shape -> Shape
 
 inductive Filter : Type where
   | id : Filter
   | custom : (Pixel -> Pixel) -> Filter
 
+@[simp]
+def denote_filter (f : Filter) : Pixel -> Pixel :=
+  match f with
+  | Filter.id => id
+  | Filter.custom f => f
+
+def denote_filter.id (px : Pixel) :
+  denote_filter Filter.id px = px := rfl
+
 /-
 Figure 2: Layer Language
-  See lines 59-76.
+  See lines 82-98.
   Paint here differs from the figure,
   because it also includes a Style.
 -/
@@ -85,32 +106,11 @@ def countSaveLayers : Layer -> Nat
 
 /-
 Fig 3: Denotational Semantics
-  See lines 90-126.
+  See lines 114-129.
   denote here differs from the figure,
   because it includes a Style,
   and it also deals with opacity (which is also discussed in Section 3.4).
 -/
-@[simp]
-noncomputable def denote_bm (bm : BlendMode) : Pixel -> Pixel -> Pixel :=
-  match bm with
-  | BlendMode.srcover => srcover
-  | BlendMode.dstin => dstin
-  | BlendMode.srcin => srcin
-  | BlendMode.src => src
-  | BlendMode.plus => plus
-  | BlendMode.overlay => overlay
-  | BlendMode.softlight => softlight
-  | BlendMode.multiply => multiply
-
-@[simp]
-def denote_filter (f : Filter) : Pixel -> Pixel :=
-  match f with
-  | Filter.id => id
-  | Filter.custom f => f
-
-def denote_filter.id (px : Pixel) :
-  denote_filter Filter.id px = px := rfl
-
 noncomputable def denote : Layer -> Point -> Pixel
   | empty, _ => Pixel.Transparent
   | draw l_b geo paint clip, pt =>

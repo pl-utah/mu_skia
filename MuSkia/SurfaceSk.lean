@@ -7,6 +7,7 @@ open CoreSk
 
 /-
 Figure 3: muSkia Command Language
+  See lines 12-22
 -/
 inductive ClipOp : Type where
   | int : ClipOp
@@ -22,15 +23,16 @@ inductive Command : Type where
 
 open Command
 
+/-
+Section 3.3: Operational Semantics of muSkia.
+  See lines 30-177
+-/
 structure State where
   clip_stack : List Shape
   layer_stack : List Layer
 
 notation "Σ" => State
 
-/-
-Section 3.3: Operational Semantics
--/
 def interp (cmd : Command) (σ : Σ) : Σ :=
   match cmd with
   | skip => σ
@@ -361,7 +363,7 @@ Section 4.2: Dstin to Clip
   one clip in l2 and not a list of clips.
   But the proof should be similar.
 -/
-theorem maskIntoDstin_denote_eq_clip
+theorem DstinToClipMuSkia
   (cmd : Command)
   (hcmd : PlainDrawList cmd)
   (g2 c2 : Shape)
